@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "understanding-pathways"
+  },
+  "targets": {
+    "understanding-pathways": {
+      "hosting": {
+        "site": [
+          "understanding-pathways"
+        ]
+      }
+    }
+  }
+}
