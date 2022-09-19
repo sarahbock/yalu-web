@@ -2,10 +2,12 @@ import React from 'react';
 
 import { useNavigate } from "react-router-dom";
 
-import home from '../assets/home.png';
+import house from '../assets/home.png';
+import previous from '../assets/back.png';
 import search from '../assets/search.png';
+import playButton from '../assets/play.png';
 
-const TopNav = ({ toggleSearch }) => {
+const TopNav = ({ toggleSearch, title, home, back, play }) => {
 
   const navigate = useNavigate();
 
@@ -14,23 +16,48 @@ const TopNav = ({ toggleSearch }) => {
     navigate('/');
   };
 
+  const goBack = (e) => {
+    window.scrollTo(0, 0);
+    navigate(-1)
+  };
+
   return(
 
     <div className="appHeader">
 
-        <div className="leftHeader" onClick={returnHome}>
-          <div className="appHeaderImage">
-            <img src={home} alt="Home" class="appHeaderIcon"/>
+        {home &&
+          <div className="leftHeader" onClick={returnHome}>
+            <div className="appHeaderImage">
+              <img src={house} alt="Home" class="appHeaderIcon"/>
+            </div>
           </div>
-        </div>
+        }
 
-        <div className="appHeaderTitle">Dictionary</div>
-
-        <div className="rightHeader" onClick={toggleSearch}>
-          <div className="appHeaderImage">
-            <img src={search} alt="Search" class="appHeaderIcon"/>
+        {back &&
+          <div className="leftHeader" onClick={goBack}>
+            <div className="appHeaderImage">
+              <img src={previous} alt="Home" class="appHeaderIcon"/>
+            </div>
           </div>
-        </div>
+        }
+
+        <div className="appHeaderTitle">{title}</div>
+
+        {toggleSearch &&
+          <div className="rightHeader" onClick={toggleSearch}>
+            <div className="appHeaderImage">
+              <img src={search} alt="Search" class="appHeaderIcon"/>
+              </div>
+          </div>
+        }
+
+        {play &&
+          <div className="rightHeader" >
+            <div className="appHeaderImage">
+              <img src={playButton} alt="Play" class="appHeaderIcon"/>
+              </div>
+          </div>
+        }
 
       </div>
   )

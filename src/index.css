@@ -19,6 +19,15 @@ body {
   background-color: #000000;
 }
 
+.loading{
+  color:#FFFFFF;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex:1;
+}
+
 /*LAUNCH*/
 .launchLogo{
   width: 300px;
@@ -41,50 +50,73 @@ justify-content: center;
   border: none;
   background: none;
   padding: 0;
+  cursor: pointer;
 }
 .homeTileImage{
   padding: 20px;
-background-color: #cec6b8;
-border-bottom: 3px solid #000000;
-border-radius: 50px 50px 0 0;
+  background-color: #cec6b8;
+  border-bottom: 3px solid #000000;
+  border-radius: 50px 50px 0 0;
 }
 .homeIcon{
   width: 100%;
 }
 .homeTileText{
   text-align: center;
-    background-color: #792b26;
-    color: #FFF;
-    font-weight: bold;
-    padding: 10px;
-    border-top: 10px solid #e1b631;
-        border-radius: 0 0 50px 50px;
+  background-color: #8b2b25;
+  color: #FFF;
+  font-weight: bold;
+  padding: 10px;
+  border-top: 10px solid #e1b631;
+  border-radius: 0 0 50px 50px;
 }
 
 /*DICTIONARY*/
 .dictionaryScreen{
   flex-direction: column;
 }
-.listItem{
-  color: #333
+.listItemHolder{
+  width:calc(100% - 6px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 3px solid #000000;
+  border-bottom: 0px;
+  margin:10px 0 0 0;
+}
+.listItemText{
+  padding:10px;
+  font-size:20px;
+  font-weight: bold;
+  flex-grow: 1;
+  text-align: left;
+}
+.listItemAudio{
+  padding: 10px;
+}
+.listItemAudioIcon{
+  width: 40px;
+  height: 40px;
 }
 
 /*APP HEADER*/
 .appHeader{
-
   display: flex;
   justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    background-color: #cec6b8;
-    border-bottom: 3px solid #000000;
+  width: 100%;
+  align-items: center;
+  background-color: #8b2b25;
+  border-bottom: 10px solid #e1b631;
 }
-.leftHeader{
-
+.leftHeader, .rightHeader{
+  filter: invert(97%) sepia(50%) saturate(13%) hue-rotate(21deg) brightness(104%) contrast(102%);
 }
 .appHeaderTitle{
   font-weight: bold;
   text-align: center;
+  color:#FFFFFF;
+  font-size: 20px;
 }
 .rightHeader{
 
@@ -96,7 +128,27 @@ border-radius: 50px 50px 0 0;
   width: 40px;
 }
 .searchBar {
-width:100%
+  width:100%
+}
+
+/*ITEM NAV*/
+.itemNavHolder {
+  width:100%;
+  display:flex;
+  justify-content: center;
+}
+.itemNav{
+  cursor: pointer;
+}
+.itemNavBall{
+  width:40px;
+  height:40px;
+  background-color: #FFFFFF66;
+  border-radius: 50%;
+  margin: 10px 5px;
+}
+.itemNavBallFilled{
+  background-color: #FFFFFF;
 }
 
 #root input{
