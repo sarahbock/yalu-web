@@ -9,6 +9,14 @@ body {
   font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
+h2{
+  padding:10px 20px;
+  margin:0;
+  background-color: #e1b631;
+  text-align: left;
+  font-size:14px;
+}
+
 .container{
   max-width: 600px;
   min-height:100vh;
@@ -54,7 +62,7 @@ justify-content: center;
 }
 .homeTileImage{
   padding: 20px;
-  background-color: #cec6b8;
+  background-color: #FFF;
   border-bottom: 3px solid #000000;
   border-radius: 50px 50px 0 0;
 }
@@ -91,13 +99,48 @@ justify-content: center;
   font-weight: bold;
   flex-grow: 1;
   text-align: left;
+  cursor: pointer;
 }
 .listItemAudio{
   padding: 10px;
+  min-height: 40px;
 }
-.listItemAudioIcon{
-  width: 40px;
+
+
+/*AUDIO PLAYER*/
+#root .rhap_container, .rhap_container *:focus{
+  outline:none;
+  box-shadow: none;
+  background:none;
+  padding: 0;
+}
+#root .rhap_main-controls-button{
+    color:#8b2b25;
+}
+
+
+/*ENTRY*/
+
+.entryContent{
+  width:calc(100% - 6px);
+  margin:10px 0;
+}
+.entrySection{
+  background-color: #FFFFFF;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.entrySectionText{
+  text-align: left;
+  margin-right:20px;
+
+}
+.entrySectionAudioIcon{
+  width:40px;
   height: 40px;
+  filter: invert(19%) sepia(35%) saturate(3376%) hue-rotate(339deg) brightness(94%) contrast(91%);
 }
 
 /*APP HEADER*/
@@ -111,6 +154,7 @@ justify-content: center;
 }
 .leftHeader, .rightHeader{
   filter: invert(97%) sepia(50%) saturate(13%) hue-rotate(21deg) brightness(104%) contrast(102%);
+  cursor: pointer;
 }
 .appHeaderTitle{
   font-weight: bold;
@@ -146,6 +190,10 @@ justify-content: center;
   background-color: #FFFFFF66;
   border-radius: 50%;
   margin: 10px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 .itemNavBallFilled{
   background-color: #FFFFFF;

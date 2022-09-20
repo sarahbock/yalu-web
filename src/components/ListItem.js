@@ -2,7 +2,11 @@ import React from 'react';
 import play from '../assets/play.png';
 import pause from '../assets/pause.png';
 
-const ListItem = ({ key, item, onClick }) => {
+import SoundPlayer from '../components/SoundPlayer';
+
+const ListItem = ({ item, onClick }) => {
+
+  const audioSource = item?.titleaudio?.src ?? null;
 
   return(
 
@@ -11,7 +15,9 @@ const ListItem = ({ key, item, onClick }) => {
       <div className="listItemText" onClick={()=>onClick(item)}>{item.title}</div>
 
       <div className="listItemAudio">
-        <img src={play} className="listItemAudioIcon" alt="Play"/>
+
+        <SoundPlayer source={audioSource}/>
+
       </div>
 
     </div>

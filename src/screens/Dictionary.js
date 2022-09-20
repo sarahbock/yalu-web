@@ -44,8 +44,8 @@ const Dictionary = () => {
   const renderEntries = () => {
     return (
       <>
-      {searchResults.map( (item,idx) =>
-        <ListItem key={idx} item={item} onClick={openEntry}/>
+      {searchResults.map( item =>
+        <ListItem key={item.id} item={item} onClick={openEntry}/>
       )}
       </>
     )
