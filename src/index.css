@@ -40,10 +40,24 @@ h2{
 .launchLogo{
   width: 300px;
   margin: 20px;
+  margin-bottom:0;
   max-width: 80%;
 }
 .launchScreen{
   justify-content: center;
+  flex-direction: column;
+}
+.launchTitle{
+  color:#FFFFFF;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.launchClick{
+  height:40px;
+  width:40px;
+  margin: 0 0 10px 10px;
+  filter: invert(97%) sepia(50%) saturate(13%) hue-rotate(21deg) brightness(104%) contrast(102%);
 }
 
 /*HOME*/
