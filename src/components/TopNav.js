@@ -23,7 +23,7 @@ const TopNav = ({ toggleSearch, title, home, back, play, audio }) => {
 
   return(
 
-    <div className="appHeader">
+    <div className="appHeader bgstrip">
 
         {home &&
           <div className="leftHeader" onClick={returnHome}>
@@ -46,7 +46,7 @@ const TopNav = ({ toggleSearch, title, home, back, play, audio }) => {
         {toggleSearch &&
           <div className="rightHeader" onClick={toggleSearch}>
             <div className="appHeaderImage">
-              <img src={search} alt="Search" className="appHeaderIcon"/>
+              <img src={search} alt="Search" className="appHeaderIcon searchIcon"/>
               </div>
           </div>
         }

@@ -90,7 +90,7 @@ const Dictionary = () => {
   return(
     <div className="container dictionaryScreen">
 
-      <TopNav toggleSearch={toggleSearch} home title="Dictionary"/>
+      <TopNav toggleSearch={toggleSearch} back title="Dictionary"/>
 
         {showSearch &&
           <div className="searchBar">

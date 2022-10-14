@@ -13,12 +13,20 @@ const Launch = () => {
 
   return(
 
-      <div className="container launchScreen" onClick={enterApp}>
-        <img src={logo} className="launchLogo" alt="Yalu logo"/>
-        <div className="launchTitle">
-          Click here
-          <img src={click} className="launchClick" alt="Click"/>
+      <div className="container" onClick={enterApp}>
+
+        <div className="header bgstrip">Dhukarr ga Rom marŋgithinyaraw bala-räliyunmirr Yolŋuw ga Balandaw</div>
+
+        <div className="centeredContent">
+          <img src={logo} className="launchLogo" alt="Yalu logo"/>
+          <div className="launchClick">
+            Click here
+            <img src={click} className="launchClickImage" alt="Click"/>
+          </div>
         </div>
+
+        <div className="footer bgstrip">Understanding Yolngu and Balanda education pathways and systems</div>
+
       </div>
 
   )

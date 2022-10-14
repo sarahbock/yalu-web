@@ -11,6 +11,7 @@ const SoundPlayer = ({ source }) => {
   return(
     <AudioPlayer
     autoPlay={false}
+    autoPlayAfterSrcChange={false}
     src={source}
     showJumpControls={false}
     showDownloadProgress={false}
