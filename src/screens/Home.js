@@ -10,7 +10,7 @@ const Home = props =>{
 
   const chooseResourceHandler = (e) => {
     window.scrollTo(0, 0);
-    navigate('/dictionary');
+    navigate('/'+e);
   };
 
   return(
@@ -22,11 +22,11 @@ const Home = props =>{
         <div className="homeContent">
 
           <Tile id='dictionary' label='Dictionary'
-            onClick={chooseResourceHandler}
+            onClick={()=>chooseResourceHandler('dictionary')}
           />
 
           <Tile id='children' label='Child development pathway'
-            onClick={()=>alert('In development')}
+            onClick={()=>chooseResourceHandler('dhukarr')}
           />
 
           <Tile id='blank' label='Coming'

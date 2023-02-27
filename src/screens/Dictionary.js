@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 
 import { db } from '../config';
-import { collection, getDocs } from 'firebase/firestore';
+import { collection, getDocs, orderBy } from 'firebase/firestore';
 
 import { useNavigate } from "react-router-dom";
 
@@ -33,10 +33,17 @@ const Dictionary = () => {
   //get entries from firestore and store in state
   const getData = async() => {
     const entriesArray=[];
-    const querySnapshot = await getDocs(collection(db, "entries"));
+    const querySnapshot = await getDocs(
+      collection(db, "entries")
+      );
     querySnapshot.forEach((doc) => {
       entriesArray.push(doc.data());
     });
+    entriesArray.sort(function(a, b){
+      if(a.title < b.title) { return -1; }
+      if(a.title > b.title) { return 1; }
+      return 0;
+    })
     setEntries(entriesArray);
   }
 

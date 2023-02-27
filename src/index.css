@@ -160,6 +160,20 @@ cursor: pointer;
 }
 
 
+/*DHUKARR*/
+
+.dhukarrScreen{align-items: flex-start;}
+.longImageHolder{
+  width:100%;
+}
+
+.longImage{
+  width:100%; height: auto;
+}
+
+.audioTrigger{display:none;border: 1px solid red; position: absolute; }
+
+
 /*ENTRY*/
 
 .entryContent{
@@ -219,6 +233,10 @@ padding: 10px;
 }
 .appHeaderImage{
   padding: 10px;
+}
+.appHeaderImageFloat{
+  padding: 10px;
+  position: absolute;
 }
 .appHeaderIcon{
   filter: invert(97%) sepia(50%) saturate(13%) hue-rotate(21deg) brightness(104%) contrast(102%);
