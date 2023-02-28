@@ -99,7 +99,9 @@ const Dictionary = () => {
 
       <TopNav toggleSearch={toggleSearch} back title="Dictionary"/>
 
-        {showSearch &&
+      <div className='contentContainer'>
+        
+      {showSearch &&
           <div className="searchBar">
             <input id="searchTerm" maxLength="30" defaultValue={searchTerm} placeholder='Search' onChange={handleChange}  />
           </div>
@@ -109,6 +111,10 @@ const Dictionary = () => {
 
         {searchResults && renderEntries()}
 
+
+      </div>
+
+        
     </div>
   )
 }

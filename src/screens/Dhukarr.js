@@ -1,30 +1,25 @@
 import React, { useState } from 'react';
 
+import TopNav from '../components/TopNav';
 
-import { useNavigate } from "react-router-dom";
 import dhukarr_english from '../assets/dkharr_english.png';
-import previous from '../assets/back.png';
+import dhukarr_yolngu from '../assets/dkharr_yolngu.png';
 
 
 const Dhukarr = () => {
 
-  const navigate = useNavigate();
+  //show in language or english?
+  const [language, setLanguage] = useState(true)
 
-  const goBack = (e) => {
-    window.scrollTo(0, 0);
-    navigate(-1)
-  };
-
-  
+  //when user clicks the language icon 
+  const toggleLanguage = () => {
+    setLanguage(!language);
+  }
 
   return(
     <div className="container dictionaryScreen dhukarrScreen">
 
-    <div className="leftHeader" onClick={goBack}>
-            <div className="appHeaderImageFloat">
-              <img src={previous} alt="Home" className="appHeaderIcon"/>
-            </div>
-          </div>
+    <TopNav toggleLanguage={toggleLanguage} language={language} back noBorder title=""/>
 
           {/*<img src={dhukarr_english} usemap="#Map"/>
           <map name="Map">
@@ -32,8 +27,8 @@ const Dhukarr = () => {
           </map>   
           */}
       
-      <div >
-        <img  src={dhukarr_english}/>
+      <div className='contentContainer longImageHolder'>
+        <img className='longImage' src={language ? dhukarr_yolngu : dhukarr_english}/>
         <div className="audioTrigger" id="audioTrigger1" style={{top: "828px", left:"480px", width:"270px", height: "210px"}}></div>
       </div>
 
