@@ -57,63 +57,67 @@ const DictionaryEntry = () => {
 
     <TopNav title={item?.title ?? 'Entry'} back play audio={definition.titleaudio}/>
 
+    <div className='contentContainer'>
     <ItemNav onClick={setPage} page={page} totalPages={totalPages}/>
 
-    <div className="entryContent">
-      <div className="entryContentHeader">
-        Djambarrpuyŋu
-      </div>
-      <div className="entrySection">
-        <div className="entrySectionText">
-          {definition.yolngu}
-        </div>
-        <div className="entrySectionAudio">
-          <SoundPlayer source={definition.yolnguaudio}/>
-        </div>
-      </div>
+<div className="entryContent">
+  <div className="entryContentHeader">
+    Djambarrpuyŋu
+  </div>
+  <div className="entrySection">
+    <div className="entrySectionText">
+      {definition.yolngu}
     </div>
+    <div className="entrySectionAudio">
+      <SoundPlayer source={definition.yolnguaudio}/>
+    </div>
+  </div>
+</div>
 
-    <div className="entryContent">
-      <div className="entryContentHeader">
-        English
-      </div>
-      <div className="entrySection">
-        <div className="entrySectionText">
-          {definition.english}
-        </div>
-        <div className="entrySectionAudio">
-          <SoundPlayer source={definition.englishaudio}/>
-        </div>
-      </div>
+<div className="entryContent">
+  <div className="entryContentHeader">
+    English
+  </div>
+  <div className="entrySection">
+    <div className="entrySectionText">
+      {definition.english}
     </div>
+    <div className="entrySectionAudio">
+      <SoundPlayer source={definition.englishaudio}/>
+    </div>
+  </div>
+</div>
 
-    <div className="entryContent">
-      <div className="entryContentHeader">
-        Plain English
-      </div>
-      <div className="entrySection">
-        <div className="entrySectionText">
-          {definition.plainenglish}
-        </div>
-        <div className="entrySectionAudio">
-          <SoundPlayer source={definition.plainenglishaudio}/>
-        </div>
-      </div>
+<div className="entryContent">
+  <div className="entryContentHeader">
+    Plain English
+  </div>
+  <div className="entrySection">
+    <div className="entrySectionText">
+      {definition.plainenglish}
     </div>
+    <div className="entrySectionAudio">
+      <SoundPlayer source={definition.plainenglishaudio}/>
+    </div>
+  </div>
+</div>
 
-    <div className="entryContent">
-      <div className="entryContentHeader">
-        Example
-      </div>
-      <div className="entrySection">
-        <div className="entrySectionText">
-          {definition.example}
-        </div>
-        <div className="entrySectionAudio">
-          <SoundPlayer source={definition.exampleaudio}/>
-        </div>
-      </div>
+<div className="entryContent">
+  <div className="entryContentHeader">
+    Example
+  </div>
+  <div className="entrySection">
+    <div className="entrySectionText">
+      {definition.example}
     </div>
+    <div className="entrySectionAudio">
+      <SoundPlayer source={definition.exampleaudio}/>
+    </div>
+  </div>
+</div>
+    </div>
+    
+    
 
     </div>
   )
