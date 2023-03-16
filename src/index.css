@@ -256,6 +256,7 @@ padding: 10px;
 }
 
 .contentContainer{margin-top: 110px; width: 100%; max-width: 1200px;}
+.textContainer p, .textContainer h1, .textContainer h3, .textContainer h2, .textContainer li {color:#FFF; text-align: left; padding: 5px 10px;}
 /*ITEM NAV*/
 .itemNavHolder {
   display:flex;

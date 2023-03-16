@@ -21,29 +21,15 @@ const Home = props =>{
 
         <div className="homeContent">
 
-          <Tile id='dictionary' label='Dictionary'
+          <Tile id='dictionary' label='Balandaw gurraŋay dhäruk ga Yolŋukurr mayali: – a dictionary of English education and research terms for Yolŋu'
             onClick={()=>chooseResourceHandler('dictionary')}
           />
 
-          <Tile id='children' label='Child development pathway'
+          <Tile id='children' label='Yolŋu Yothuw Dhukarr – the developmental pathway of a Yolŋu child'
             onClick={()=>chooseResourceHandler('dhukarr')}
           />
 
-          <Tile id='blank' label='Coming'
-            onClick={()=>alert('Coming soon')}
-          />
-
-          <Tile id='blank' label='Coming'
-            onClick={()=>alert('Coming soon')}
-          />
-
-          <Tile id='blank' label='Coming'
-            onClick={()=>alert('Coming soon')}
-          />
-
-          <Tile id='blank' label='Coming'
-            onClick={()=>alert('Coming soon')}
-          />
+          
 
         </div>
 

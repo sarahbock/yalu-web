@@ -97,7 +97,7 @@ const Dictionary = () => {
   return(
     <div className="container dictionaryScreen">
 
-      <TopNav toggleSearch={toggleSearch} back title="Dictionary"/>
+      <TopNav toggleSearch={toggleSearch} back title="Balandaw gurraŋay dhäruk ga Yolŋukurr mayali – a dictionary of English education and research terms for Yolŋu"/>
 
       <div className='contentContainer'>
         

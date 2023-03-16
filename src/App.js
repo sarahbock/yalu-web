@@ -7,6 +7,7 @@ import Home from './screens/Home';
 import Dictionary from './screens/Dictionary';
 import Dhukarr from './screens/Dhukarr';
 import DictionaryEntry from './screens/DictionaryEntry';
+import Privacy from './screens/Privacy';
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="dictionary" element={<Dictionary />} />
         <Route path="dictionaryentry" element={<DictionaryEntry />} />
         <Route path="dhukarr" element={<Dhukarr />} />
+        <Route path="privacy" element={<Privacy />} />
       </Routes>
   );
 }
