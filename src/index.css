@@ -162,16 +162,17 @@ cursor: pointer;
 
 /*DHUKARR*/
 
-.dhukarrScreen{align-items: flex-start;}
+.dhukarrScreen{align-items: flex-start; width: 1200px; margin:0;}
 .longImageHolder{
-  width:100%;
+  width:1200px;
+  max-width: none!important;
 }
 
 .longImage{
   width:100%; height: auto;
 }
 
-.audioTrigger{display:none;border: 1px solid red; position: absolute; }
+.audioTrigger{position: absolute; width:100%; display: flex; justify-content: center;}
 
 
 /*ENTRY*/
