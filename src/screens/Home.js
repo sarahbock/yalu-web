@@ -17,7 +17,7 @@ const Home = props =>{
 
     <div className="container homeScreen">
 
-        <div className="header bgstrip">Dhukarr ga Rom marŋgithinyaraw bala-räliyunmirr Yolŋuw ga Balandaw</div>
+        <div className="header bgstrip largerFont">Dhukarr ga Rom marŋgithinyaraw bala-räliyunmirr Yolŋuw ga Balandaw</div>
 
         <div className="homeContent">
 
@@ -27,6 +27,14 @@ const Home = props =>{
 
           <Tile id='children' label='Yolŋu Yothuw Dhukarr – the developmental pathway of a Yolŋu child'
             onClick={()=>chooseResourceHandler('dhukarr')}
+          />
+
+          <Tile id='auspathway' label='Australian education pathway'
+            onClick={()=>alert('Coming soon!')}
+          />
+
+          <Tile id='ceremony' label='Ceremony as a Yolŋu classroom'
+            onClick={()=>alert('Coming soon!')}
           />
 
           
