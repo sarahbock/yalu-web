@@ -74,7 +74,7 @@ const Dhukarr = () => {
           <SoundPlayer source={require('../assets/mp3/recording3.mp3')}/>
         </div>
 
-        <div className="audioTrigger" id="audioTrigger4" style={{top: "1630px", left:"930px", width:"50px", height: "50px"}}>
+        <div className="audioTrigger" id="audioTrigger4" style={{top: "2000px", left:"550px", width:"50px", height: "50px"}}>
           <SoundPlayer source={require('../assets/mp3/recording4.mp3')}/>
         </div>
         
