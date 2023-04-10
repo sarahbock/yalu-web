@@ -10,6 +10,15 @@ body {
 }
 
 
+@font-face {
+  font-family: 'KGBlank';
+  src: local('KGBlank'), url(./assets/fonts/kgblankspacesolid-webfont.woff) format('woff'), url(./assets/fonts/KGBlankSpaceSolid.woff2) format('woff2'), url(./assets/fonts/kgblankspacesolid.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Ebrima';
+  src: local('Ebrima'), url(./assets/fonts/ebrimabd.woff) format('woff'), url(./assets/fonts/ebrimabd.woff2) format('woff2'), url(./assets/fonts/ebrimabd.ttf) format('ttf');
+}
 .container{
   max-width: 1200px;
   min-height:100vh;
@@ -163,15 +172,40 @@ cursor: pointer;
 
 /*DHUKARR*/
 
-.dhukarrScreen{align-items: flex-start; width: 1200px; margin:0;}
-.longImageHolder{
-  width:1200px;
-  max-width: none!important;
+.dhukarrScreen{align-items: flex-start; width: 1200px; }
+.introHolder{ 
+  background-image:url("./assets/dhukarr/intro_bg.png");
+  background-repeat: no-repeat;
+  background-color: #821C19;
+  background-size: cover;
+  padding-top: 170px;
 }
+.dhukarrScreen h1{ color: #FFF; font-family: 'KGBlank', Arial, sans-serif; font-size: 36px; font-weight: normal;}
+.dhukarrScreen h2{color: #FFF; font-family: 'KGBlank', Arial, sans-serif; font-size: 20px; font-weight: normal;}
+.dhukarrScreen h3{color: #FFF; font-family: 'Ebrima', Arial, sans-serif; font-size: 20px; font-weight: normal;}
+.dhukarrScreen p{color: #FFF; font-family: 'Ebrima', Arial, sans-serif; font-size: 20px; font-weight: normal;}
 
-.longImage{
-  width:100%; height: auto;
-}
+.blob{padding:40px; margin:10px; background-size: contain; background-repeat: no-repeat; display:flex; justify-content: center; align-items: center;     background-position: center;}
+.blobRow{display:flex; justify-content: space-evenly; align-items: center;}
+.blobText{font-family: 'Ebrima', Arial, sans-serif; font-size: 16px; font-weight: normal;}
+.blobBrown{color: #FFF;}
+.blobOrange{color: #FFF;}
+.blobYellow{color: #843c0c;}
+.blobLight{color: #843c0c;}
+.blobGrey{color: #efd32e;}
+
+#intro1Holder{background-image:url("./assets/dhukarr/blobs_intro1.png"); width:135px; height:97px; position: relative; top: 50px;}
+#intro2Holder{background-image:url("./assets/dhukarr/blobs_intro2.png"); width:130px; height:100px;}
+#intro3Holder{background-image:url("./assets/dhukarr/blobs_intro3.png"); width:121px; height:104px;}
+#intro4Holder{background-image:url("./assets/dhukarr/blobs_intro4.png"); width:97px; height:80px; position: relative; top: 50px;}
+#intro5Holder{background-image:url("./assets/dhukarr/blobs_intro5.png"); width:150px; height:92px;}
+
+
+
+.dhukarrScreen .padThin{ padding-left:50px; padding-right:50px;}
+.dhukarrScreen .padThinner{ padding-left:100px; padding-right:100px;}
+.dhukarrScreen .marginTop{margin-top:60px;}
+.dhukarrScreen .paddingBottom{padding-bottom:60px;}
 
 .audioTrigger{position: absolute; width:100%; display: flex; justify-content: center;}
 
