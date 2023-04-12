@@ -66,6 +66,8 @@ const Dhukarr = () => {
       
       <div className='contentContainer'>
 
+        {/*INTRODUCTION*/}
+
         <div className='introHolder padThin'>
 
           <div className='padThinner'>
@@ -95,68 +97,106 @@ const Dhukarr = () => {
             </div>
           </div>
 
-          <div className='padThinner'>
-            <p className='marginTop paddingBottom'>Yolŋu monitor and support the child’s development through watching and assessing how each child is progressing along their pathway and helping with what they need at the time – not expecting specific stages at specific ages like the Balanda system. </p>
+          <div className='padThinner marginTop paddingBottom'>
+            <p>
+              { language ? 
+                <>Yolŋuwal mäŋutjiy ŋuli nhäma ga dharaŋan nhaltjan ga yothu ŋuthan ga marŋgithirr – Yolŋuw guyaŋanhawuy dhuwal yaka rrambaŋi nhakun Balandaw.</> : 
+                <>9Yolŋu monitor and support the child’s development through watching and assessing how each child is progressing along their pathway and helping with what they need at the time – not expecting specific stages at specific ages like the Balanda system.</>
+              }
+              <SoundPlayer source={require('../assets/mp3/recording9.mp3')}/>
+            </p>
           </div>
 
           {/*ONGOING*/}
 
-          <div className='blobRow'>
+          <div className='dhukarrSection'>
 
-            <div className='blob' id='blob8Holder'>
-              <div className='blobText blobBrown'>
-                <span className='englishText'>8In the Yolŋu system, we all work together to care and support the child’s development.</span>
-                <span className='yolnguText'>Dhuwal yothuw gakal yolŋuwal romŋur ŋanapurruŋgal djägany ŋuli räḻ-manapanmirr.  </span>
+            <div className='dhukarrSectionContent'>
+
+            <div className='blobRow'>
+
+              <div className='blob' id='blob8Holder'>
+                <div className='blobText blobBrown'>
+                  { language ? 
+                    <>Dhuwal yothuw gakal yolŋuwal romŋur ŋanapurruŋgal djägany ŋuli räḻ-manapanmirr. </> : 
+                    <>8In the Yolŋu system, we all work together to care and support the child’s development.</>
+                  }
+                  <SoundPlayer source={require('../assets/mp3/recording8.mp3')}/>
+                </div>
               </div>
-            </div>
 
-            <div className='blob' id='blob3Holder'>
-              <div className='blobText blobYellow'>
-              <span className='englishText'>3The child knows what is best for their growth – when to sleep, eat, play (the child decides not the family). </span>
-                <span className='yolnguText'>Dhuwal yothuw gakal yolŋuwal romŋur ŋanapurruŋgal djägany ŋuli räḻ-manapanmirr  </span>
+              <div className='blob' id='blob3Holder'>
+                <div className='blobText blobYellow'>
+                  { language ? 
+                    <>ŋayi yothu marŋgi nhaltjan ŋayi ŋuli galŋa-dhulŋithirr –  ŋorranharaw ga buḻ’yunaraw ga ŋaminiwu ŋulkthunaraw.</> : 
+                    <>3The child knows what is best for their growth – when to sleep, eat, play (the child decides not the family).</>
+                  }
+                  <SoundPlayer source={require('../assets/mp3/recording3.mp3')}/>
+                </div>
               </div>
-            </div>
 
-            <div className='blob' id='blob5Holder'>
-              <div className='blobText blobYellow'>
-              <span className='englishText'>5Gurruṯu (kinship connection) testing—teaching—testing—teaching routines continue all the time until the child has demonstrated strong understanding of kinship concepts and their own relationship</span>
-                <span className='yolnguText'>Gurruṯuny ŋanapurr ŋuli marŋgi- gurrapan ŋunhi yothuny ŋayi ŋuli marrtji ŋuthan. Ga bulu ŋanapurr ŋuli walalany birrka’yun nhä ŋayi ŋunhi gurruṯu nhanŋu yothuw bitjan bili. </span>
+              <div className='blob' id='blob5Holder'>
+                <div className='blobText blobYellow'>
+                  { language ? 
+                    <>Gurruṯuny ŋanapurr ŋuli marŋgi- gurrapan ŋunhi yothuny ŋayi ŋuli marrtji ŋuthan. Ga bulu ŋanapurr ŋuli walalany birrka’yun nhä ŋayi ŋunhi gurruṯu nhanŋu yothuw bitjan bili.</> : 
+                    <>5Gurruṯu (kinship connection) testing—teaching—testing—teaching routines continue all the time until the child has demonstrated strong understanding of kinship concepts and their own relationship</>
+                  }
+                  <SoundPlayer source={require('../assets/mp3/recording5.mp3')}/>
+                </div>
               </div>
-            </div>
 
-          </div>
-          
-          <div className='blobRow'>
-
-            <div className='blob' id='blob7Holder'>
-              <div className='blobText blobBrown'>
-                <span className='englishText'>7Grandparents support and offer advice to mum and dad and rest of the family so they understand how to care for the child.
-</span>
-                <span className='yolnguText'>Märiy ga ŋathiy ŋuli guŋga’yun ga gurrupan dharaŋanaraw bäpaw ga ŋaṉḏiw  ga wiripuny mala gurruṯumirriw märr walal dhu dharaŋan nhaltjan walal dhu djäga yothuw.    </span>
               </div>
-            </div>
 
-            <div className='blob' id='blob4Holder'>
-              <div className='blobText blobGrey'>
-              <span className='englishText'>4Family constantly observe and monitor how the child is developing in all areas (identity, skills, knowledge, character etc) - ‘watching what knowledge the child has caught’ (ref)
- </span>
-                <span className='yolnguText'>Gurruṯumirriy ŋuli dhuwurr nhäma yothuny - nhaltjan ŋayi ŋuli romgu ga gakalwu marŋgithirr bitjan bili  </span>
+              <div className='blobRow'>
+
+              <div className='blob' id='blob7Holder'>
+                <div className='blobText blobBrown'>
+                  { language ? 
+                    <>Märiy ga ŋathiy ŋuli guŋga’yun ga gurrupan dharaŋanaraw bäpaw ga ŋaṉḏiw  ga wiripuny mala gurruṯumirriw märr walal dhu dharaŋan nhaltjan walal dhu djäga yothuw.</> : 
+                    <>7Grandparents support and offer advice to mum and dad and rest of the family so they understand how to care for the child.</>
+                  }
+                <SoundPlayer source={require('../assets/mp3/recording7.mp3')}/>
+                </div>
               </div>
-            </div>
 
-            <div className='blob' id='blob6Holder'>
-              <div className='blobText blobYellow'>
-              <span className='englishText'>6The child decides what they want or don’t want – they have autonomy – family don’t force them or hurt their feelings by refusing to give them what they want. 
-</span>
-                <span className='yolnguText'>Yothuw ŋayaŋu nhaku ŋayi djäl ga nhaku malaŋuw – ŋayi ŋunhi rumbal waṯaŋu – gurruṯumirriy ŋuli yaka gurkuryun wo ŋayaŋu wutthun yothuny  </span>
+              <div className='blob' id='blob4Holder'>
+                <div className='blobText blobGrey'>
+                  { language ? 
+                    <>Gurruṯumirriy ŋuli dhuwurr nhäma yothuny - nhaltjan ŋayi ŋuli romgu ga gakalwu marŋgithirr bitjan bili.</> : 
+                    <>4Family constantly observe and monitor how the child is developing in all areas (identity, skills, knowledge, character etc) - ‘watching what knowledge the child has caught’ (ref)</>
+                  }
+                  <SoundPlayer source={require('../assets/mp3/recording4.mp3')}/>
+                </div>
               </div>
-            </div>
+
+              <div className='blob' id='blob6Holder'>
+                <div className='blobText blobYellow'>
+                { language ? 
+                    <>Yothuw ŋayaŋu nhaku ŋayi djäl ga nhaku malaŋuw – ŋayi ŋunhi rumbal waṯaŋu – gurruṯumirriy ŋuli yaka gurkuryun wo ŋayaŋu wutthun yothuny.</> : 
+                    <>6The child decides what they want or don’t want – they have autonomy – family don’t force them or hurt their feelings by refusing to give them what they want. </>
+                  }
+                  <SoundPlayer source={require('../assets/mp3/recording6.mp3')}/>
+                </div>
+              </div>
+
+              </div>
 
             </div>
 
-          
-         
+             {/*SIDE BAR - ONGOING*/}
 
+            <div className='dhukarrSectionSideBar'>
+
+              <div className='sideBarText'>
+              { language ? 
+                  <>Dhuwandja dhäwu mala baḏaknha ŋuli bitjana bili  marrtji weyinŋumirra </> : 
+                  <>Things that are ongoing throughout the dhukarr</>
+                }
+              </div>
+
+            </div>
+
+          </div> 
 
         </div>
       

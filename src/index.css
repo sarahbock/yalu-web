@@ -164,10 +164,14 @@ cursor: pointer;
   box-shadow: none;
   background:none;
   padding: 0;
+  margin-top: 5px;
 }
-#root .rhap_main-controls-button{
-    color:#831C19;
-}
+#root .rhap_progress-section { display: none;}
+
+#root .rhap_main-controls-button{ color:#ffffff; }
+#root .blob .rhap_main-controls-button{ color:#831C19; }
+#root .blobBrown .rhap_main-controls-button{ color:#ffffff; }
+#root .blobGrey .rhap_main-controls-button{ color:#FFC153; }
 
 
 /*DHUKARR*/
@@ -220,8 +224,9 @@ cursor: pointer;
 .dhukarrScreen .marginTop{margin-top:100px;}
 .dhukarrScreen .marginTopLarge{margin-top:170px;}
 .dhukarrScreen .paddingBottom{padding-bottom:100px;}
-
-.audioTrigger{position: absolute; width:100%; display: flex; justify-content: center;}
+.dhukarrSection{    display: flex; }
+.dhukarrScreen .dhukarrSectionSideBar{    margin-right: -45px;}
+.dhukarrScreen .sideBarText{writing-mode: vertical-rl;text-orientation: mixed; color: #841a0c; font-family: 'KGBlank', Arial, sans-serif; font-weight: normal; }
 
 
 /*ENTRY*/
@@ -272,6 +277,7 @@ padding: 10px;
   min-height: 80px;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 .appHeader.bgstrip{
   padding-top: 30px;
