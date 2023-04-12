@@ -21,7 +21,7 @@ const TopNav = ({ toggleSearch, title, home, back, play, audio, noBorder, toggle
     navigate(-1)
   };
 
-  console.log(language)
+  //console.log(language)
 
   return(
 
