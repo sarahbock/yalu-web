@@ -1,13 +1,13 @@
 import React from 'react';
 
-import SoundPlayer from '../components/SoundPlayer';
+import SoundPlayer from '../SoundPlayer';
 
 const Blob = ({ id, colour, english, yolngu, language, audio, style, link }) => {
 
   const showBlobNumber = true;
   const introBlob = id.substr(0,1) ==='0';
   const classId = introBlob ? 'intro'+id+'Holder' : 'blob'+id+'Holder';
-  const soundFile = audio ? require('../assets/dhukarr/mp3/recording'+id+'.mp3') : null;
+  const soundFile = audio ? require('../../assets/dhukarr/mp3/recording'+id+'.mp3') : null;
   let colourClass = '';
   switch ( colour ) {
     case 'yellow': colourClass = 'blobYellow'; break;

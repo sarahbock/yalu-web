@@ -1,53 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import TopNav from '../components/TopNav';
 
 
 import SoundPlayer from '../components/SoundPlayer';
-import Blob from '../components/Blob';
+import Blob from '../components/Dhukarr/Blob';
+import BlobRow from '../components/Dhukarr/BlobRow';
+import Anchor from '../components/Dhukarr/Anchor';
+import SectionHolder from '../components/Dhukarr/SectionHolder';
+import DhukarrSection from '../components/Dhukarr/DhukarrSection';
+import DhukarrContent from '../components/Dhukarr/DhukarrContent';
+import DhukarrMiddle from '../components/Dhukarr/DhukarrMiddle';
 import Sidebar from '../components/Sidebar';
 
 const Dhukarr = () => {
 
-  const size = useWindowSize();
-
-  const [audio1, setAudio1] = useState();
-
-
- 
-
-  // Hook
-  function useWindowSize() {
-    // Initialize state with undefined width/height so server and client renders match
-    // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
-    const [windowSize, setWindowSize] = useState({
-      width: undefined,
-      height: undefined,
-    });
-    useEffect(() => {
-      // Handler to call on window resize
-      function handleResize() {
-        // Set window width/height to state
-        setWindowSize({
-          width: window.innerWidth,
-          height: window.innerHeight,
-        });
-      }
-      // Add event listener
-      window.addEventListener("resize", handleResize);
-      // Call handler right away so state gets updated with initial window size
-      handleResize();
-      // Remove event listener on cleanup
-      return () => window.removeEventListener("resize", handleResize);
-    }, []); // Empty array ensures that effect is only run on mount
-    return windowSize;
-  }
-
-
   //show in language or english?
   const [language, setLanguage] = useState(true)
 
-  const audioSource = null;
 
   //when user clicks the language icon 
   const toggleLanguage = () => {
@@ -59,17 +29,11 @@ const Dhukarr = () => {
 
     <TopNav toggleLanguage={toggleLanguage} language={language} back noBorder title=""/>
 
-          {/*<img src={dhukarr_english} usemap="#Map"/>
-          <map name="Map">
-          <area shape="poly" title="test" coords="498,1607,648,1591,752,1627,791,1729,779,1794,696,1856,549,1868,459,1827,406,1730,427,1658" href="#"/>
-          </map>   
-          */}
-      
       <div className='contentContainer'>
 
         {/*INTRODUCTION*/}
 
-        <div className='bgHolder introHolder'>
+        <SectionHolder id='0'>
 
           <div className='padThinner'>
             <h1>Yolŋu Yothuw Dhukarr ŋuthanaraw ga dharaŋanaraw. Ga nhaltjan dhu gurruṯumirriy guŋga’yun yothuny.</h1>
@@ -132,42 +96,42 @@ const Dhukarr = () => {
 
           {/*ONGOING*/}
 
-          <div className='dhukarrSection'>
+          <DhukarrSection>
 
-            <div className='dhukarrSectionContent'>
+              <DhukarrContent orientation="column">
 
-            <div className='blobRow'>
+            <BlobRow>
 
-            <Blob 
-              id='8' 
-              colour='brown'
-              english='In the Yolŋu system, we all work together to care and support the child’s development.'
-              yolngu='Dhuwal yothuw gakal yolŋuwal romŋur ŋanapurruŋgal djägany ŋuli räḻ-manapanmirr.'
-              language={language}
-              audio={true}
-              />
+              <Blob 
+                id='8' 
+                colour='brown'
+                english='In the Yolŋu system, we all work together to care and support the child’s development.'
+                yolngu='Dhuwal yothuw gakal yolŋuwal romŋur ŋanapurruŋgal djägany ŋuli räḻ-manapanmirr.'
+                language={language}
+                audio={true}
+                />
 
-            <Blob 
-              id='3' 
-              colour='yellow'
-              english='The child knows what is best for their growth – when to sleep, eat, play (the child decides not the family).'
-              yolngu='ŋayi yothu marŋgi nhaltjan ŋayi ŋuli galŋa-dhulŋithirr –  ŋorranharaw ga buḻ’yunaraw ga ŋaminiwu ŋulkthunaraw.'
-              language={language}
-              audio={true}
-              />
+              <Blob 
+                id='3' 
+                colour='yellow'
+                english='The child knows what is best for their growth – when to sleep, eat, play (the child decides not the family).'
+                yolngu='ŋayi yothu marŋgi nhaltjan ŋayi ŋuli galŋa-dhulŋithirr –  ŋorranharaw ga buḻ’yunaraw ga ŋaminiwu ŋulkthunaraw.'
+                language={language}
+                audio={true}
+                />
 
-            <Blob 
-              id='5' 
-              colour='yellow'
-              english='Gurruṯu (kinship connection) testing—teaching—testing—teaching routines continue all the time until the child has demonstrated strong understanding of kinship concepts and their own relationship.'
-              yolngu='Gurruṯuny ŋanapurr ŋuli marŋgi- gurrapan ŋunhi yothuny ŋayi ŋuli marrtji ŋuthan. Ga bulu ŋanapurr ŋuli walalany birrka’yun nhä ŋayi ŋunhi gurruṯu nhanŋu yothuw bitjan bili.'
-              language={language}
-              audio={true}
-              />
+              <Blob 
+                id='5' 
+                colour='yellow'
+                english='Gurruṯu (kinship connection) testing—teaching—testing—teaching routines continue all the time until the child has demonstrated strong understanding of kinship concepts and their own relationship.'
+                yolngu='Gurruṯuny ŋanapurr ŋuli marŋgi- gurrapan ŋunhi yothuny ŋayi ŋuli marrtji ŋuthan. Ga bulu ŋanapurr ŋuli walalany birrka’yun nhä ŋayi ŋunhi gurruṯu nhanŋu yothuw bitjan bili.'
+                language={language}
+                audio={true}
+                />
 
-              </div>
+              </BlobRow>
 
-              <div className='blobRow'>
+              <BlobRow>
 
                 <Blob 
                   id='7' 
@@ -196,9 +160,9 @@ const Dhukarr = () => {
                   audio={true}
                   />
 
-              </div>
+              </BlobRow>
 
-            </div>
+              </DhukarrContent>
 
              {/*SIDE BAR - ONGOING*/}
 
@@ -209,501 +173,533 @@ const Dhukarr = () => {
               language={language}
               />
 
-          </div> 
+          </DhukarrSection> 
 
-        </div>
+        </SectionHolder>
       
 
        {/*SECTION 1*/}
 
-        <a name="section1" href='section1' id="section1"></a>
-        
-        <div className='bgHolder section1Holder'>
+       <SectionHolder id='1'>
 
-          <div className='dhukarrSection'>
+            <DhukarrSection>
 
-            <div className='dhukarrSectionContent'>
+              <DhukarrContent orientation="column">
 
-            <Blob 
-              id='11' 
-              colour='brown'
-              english='Father and others provide healthy Yolŋu food for the pregnant woman e.g. shellfish, fish, kangaroo, some kinds of stingray, white clay, yams, wild fruits.'
-              yolngu='Bäpa’mirriŋu ga wiripu gurruṯumirriy mala ŋuli märram Yolŋuw ŋatha yothumirriw ŋaṉḏimirriŋuw.'
-              language={language}
-              audio={true}
-              />
-
-            <div className='dhukarrSectionContentRow'>
-
-              <Blob 
-                id='12' 
+                <Blob 
+                id='11' 
                 colour='brown'
-                english='Pregnant woman can walk around and work a little bit.'
-                yolngu='Miyalk dhu yothumirriny ŋayi dhu ga gaŋga djäma ga marrtji.'
+                english='Father and others provide healthy Yolŋu food for the pregnant woman e.g. shellfish, fish, kangaroo, some kinds of stingray, white clay, yams, wild fruits.'
+                yolngu='Bäpa’mirriŋu ga wiripu gurruṯumirriy mala ŋuli märram Yolŋuw ŋatha yothumirriw ŋaṉḏimirriŋuw.'
                 language={language}
                 audio={true}
-                style={{paddingTop: '40px', paddingBottom: '40px', paddingLeft:'30px', paddingRight: '30px' }}
+                />
+
+                <DhukarrContent orientation="row">
+
+                  <Blob 
+                  id='12' 
+                  colour='brown'
+                  english='Pregnant woman can walk around and work a little bit.'
+                  yolngu='Miyalk dhu yothumirriny ŋayi dhu ga gaŋga djäma ga marrtji.'
+                  language={language}
+                  audio={true}
+                  style={{paddingTop: '40px', paddingBottom: '40px', paddingLeft:'30px', paddingRight: '30px' }}
+                  />
+
+                <Blob 
+                  id='14' 
+                  colour='orange'
+                  english='Family observe and recognise early signs that the woman is pregnant.'
+                  yolngu='Gurruṯumirriy ŋuli nhäma ga marŋgithirr ŋunhi miyalknha ŋayi yothumirra.'
+                  language={language}
+                  audio={true}
+                  style={{ position: 'relative', left: '20px', paddingTop: '50px', paddingBottom: '40px', paddingLeft:'30px', paddingRight: '30px' }}
+                  />
+
+                </DhukarrContent>
+
+                <Blob 
+                  id='13' 
+                  colour='brown'
+                  english='Yolŋu have guidelines for avoiding certain foods to protect the baby from harmful effects  e.g. Yirritja turtle, some kinds of stingray, young sharks, hot tea, eggs of seafood – can cause physical disability.'
+                  yolngu='Rom ga ŋorra yaka dhu ḻuka ŋatha bawalamirr yothumirriy miyalkthu märr ŋayi dhu yothu yaka rirrikthun ga yalŋgiyirr.'
+                  language={language}
+                  audio={true}
+                  />
+
+              </DhukarrContent>
+
+              <DhukarrMiddle/>
+
+              <DhukarrContent orientation="column">
+                
+              <Blob 
+                id='15' 
+                colour='yellow'
+                english='Soon after conception, the spirit of the baby communicates with a family member in a dream or through a sign e.g. unusual behaviour of an animal that is the same moiety and totem of the child – the person who gets the message has a lifelong strong connection to that child - like a ‘godparent’.'
+                yolngu='Ŋaḻapaḻyu Yolŋuy ŋuli dhiṉ’thun wuŋiḻi wo mawa ŋunhi ŋayi yothu yutuŋgurrpuy Yolŋuwuŋ ga malthunawuy.'
+                language={language}
+                link='http://growingupyolngu.com.au/index.cfm?fuseaction=page&p=231&l=1&id=71'
+                audio={true}
                 />
 
               <Blob 
-                id='14' 
-                colour='orange'
-                english='Family observe and recognise early signs that the woman is pregnant.'
-                yolngu='Gurruṯumirriy ŋuli nhäma ga marŋgithirr ŋunhi miyalknha ŋayi yothumirra.'
+                id='16' 
+                colour='yellow'
+                english='Mother, father and other family members communicate with the baby during pregnancy and the baby responds
+                e.g. responding (kicking) when family talk to the baby; responding to what the mother is eating; telling what they want through movement, staying still when listening to a story ; family touch the mother’s body and talk to the baby about wishes and hopes for the baby’s future; the baby feels comfort.'
+                yolngu='Ŋaṉdi’mirriŋuwal gulunlil walal ŋuli waŋa – bäpa’mirriŋuny ga wiripuny gurruṯu’mirriny mala ŋuli waŋa yothuwal ga yothuy ŋuli dhäkay-ŋäma bala buku-ruŋinmaram djagadjaga’yuna.'
                 language={language}
+                link='http://growingupyolngu.com.au/index.cfm?fuseaction=page&p=231&l=1&id=71'
                 audio={true}
-                style={{ position: 'relative', left: '20px', paddingTop: '50px', paddingBottom: '40px', paddingLeft:'30px', paddingRight: '30px' }}
                 />
 
-              </div>
+              </DhukarrContent>
 
-            <Blob 
-              id='13' 
-              colour='brown'
-              english='Yolŋu have guidelines for avoiding certain foods to protect the baby from harmful effects  e.g. Yirritja turtle, some kinds of stingray, young sharks, hot tea, eggs of seafood – can cause physical disability.'
-              yolngu='Rom ga ŋorra yaka dhu ḻuka ŋatha bawalamirr yothumirriy miyalkthu märr ŋayi dhu yothu yaka rirrikthun ga yalŋgiyirr.'
-              language={language}
-              audio={true}
-              />
-
-            </div>
+              <Sidebar 
+                id='1' 
+                english=''
+                yolngu=''
+                language={language}
+                />
             
-            <div className='dhukarrSectionMiddle'></div>
+            </DhukarrSection>
 
-            <div className='dhukarrSectionContent'>
+           </SectionHolder>
 
-          <Blob 
-            id='15' 
-            colour='yellow'
-            english='Soon after conception, the spirit of the baby communicates with a family member in a dream or through a sign e.g. unusual behaviour of an animal that is the same moiety and totem of the child – the person who gets the message has a lifelong strong connection to that child - like a ‘godparent’.'
-            yolngu='Ŋaḻapaḻyu Yolŋuy ŋuli dhiṉ’thun wuŋiḻi wo mawa ŋunhi ŋayi yothu yutuŋgurrpuy Yolŋuwuŋ ga malthunawuy.'
-            language={language}
-            link='http://growingupyolngu.com.au/index.cfm?fuseaction=page&p=231&l=1&id=71'
-            audio={true}
-            />
-
-          <Blob 
-            id='16' 
-            colour='yellow'
-            english='Mother, father and other family members communicate with the baby during pregnancy and the baby responds
-            e.g. responding (kicking) when family talk to the baby; responding to what the mother is eating; telling what they want through movement, staying still when listening to a story ; family touch the mother’s body and talk to the baby about wishes and hopes for the baby’s future; the baby feels comfort.'
-            yolngu='Ŋaṉdi’mirriŋuwal gulunlil walal ŋuli waŋa – bäpa’mirriŋuny ga wiripuny gurruṯu’mirriny mala ŋuli waŋa yothuwal ga yothuy ŋuli dhäkay-ŋäma bala buku-ruŋinmaram djagadjaga’yuna.'
-            language={language}
-            link='http://growingupyolngu.com.au/index.cfm?fuseaction=page&p=231&l=1&id=71'
-            audio={true}
-            />
-
-            </div>
-
-            <Sidebar 
-              id='1' 
-              english='Pregnancy'
-              yolngu='Yothumirriw miyalkku gakal'
-              language={language}
-              />
-
-          </div> 
-
-        </div>
 
         {/*SECTION 2*/}
 
-        <a name="section2" href='section2' id="section2"></a>
+        <Anchor id='2'/>
 
-        <div className='bgHolder section2Holder'>
+        <SectionHolder id='2'>
 
-          <div className='dhukarrSection'>
+            <DhukarrSection>
 
-            <div className='dhukarrSectionContent'>
+              <DhukarrContent orientation="column">
+                
+                <Blob 
+                id='18' 
+                colour='brown'
+                english='Family stay close to the mother, talk to her and encourage her.'
+                yolngu='Gurruṯumirr ŋuli nhina galki yothumirriwal miyalkkal, ga guŋga’yun ŋanya waŋa.  '
+                language={language}
+                audio={true}
+                style={{position: 'relative', left: '-30px', top:'-20px'}}
+                />
 
-            <Blob 
-              id='18' 
-              colour='brown'
-              english='Family stay close to the mother, talk to her and encourage her.'
-              yolngu='Gurruṯumirr ŋuli nhina galki yothumirriwal miyalkkal, ga guŋga’yun ŋanya waŋa.  '
+                <DhukarrContent orientation="row">
+
+                  <Blob 
+                    id='19' 
+                    colour='orange'
+                    english='Family talk to encourage the baby to come when the time is right to be born.'
+                    yolngu='Gurruṯumirr ŋuli ga waŋa yothuwal boṉdi’yun wäŋaw nhänharaw.'
+                    language={language}
+                    audio={true}
+                    style={{position: 'relative', left: '20px', top:'-20px', paddingTop: '40px', paddingBottom: '40px', paddingLeft:'30px', paddingRight: '30px' }}
+                    />
+
+                  <Blob 
+                    id='20' 
+                    colour='orange'
+                    english='Mother walks a lot to encourage the baby to come.'
+                    yolngu='Ŋäṉḏimirriŋu ŋuli ga marrtjimarrtji märr galkikum yothuny dhawal- guyaŋanharaw.'
+                    language={language}
+                    audio={true}
+                    style={{ position: 'relative', left: '40px', top:'-30px', paddingTop: '50px', paddingBottom: '40px', paddingLeft:'30px', paddingRight: '30px' }}
+                    />
+
+                </DhukarrContent>
+
+              </DhukarrContent>
+
+              <DhukarrMiddle/>
+
+              <DhukarrContent orientation="column">
+                
+                <Blob 
+              id='21' 
+              colour='light'
+              english='Baby kicks and moves down, giving the mother back pain, to show the time is close - the baby is ready to come out and be with the mother.'
+              yolngu='Yothuy ga dhumurrdhumurryun guḻun ŋaṉḏi’mirriŋuny ga ḏiltjiŋur ŋaraka ŋuli ŋäṉḏi’mirriŋuny nhära ŋunhiyin ŋuli maŋutji-lakaram yothuny gurku’yunhawuy.'
               language={language}
               audio={true}
-              style={{position: 'relative', left: '-30px', top:'-20px'}}
+              style={{marginLeft:'20px' }}
               />
+              
+              </DhukarrContent>
 
-            <div className='dhukarrSectionContentRow'>
-
-              <Blob 
-                id='19' 
-                colour='orange'
-                english='Family talk to encourage the baby to come when the time is right to be born.'
-                yolngu='Gurruṯumirr ŋuli ga waŋa yothuwal boṉdi’yun wäŋaw nhänharaw.'
+              <Sidebar 
+                id='2' 
+                english=''
+                yolngu=''
                 language={language}
-                audio={true}
-                style={{position: 'relative', left: '20px', top:'-20px', paddingTop: '40px', paddingBottom: '40px', paddingLeft:'30px', paddingRight: '30px' }}
                 />
-
-              <Blob 
-                id='20' 
-                colour='orange'
-                english='Mother walks a lot to encourage the baby to come.'
-                yolngu='Ŋäṉḏimirriŋu ŋuli ga marrtjimarrtji märr galkikum yothuny dhawal- guyaŋanharaw.'
-                language={language}
-                audio={true}
-                style={{ position: 'relative', left: '40px', top:'-30px', paddingTop: '50px', paddingBottom: '40px', paddingLeft:'30px', paddingRight: '30px' }}
-                />
-
-              </div>
-
-            </div>
             
-            <div className='dhukarrSectionMiddle'></div>
+            </DhukarrSection>
 
-            <div className='dhukarrSectionContent'>
-
-            <Blob 
-            id='21' 
-            colour='light'
-            english='Baby kicks and moves down, giving the mother back pain, to show the time is close - the baby is ready to come out and be with the mother.'
-            yolngu='Yothuy ga dhumurrdhumurryun guḻun ŋaṉḏi’mirriŋuny ga ḏiltjiŋur ŋaraka ŋuli ŋäṉḏi’mirriŋuny nhära ŋunhiyin ŋuli maŋutji-lakaram yothuny gurku’yunhawuy.'
-            language={language}
-            audio={true}
-            style={{marginLeft:'20px' }}
-            />
-
-
-            </div>
-
-            
-
-            <Sidebar 
-              id='2' 
-              english='When it’s time to be born'
-              yolngu='Yothuw walu galki ŋayi dhu wäŋa-nhäman'
-              language={language}
-              />
-
-          </div> 
-
-        </div>
+           </SectionHolder>
 
         {/*SECTION 3*/}
 
-        <a name="section3"  href='section3' id="section3"></a>
+        <Anchor id='3'/>
 
-        <div className='bgHolder section3Holder'>
+        <SectionHolder id='3'>
 
-          <div className='dhukarrSection'>
+            <DhukarrSection>
 
-            <div className='dhukarrSectionContent'>Left column</div>
+              <DhukarrContent orientation="column">
+                Left column
+              </DhukarrContent>
+
+              <DhukarrMiddle/>
+
+              <DhukarrContent orientation="column">
+                Right column
+              </DhukarrContent>
+
+              <Sidebar 
+                id='3' 
+                english='Newborn'
+                yolngu='Dhuwandja dhäwu Ŋäṉarrwu yothuw'
+                language={language}
+                />
             
-            <div className='dhukarrSectionMiddle'></div>
+            </DhukarrSection>
 
-            <div className='dhukarrSectionContent'>Right column</div>
+           </SectionHolder>
 
-            
-
-            <Sidebar 
-              id='3' 
-              english=''
-              yolngu=''
-              language={language}
-              />
-
-          </div> 
-
-        </div>
 
          {/*SECTION 4*/}
 
-         <a name="section4" href='section4' id="section4"></a>
+         <Anchor id='4'/>
 
-        <div className='bgHolder section4Holder'>
+         <SectionHolder id='4'>
 
-          <div className='dhukarrSection'>
+            <DhukarrSection>
 
-            <div className='dhukarrSectionContent'>Left column</div>
+              <DhukarrContent orientation="column">
+                Left column
+              </DhukarrContent>
+
+              <DhukarrMiddle/>
+
+              <DhukarrContent orientation="column">
+                Right column
+              </DhukarrContent>
+
+              <Sidebar 
+                id='4' 
+                english='Skin getting darker'
+                yolngu='Dhuwandja dhäwu ŋunhi gurrŋan’thirra ŋuli yothu'
+                language={language}
+                />
             
-            <div className='dhukarrSectionMiddle'></div>
+            </DhukarrSection>
 
-            <div className='dhukarrSectionContent'>Right column</div>
+           </SectionHolder>
 
-            
-
-            <Sidebar 
-              id='4' 
-              english=''
-              yolngu=''
-              language={language}
-              />
-
-          </div> 
-
-        </div>
 
          {/*SECTION 5*/}
 
-         <a name="section5" href='section5' id="section5"></a>
+         <Anchor id='5'/>
 
-        <div className='bgHolder section5Holder'>
+         <SectionHolder id='5'>
 
-          <div className='dhukarrSection'>
+            <DhukarrSection>
 
-            <div className='dhukarrSectionContent'>Left column</div>
+              <DhukarrContent orientation="column">
+                Left column
+              </DhukarrContent>
+
+              <DhukarrMiddle/>
+
+              <DhukarrContent orientation="column">
+                Right column
+              </DhukarrContent>
+
+              <Sidebar 
+                id='5' 
+                english='Turning over stage'
+                yolngu='Dhuwandja dhäwu yothuw bilyu’pilyunamirriw '
+                language={language}
+                />
             
-            <div className='dhukarrSectionMiddle'></div>
+            </DhukarrSection>
 
-            <div className='dhukarrSectionContent'>Right column</div>
+           </SectionHolder>
 
-            
-
-            <Sidebar 
-              id='5' 
-              english=''
-              yolngu=''
-              language={language}
-              />
-
-          </div> 
-
-        </div>
 
          {/*SECTION 6*/}
 
-         <a name="section6" href='section6' id="section6"></a>
+         <Anchor id='6'/>
 
-        <div className='bgHolder section6Holder'>
+         <SectionHolder id='6'>
 
-          <div className='dhukarrSection'>
+            <DhukarrSection>
 
-            <div className='dhukarrSectionContent'>Left column</div>
+              <DhukarrContent orientation="column">
+                Left column
+              </DhukarrContent>
+
+              <DhukarrMiddle/>
+
+              <DhukarrContent orientation="column">
+                Right column
+              </DhukarrContent>
+
+              <Sidebar 
+                id='6' 
+                english='Sitting up stage'
+                yolngu='Dhuwandja dhäwu yothuw nhina’nhinanhamirriw'
+                language={language}
+                />
             
-            <div className='dhukarrSectionMiddle'></div>
+            </DhukarrSection>
 
-            <div className='dhukarrSectionContent'>Right column</div>
+           </SectionHolder>
 
-            
-
-            <Sidebar 
-              id='6' 
-              english=''
-              yolngu=''
-              language={language}
-              />
-
-          </div> 
-
-        </div>
 
          {/*SECTION 7*/}
 
-         <a name="section7" href='section7' id="section7"></a>
+         <Anchor id='7'/>
 
-          <div className='bgHolder section7Holder'>
+         <SectionHolder id='7'>
 
-            <div className='dhukarrSection'>
+            <DhukarrSection>
 
-              <div className='dhukarrSectionContent'>Left column</div>
-              
-              <div className='dhukarrSectionMiddle'></div>
+              <DhukarrContent orientation="column">
+                Left column
+              </DhukarrContent>
 
-              <div className='dhukarrSectionContent'>Right column</div>
+              <DhukarrMiddle/>
 
-              
+              <DhukarrContent orientation="column">
+                Right column
+              </DhukarrContent>
 
               <Sidebar 
-              id='7' 
-              english=''
-              yolngu=''
-              language={language}
-              />
+                id='7' 
+                english='Crawling stage'
+                yolngu='Dhuwandja dhäwu yothuw gaḻ’yunamirriw'
+                language={language}
+                />
+            
+            </DhukarrSection>
 
-            </div> 
+           </SectionHolder>
 
-          </div>
 
            {/*SECTION 8*/}
 
-        <a name="section8" href='section8' id="section8"></a>
+           <Anchor id='8'/>
 
-        <div className='bgHolder section8Holder'>
+           <SectionHolder id='8'>
 
-          <div className='dhukarrSection'>
+            <DhukarrSection>
 
-            <div className='dhukarrSectionContent'>Left column</div>
+              <DhukarrContent orientation="column">
+                Left column
+              </DhukarrContent>
+
+              <DhukarrMiddle/>
+
+              <DhukarrContent orientation="column">
+                Right column
+              </DhukarrContent>
+
+              <Sidebar 
+                id='8' 
+                english='Standing up'
+                yolngu='Dhuwandja dhäwu yothuw dhärra’tharranhamirriw'
+                language={language}
+                />
             
-            <div className='dhukarrSectionMiddle'></div>
+            </DhukarrSection>
 
-            <div className='dhukarrSectionContent'>Right column</div>
+           </SectionHolder>
 
-            
-
-            <Sidebar 
-              id='8' 
-              english=''
-              yolngu=''
-              language={language}
-              />
-
-          </div> 
-
-        </div>
 
          {/*SECTION 9*/}
 
-         <a name="section9" href='section9' id="section9"></a>
+         <Anchor id='9'/>
 
-          <div className='bgHolder section9Holder'>
+         <SectionHolder id='9'>
 
-            <div className='dhukarrSection'>
+            <DhukarrSection>
 
-              <div className='dhukarrSectionContent'>Left column</div>
-              
-              <div className='dhukarrSectionMiddle'></div>
+              <DhukarrContent orientation="column">
+                Left column
+              </DhukarrContent>
 
-              <div className='dhukarrSectionContent'>Right column</div>
+              <DhukarrMiddle/>
 
-              
+              <DhukarrContent orientation="column">
+                Right column
+              </DhukarrContent>
 
               <Sidebar 
-              id='9' 
-              english=''
-              yolngu=''
-              language={language}
-              />
+                id='9' 
+                english=''
+                yolngu='Dhuwandja dhäwu yothuw marrtji’marrtjinyamirriw'
+                language={language}
+                />
+            
+            </DhukarrSection>
 
-            </div> 
+           </SectionHolder>
 
-          </div>
 
            {/*SECTION 10*/}
 
-        <a name="section10" href='section10' id="section10"></a>
+           <Anchor id='10'/>
 
-        <div className='bgHolder section10Holder'>
+           <SectionHolder id='10'>
 
-          <div className='dhukarrSection'>
+            <DhukarrSection>
 
-            <div className='dhukarrSectionContent'>Left column</div>
+              <DhukarrContent orientation="column">
+                Left column
+              </DhukarrContent>
+
+              <DhukarrMiddle/>
+
+              <DhukarrContent orientation="column">
+                Right column
+              </DhukarrContent>
+
+              <Sidebar 
+                id='10' 
+                english='Toddler stage'
+                yolngu='Dhuwandja dhäwu yothuw djandjanmirriw ḏälnha marrtjinyaraw '
+                language={language}
+                />
             
-            <div className='dhukarrSectionMiddle'></div>
+            </DhukarrSection>
 
-            <div className='dhukarrSectionContent'>Right column</div>
-
-            
-
-            <Sidebar 
-              id='10' 
-              english=''
-              yolngu=''
-              language={language}
-              />
-
-          </div> 
-
-        </div>
+           </SectionHolder>
 
          {/*SECTION 11*/}
 
-         <a name="section11" href='section11' id="section11"></a>
+         <Anchor id='11'/>
 
-          <div className='bgHolder section11Holder'>
+         <SectionHolder id='11'>
 
-            <div className='dhukarrSection'>
+            <DhukarrSection>
 
-              <div className='dhukarrSectionContent'>Left column</div>
-              
-              <div className='dhukarrSectionMiddle'></div>
+              <DhukarrContent orientation="column">
+                Left column
+              </DhukarrContent>
 
-              <div className='dhukarrSectionContent'>Right column</div>
+              <DhukarrMiddle/>
 
-              
+              <DhukarrContent orientation="column">
+                Right column
+              </DhukarrContent>
 
               <Sidebar 
-              id='11' 
-              english=''
-              yolngu=''
-              language={language}
-              />
+                id='11' 
+                english='Running, jumping and playing stage'
+                yolngu='Dhuwandja dhäwu yothuw waṉḏinyamirr ga wapthunamirr  ga buḻ’yunamirr'
+                language={language}
+                />
+            
+            </DhukarrSection>
 
-            </div> 
+           </SectionHolder>
 
-          </div>
 
            {/*SECTION 12*/}
 
-        <a name="section12" href='section12' id="section12"></a>
+           <Anchor id='12'/>
 
-        <div className='bgHolder section12Holder'>
+           <SectionHolder id='12'>
 
-          <div className='dhukarrSection'>
+            <DhukarrSection>
 
-            <div className='dhukarrSectionContent'>Left column</div>
+              <DhukarrContent orientation="column">
+                Left column
+              </DhukarrContent>
+
+              <DhukarrMiddle/>
+
+              <DhukarrContent orientation="column">
+                Right column
+              </DhukarrContent>
+
+              <Sidebar 
+                id='12' 
+                english='Around preschool age'
+                yolngu='Dhuwandja dhäwu yothuw dharaŋanamirriw '
+                language={language}
+                />
             
-            <div className='dhukarrSectionMiddle'></div>
+            </DhukarrSection>
 
-            <div className='dhukarrSectionContent'>Right column</div>
+           </SectionHolder>
 
-            
-
-            <Sidebar 
-              id='12' 
-              english=''
-              yolngu=''
-              language={language}
-              />
-
-          </div> 
-
-        </div>
 
          {/*SECTION 13*/}
 
-         <a name="section13" href='section13' id="section13"></a>
+         <Anchor id='13'/>
 
-          <div className='bgHolder section13Holder'>
+         <SectionHolder id='13'>
 
-            <div className='dhukarrSection'>
+          <DhukarrSection>
 
-              <div className='dhukarrSectionContent'>Left column</div>
-              
-              <div className='dhukarrSectionMiddle'></div>
+            <DhukarrContent orientation="column">
+              Left column
+            </DhukarrContent>
 
-              <div className='dhukarrSectionContent'>Right column</div>
+            <DhukarrMiddle/>
 
-              
+            <DhukarrContent orientation="column">
+              Right column
+            </DhukarrContent>
 
-              <Sidebar 
+            <Sidebar 
               id='13' 
-              english=''
-              yolngu=''
+              english='From preschool age and onwards'
+              yolngu='Dhuwandja dhäwu yothuw ŋunhi ŋayi ŋuli mirithirra dharaŋan ga marŋgithirra '
               language={language}
               />
 
-            </div> 
+          </DhukarrSection>
 
-          </div>
+          </SectionHolder>
+
 
            {/*SECTION 14*/}
 
-        <a name="section14" href='section14' id="section14"></a>
+           <Anchor id='14'/>
 
-        <div className='bgHolder section14Holder'>
+           <SectionHolder id='14'>
 
-          <div className='dhukarrSection'>
+            <DhukarrSection>
 
-            <div className='dhukarrSectionContent'>Left column</div>
+              <DhukarrContent orientation="column">
+                Left column
+              </DhukarrContent>
+
+              <DhukarrMiddle/>
+
+              <DhukarrContent orientation="column">
+                Right column
+              </DhukarrContent>
+
+              <Sidebar 
+                id='14' 
+                english='Pre-adolescent stage'
+                yolngu='Dhuwandja dhäwu yothuw märr ŋaḻapaḻnha dhuŋgarramirr'
+                language={language}
+                />
             
-            <div className='dhukarrSectionMiddle'></div>
+            </DhukarrSection>
 
-            <div className='dhukarrSectionContent'>Right column</div>
+           </SectionHolder>
 
-            <Sidebar 
-              id='14' 
-              english=''
-              yolngu=''
-              language={language}
-              />
-
-          </div> 
-
-        </div>
-     
         
         
       </div>

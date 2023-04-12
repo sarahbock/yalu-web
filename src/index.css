@@ -180,11 +180,7 @@ cursor: pointer;
 .dhukarrScreen{align-items: flex-start; width: 1200px; }
 .yolnguText{display:none;}
 .bgHolder{background-repeat: no-repeat; background-color: #821C19; background-size: cover; padding-left:50px; padding-right:50px;     display: flex;}
-.introHolder{ 
-  background-image:url("./assets/dhukarr/intro_bg.png");
-  padding-top: 200px;
-  flex-direction: column;
-}
+.section0Holder{  background-image:url("./assets/dhukarr/intro_bg.png"); padding-top: 200px; flex-direction: column; }
 .section1Holder{  background-image:url("./assets/dhukarr/bg1.png"); height:1051px;}
 .section2Holder{  background-image:url("./assets/dhukarr/bg2.png"); height:571px;}
 .section3Holder{  background-image:url("./assets/dhukarr/bg3.png"); height:3232px;}
@@ -254,7 +250,7 @@ cursor: pointer;
 .dhukarrScreen .paddingBottom{padding-bottom:100px;}
 .dhukarrSection{    display: flex; }
 .dhukarrSectionContent{flex:1; display: flex; flex-direction: column;}
-.dhukarrSectionContentRow{display: flex;}
+.dhukarrSectionContentRow{display: flex; flex-direction: row;}
 .dhukarrSectionMiddle{width:200px;}
 .dhukarrScreen .dhukarrSectionSideBar{    margin-right: -45px; margin-left: 30px;}
 .dhukarrScreen .sideBarText{writing-mode: vertical-rl;text-orientation: mixed; color: #841a0c; font-family: 'KGBlank', Arial, sans-serif; font-weight: normal; }
