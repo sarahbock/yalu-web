@@ -1091,13 +1091,134 @@ const Dhukarr = () => {
             <DhukarrSection>
 
               <DhukarrContent orientation="column">
-                Left column
+                
+              <Blob 
+                  id='85' 
+                  colour='brown'
+                  english='Family are teaching the child language all the time, for example words and hand signs about kinship – and testing their learning.'
+                  yolngu='Gurruṯumirriy ŋuli ga marŋgikum yothuny dhärukku ga wanaŋgum goŋdhu bitjan bili, nhakun gurruṯumirriny yäku ga bawalamirr – gurruṯumirriy mala birrka’yun ŋuli yothuny bitjan bili. '
+                  language={language}
+                  audio={true}
+                  style={{marginTop:'30px'}}
+                  textStyle={{}}
+                  />
+
+              <Blob 
+                  id='86' 
+                  colour='brown'
+                  english='Family explain and teach the child about safe places for playing and crawling. '
+                  yolngu='Gurruṯu’mirriy ŋuli ḻakaram ga marŋgikum yothuny wanha ŋayi manymak wäŋa buḻ’yunaraw ga gaḻ’yunaraw.'
+                  language={language}
+                  audio={true}
+                  style={{}}
+                  textStyle={{}}
+                  />
+
+              <Blob 
+                  id='88' 
+                  colour='grey'
+                  english='Family encourage the child to recognise and claim their connection to a close family member through cuddling that person and saying ‘she’s my mother/sister/cousin etc’ and the child responds by crying or getting angry or sad.'
+                  yolngu='Gurruṯumirriy ŋuli yothuny wakal marram ga dhangi’yun waŋganyŋuny yolŋuny bala walal ŋuli ŋäthin ga maḏakarritjthirra bala warwuyuna bitjan nhakun galki’puynha gurruṯu’mirriny bili ŋayi ŋunhi yothu marŋgi ŋunhi nhanŋu ŋayi gurruṯu’mirr.'
+                  language={language}
+                  audio={true}
+                  style={{}}
+                  textStyle={{}}
+                  />
+
+              <Blob 
+                  id='92' 
+                  colour='brown'
+                  english='Family teach the child to be confident, not afraid or easily upset – e.g. distracting not giving sympathy if the child is hurt or upset. This is the character of the child we want to develop through calming them when they are hurt. '
+                  yolngu='Gurruṯumirriy ŋuli marŋgikum yothuny märr ŋayi dhu ŋoy-ḏälthirr ga yaka barrarirr ga ŋayaŋu miḏikirr dhuwandja gakal yolŋuw yothuw ŋanapurr ŋuli ŋayaŋu mulka’kum yothuny ŋunhi walal ŋuli galkirri.'
+                  language={language}
+                  audio={true}
+                  style={{}}
+                  textStyle={{}}
+                  />
+
+              <Blob 
+                  id='93' 
+                  colour='brown'
+                  english='High priority for families is that children feel safe and loved. '
+                  yolngu='Djamarrkuliw’ rom ŋurruŋu mirithirr walal dhu dhäkay ŋäma manymak wo mägaya rom ga märr-ŋamathinyawuy.'
+                  language={language}
+                  audio={true}
+                  style={{position:'relative', left:'-20px', top:'-30px', width:'40%'}}
+                  textStyle={{width:'70%'}}
+                  />
+
               </DhukarrContent>
 
               <DhukarrMiddle/>
 
               <DhukarrContent orientation="column">
-                Right column
+                
+                <Blob 
+                    id='87' 
+                    colour='light'
+                    english='The child copies what mother and other family show the child.'
+                    yolngu='Yothuy ŋuli waṉaŋgum ŋäṉḏi’mirriŋuny ga gurruṯu’mirriny mala nhä walal ŋuli milkum yothuwal.'
+                    language={language}
+                    audio={true}
+                    style={{position:'relative', left:'100px', marginTop:'20px', width:'40%'}}
+                    textStyle={{}}
+                    />
+
+                <Blob 
+                    id='89' 
+                    colour='light'
+                    english='The child is following instructions and recognising tone of voice.'
+                    yolngu='Yothu ŋuli ga buthuru-bitjun ga ŋäma rirrakay nhaku walal ŋuli waŋa märranharaw walal ŋuli dhunupa galyuna.'
+                    language={language}
+                    audio={true}
+                    style={{}}
+                    textStyle={{}}
+                    />
+
+                <Blob 
+                    id='90' 
+                    colour='light'
+                    english='The child becomes interested to try different foods. '
+                    yolngu='Yothu ŋuli mirithirr wanaŋirr ŋathaw bawalamirriw ḻukanharaw.'
+                    language={language}
+                    audio={true}
+                    style={{position:'relative', left:'100px', width:'50%'}}
+                    textStyle={{}}
+                    />
+
+                <Blob 
+                    id='91' 
+                    colour='light'
+                    english='The child gets diarrhoea as a sign that the child will start to stand up.'
+                    yolngu='Yothu ŋuli milŋiny’mirriyirr ŋunhi ŋayi ŋuli maŋutji-lakaram ŋayi dhu dhärra.'
+                    language={language}
+                    audio={true}
+                    style={{position:'relative', left:'50px', width:'60%'}}
+                    textStyle={{}}
+                    />
+
+                <Blob 
+                    id='94' 
+                    colour='yellow'
+                    english='The child is observing and remembering experiences with extended family.'
+                    yolngu='Yothuwal gurruṯumrriy ŋuli gakal nhäma, bala marŋgithirra.'
+                    language={language}
+                    audio={true}
+                    style={{position:'relative', left:'100px', top:'-40px', width:'50%'}}
+                    textStyle={{}}
+                    />
+
+                <Blob 
+                    id='95' 
+                    colour='yellow'
+                    english='The child learns through exploring what is good and bad e.g. experiencing dangerous things - knife, hot water, hot sand, fire –but family watch and explain danger to make sure they don’t hurt themselves: mistakes are allowed if they are safe.'
+                    yolngu='Yothu marŋgithirr dhäkay-ŋänharaw nhä manymak ga nhä maḏakarritj nhakun yiki’, gorrmur gapu ga gorrmur munatha ga gurtha.'
+                    language={language}
+                    audio={true}
+                    style={{position:'relative', top:'-50px', width:'100%'}}
+                    textStyle={{width:'60%'}}
+                    />
+
               </DhukarrContent>
 
               <Sidebar 
@@ -1118,16 +1239,93 @@ const Dhukarr = () => {
 
            <SectionHolder id='8'>
 
-            <DhukarrSection>
+            <DhukarrSection align='top'>
 
               <DhukarrContent orientation="column">
-                Left column
+                
+              <Blob 
+                  id='97' 
+                  colour='orange'
+                  english='Family hold the child’s hands to support then to stand and to walk.'
+                  yolngu='Gurruṯumirriy ŋuli ŋarambiya  ŋayatham yothuny  ḏälkum dhärranharaw ga marrtjinaraw.'
+                  language={language}
+                  audio={true}
+                  style={{marginTop:'100px'}}
+                  textStyle={{}}
+                  />
+
+              <Blob 
+                  id='98' 
+                  colour='grey'
+                  english='Family encourage and praise the child when they show their development – in many areas.'
+                  yolngu='Gurruṯumirr ŋuli galŋa djulŋithirr ga wokṯhun ŋuriki yothu gakalwu.'
+                  language={language}
+                  audio={true}
+                  style={{width:'60%', marginTop:'30px'}}
+                  textStyle={{}}
+                  />
+
               </DhukarrContent>
 
               <DhukarrMiddle/>
 
               <DhukarrContent orientation="column">
-                Right column
+               
+                <Blob 
+                  id='99' 
+                  colour='light'
+                  english='When the child stands, they feel for what they can hold for support.'
+                  yolngu='Yothuy ŋuli dhärra ga dhäkay-ŋäma nhä ŋayi dhu ŋayatham guŋga’yunaraw.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '-50px', marginTop:'40px'}}
+                  textStyle={{}}
+                  />
+
+                <Blob 
+                  id='100' 
+                  colour='light'
+                  english='When the child is able to stand and shows the family he/she knows how to dance – already learned from watching.'
+                  yolngu='Ŋunhi yothu dhärranhamirrnydja ŋunhi ŋayi marŋgin burr’yunaraw bili ŋayi ga dharaŋana. '
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '50px', marginTop:'20px'}}
+                  textStyle={{width:'80%'}}
+                  />
+
+                <Blob 
+                  id='101' 
+                  colour='light'
+                  english='The child is ready to stand, wanting to pull her/himself up to strengthen the nerves, legs, feet, bones and their whole body.'
+                  yolngu='Ŋunhi ŋayi ga yothu dhärra’tharra ga djälthirr rur’yunaraw ŋunhiyiny ḏälkum ga dhunupayam nhanŋuwuy gurrkurr ga yaŋara ga luku ga ŋaraka ga nhanŋu rumbal.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '-80px', marginTop:'40px'}}
+                  textStyle={{}}
+                  />
+
+                <Blob 
+                  id='102' 
+                  colour='light'
+                  english='When the child is vomiting a little it’s a sign that the child is starting to talk. '
+                  yolngu='Ŋunhi ṉuli yothu gakthun nyumukuṉiny gaŋaru maŋuti-lakaram ŋuli waŋanharawnha.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '80px', marginTop:'40px'}}
+                  textStyle={{width:'80%'}}
+                  />
+
+                <Blob 
+                  id='103' 
+                  colour='light'
+                  english='Family start to use adult language (not child language register) so the child will start to learn adult language.'
+                  yolngu='Gurruṯu’mirriy ŋuli märr ḏälkum dhäruk waŋa märr ŋayi dhu yothu ḏäl dhärukku marŋgithirr.'
+                  language={language}
+                  audio={true}
+                  style={{marginTop:'40px'}}
+                  textStyle={{width:'80%'}}
+                  />
+
               </DhukarrContent>
 
               <Sidebar 
