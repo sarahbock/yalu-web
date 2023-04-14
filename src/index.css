@@ -277,6 +277,39 @@ cursor: pointer;
 #blob51Holder{background-image:url("./assets/dhukarr/blobs_blob51.png"); }
 #blob52Holder{background-image:url("./assets/dhukarr/blobs_blob52.png"); }
 
+/*SECTION 5 BLOBS*/
+#blob54Holder{background-image:url("./assets/dhukarr/blobs_blob54.png"); }
+#blob55Holder{background-image:url("./assets/dhukarr/blobs_blob55.png"); }
+#blob56Holder{background-image:url("./assets/dhukarr/blobs_blob56.png"); }
+#blob57Holder{background-image:url("./assets/dhukarr/blobs_blob57.png"); }
+#blob58Holder{background-image:url("./assets/dhukarr/blobs_blob58.png"); }
+#blob59Holder{background-image:url("./assets/dhukarr/blobs_blob59.png"); }
+#blob60Holder{background-image:url("./assets/dhukarr/blobs_blob60.png"); }
+#blob61Holder{background-image:url("./assets/dhukarr/blobs_blob61.png"); }
+#blob62Holder{background-image:url("./assets/dhukarr/blobs_blob62.png"); }
+#blob63Holder{background-image:url("./assets/dhukarr/blobs_blob63.png"); }
+#blob64Holder{background-image:url("./assets/dhukarr/blobs_blob64.png"); }
+#blob65Holder{background-image:url("./assets/dhukarr/blobs_blob65.png"); }
+#blob66Holder{background-image:url("./assets/dhukarr/blobs_blob66.png"); }
+#blob67Holder{background-image:url("./assets/dhukarr/blobs_blob67.png"); }
+#blob68Holder{background-image:url("./assets/dhukarr/blobs_blob68.png"); }
+#blob69Holder{background-image:url("./assets/dhukarr/blobs_blob69.png"); }
+#blob70Holder{background-image:url("./assets/dhukarr/blobs_blob70.png"); }
+
+/*SECTION 6 BLOBS*/
+#blob71Holder{background-image:url("./assets/dhukarr/blobs_blob71.png"); }
+#blob72Holder{background-image:url("./assets/dhukarr/blobs_blob72.png"); }
+#blob73Holder{background-image:url("./assets/dhukarr/blobs_blob73.png"); }
+#blob74Holder{background-image:url("./assets/dhukarr/blobs_blob74.png"); }
+#blob75Holder{background-image:url("./assets/dhukarr/blobs_blob75.png"); }
+#blob76Holder{background-image:url("./assets/dhukarr/blobs_blob76.png"); }
+#blob77Holder{background-image:url("./assets/dhukarr/blobs_blob77.png"); }
+#blob78Holder{background-image:url("./assets/dhukarr/blobs_blob78.png"); }
+#blob80Holder{background-image:url("./assets/dhukarr/blobs_blob80.png"); }
+#blob81Holder{background-image:url("./assets/dhukarr/blobs_blob81.png"); }
+#blob82Holder{background-image:url("./assets/dhukarr/blobs_blob82.png"); }
+#blob83Holder{background-image:url("./assets/dhukarr/blobs_blob83.png"); }
+
 .dhukarrScreen .padThinner{ padding-left:100px; padding-right:100px;}
 .dhukarrScreen .marginTop{margin-top:100px;}
 .dhukarrScreen .marginTopLarge{margin-top:170px;}
@@ -284,6 +317,7 @@ cursor: pointer;
 .dhukarrSection{    display: flex; }
 .dhukarrSectionTop{  align-items: flex-start; }
 .dhukarrSectionContent{flex:1; display: flex; flex-direction: column;}
+.dhukarrSectionContentWide {flex: 2;}
 .dhukarrSectionContentRow{display: flex; flex-direction: row;}
 .dhukarrSectionMiddle{width:200px;}
 .dhukarrScreen .dhukarrSectionSideBar{    margin-right: -45px; margin-left: 30px;}
