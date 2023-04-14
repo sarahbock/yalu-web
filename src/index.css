@@ -332,6 +332,14 @@ cursor: pointer;
 #blob102Holder{background-image:url("./assets/dhukarr/blobs_blob102.png"); }
 #blob103Holder{background-image:url("./assets/dhukarr/blobs_blob103.png"); }
 
+/*SECTION 9 BLOBS*/
+#blob105Holder{background-image:url("./assets/dhukarr/blobs_blob105.png"); }
+#blob106Holder{background-image:url("./assets/dhukarr/blobs_blob106.png"); }
+#blob107Holder{background-image:url("./assets/dhukarr/blobs_blob107.png"); }
+#blob108Holder{background-image:url("./assets/dhukarr/blobs_blob108.png"); }
+#blob109Holder{background-image:url("./assets/dhukarr/blobs_blob109.png"); }
+#blob110Holder{background-image:url("./assets/dhukarr/blobs_blob110.png"); }
+
 .dhukarrScreen .padThinner{ padding-left:100px; padding-right:100px;}
 .dhukarrScreen .marginTop{margin-top:100px;}
 .dhukarrScreen .marginTopLarge{margin-top:170px;}

@@ -1346,16 +1346,80 @@ const Dhukarr = () => {
 
          <SectionHolder id='9'>
 
-            <DhukarrSection>
+            <DhukarrSection align='top'>
 
               <DhukarrContent orientation="column">
-                Left column
+                
+              <Blob 
+                  id='106' 
+                  colour='orange'
+                  english='Family are preparing the child for two worlds - introducing English words.'
+                  yolngu='Gurruṯumirriy ŋuli ŋamaŋamayun yothuny märrmaw’ dhukarrwu Yolŋuw ga Balandaw: märr walal dhu marŋgithirr dhärukku Balandaw.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '-50px', marginTop:'40px'}}
+                  textStyle={{width:'60%'}}
+                  />
+              <Blob 
+                  id='105' 
+                  colour='brown'
+                  english='Family repeatedly explain to the child what is safe or dangerous, good or bad, so the child understands. All family support and take care of the child - the child feels that care so doesn’t get upset and is safe.                   '
+                  yolngu='Gurruṯumirriy ŋuli waŋa dharrwamirr märr yothuy dhu dharaŋan  wanha yätjkurr ga wanha manymak. Bukmakthu gurruṯmirriy ŋuli guŋga’yun ga djäga yothuw märr ŋayi dhu dhäkay-ŋäma guŋga’yunamirr ga yaka galŋa-miḏikirr  märr yothu dhu marrtji manymakum.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '-30px', marginTop:'40px', width:'100%'}}
+                  textStyle={{width:'70%'}}
+                  />
+
               </DhukarrContent>
 
               <DhukarrMiddle/>
 
               <DhukarrContent orientation="column">
-                Right column
+                
+              <Blob 
+                  id='107' 
+                  colour='yellow'
+                  english='The child has expert ears for listening  – even when the are busy playing at the same time they are listening to all the sounds around them – close and distant. The child can pay attention to more than one thing at a time.'
+                  yolngu='Yothuwdja dhuwal buthuru djambatj ŋänaraw ŋunhi ŋayi ga bul’yun ga bulu ŋäyi ŋuli ŋäma rirrakay bawalamirr.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '-50px', marginTop:'40px'}}
+                  textStyle={{}}
+                  />
+              <Blob 
+                  id='108' 
+                  colour='yellow'
+                  english='The child is learning the meaning of their names and their clan -  everything about their identity - and the stories connecting the child to the past and the present.'
+                  yolngu='Yothu ga marŋgithirr nhanŋuwuy yäku mayaliw ga bäpurruw ga bukmakku nhanŋuwuy ŋayi dhäwu beŋur ŋurru-yirr’yunaŋur ga dhiyaŋun bala.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '50px', marginTop:'50px'}}
+                  textStyle={{width:'80%'}}
+                  />
+
+              <Blob 
+                  id='109' 
+                  colour='yellow'
+                  english='The child is starting to learn English.'
+                  yolngu='Yothu dhu ŋurru-yirr’yun marŋgithirr Balandaw mathaw.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '50px', marginTop:'40px', width:'50%'}}
+                  textStyle={{width:'50%'}}
+                  />
+              <Blob 
+                  id='110' 
+                  colour='yellow'
+                  english='The child is listening to and understanding different Yolŋu languages The child is strongly learning their father’s language, cultural system and ceremony – this is important for developing a strong identity.'
+                  yolngu='Yothuy ŋuli ŋäma ga dharaŋan dhäruk mala. Yothu dhu mirithirr marŋgithirr nhanŋu bäpa’mirriŋuw dhärukku ga romgu ga buŋgulwu. '
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '-100px', marginTop:'40px', width:'100%'}}
+                  textStyle={{width:'50%'}}
+                  />
+              
+
               </DhukarrContent>
 
               <Sidebar 
