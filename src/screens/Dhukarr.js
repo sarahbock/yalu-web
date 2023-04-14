@@ -576,6 +576,7 @@ const Dhukarr = () => {
                 yolngu='Gurruṯumirriy ŋuli ḏar’ṯaryun manikay yothuwal.'
                 language={language}
                 audio={true}
+                style={{ position: 'relative', left:'140px'}}
                 />
 
               <Blob 
@@ -585,6 +586,7 @@ const Dhukarr = () => {
                 yolngu='Gurruṯumirriy ŋuli nhäma bukmak rumbal yothuny  nhaltjan ŋayi ga ŋuthan.'
                 language={language}
                 audio={true}
+                style={{ width:'80%' }}
                 />
 
               <Blob 
@@ -612,6 +614,7 @@ const Dhukarr = () => {
                 yolngu='Gurruṯumirriy yothuwal ŋuli dharaŋaṉ nhäman nhanŋu ŋunhi gakal dhuwal mirithirr manymak.'
                 language={language}
                 audio={true}
+                style={{ position: 'relative', top:'-40px',left:'40px', width:'80%' }}
                 />
 
               </DhukarrContent>
@@ -627,6 +630,7 @@ const Dhukarr = () => {
                 yolngu='Yothuy ŋuli ŋayaŋuy ga guyaŋanhawuyyu rumbalyu ga bukuy milkum, ga gurruṯu’mirri ŋuli dharaŋan.'
                 language={language}
                 audio={true}
+                style={{ position: 'relative', top:'80px', left:'30px' }}
                 />
 
               <Blob 
@@ -636,6 +640,7 @@ const Dhukarr = () => {
                 yolngu='Gakthunamirr gakal nhanŋu yothu ŋayi dhu marrtji waŋa’waŋan.'
                 language={language}
                 audio={true}
+                style={{ position: 'relative', top:'-230px', left:'30px' }}
                 />
 
               </DhukarrContent>
@@ -649,6 +654,7 @@ const Dhukarr = () => {
                 yolngu='Yothuy ŋuli dhoka dharaŋan bukmaknha gurruṯumirriny mala.'
                 language={language}
                 audio={true}
+                style={{ marginTop:'70px' }}
                 />
 
               <Blob 
@@ -658,6 +664,7 @@ const Dhukarr = () => {
                 yolngu='Yothuny ŋuli ga waŋa ga bulu ŋäthi ŋunhiyiny ŋanya ŋuli ga ḏälkum nhanŋu rumbal.'
                 language={language}
                 audio={true}
+                style={{ position: 'relative', left:'30px', width:'50%' }}
                 />
 
               <Blob 
@@ -667,6 +674,7 @@ const Dhukarr = () => {
                 yolngu='Yothuy ŋuli ŋäma ga nhäma gurruṯu’mirriny bala ŋayi ŋuli waŋan gurruṯu’mirrwal. '
                 language={language}
                 audio={true}
+                style={{ position: 'relative', left:'30px', top:'-20px', width:'50%' }}
                 />
 
               <Blob 
@@ -676,6 +684,7 @@ const Dhukarr = () => {
                 yolngu='Yothuy ŋuli märr dharaŋan yol ŋayi mälk, yol ŋayi yäku ga nhä nhanŋu dhäruk ga nhä nhanŋu gurruṯu, ŋayi ŋuli ŋäṉḏi’mirriŋuy ga wiripu Yolŋuy marŋgikum lakaram yothuwal buthurulil.'
                 language={language}
                 audio={true}
+                style={{ position: 'relative', left:'-90px', top:'-20px', width:'100%' }}
                 />
 
               </DhukarrContent>
