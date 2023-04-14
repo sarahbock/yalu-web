@@ -1,10 +1,12 @@
 import React from 'react';
 
-const DhukarrSection = ({ children }) => {
+const DhukarrSection = ({ children, align }) => {
+
+  const cssClass = align === 'top' ? 'dhukarrSection dhukarrSectionTop' : 'dhukarrSection';
 
   return(
 
-    <div className='dhukarrSection'>
+    <div className={cssClass}>
 
         {children}
 

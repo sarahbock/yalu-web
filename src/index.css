@@ -244,11 +244,32 @@ cursor: pointer;
 #blob20Holder{background-image:url("./assets/dhukarr/blobs_blob20.png"); }
 #blob21Holder{background-image:url("./assets/dhukarr/blobs_blob21.png"); }
 
+/*SECTION 3 BLOBS*/
+#blob23Holder{background-image:url("./assets/dhukarr/blobs_blob23.png"); }
+#blob24Holder{background-image:url("./assets/dhukarr/blobs_blob24.png"); }
+#blob25Holder{background-image:url("./assets/dhukarr/blobs_blob25.png"); }
+#blob26Holder{background-image:url("./assets/dhukarr/blobs_blob26.png"); }
+#blob27Holder{background-image:url("./assets/dhukarr/blobs_blob27.png"); }
+#blob28Holder{background-image:url("./assets/dhukarr/blobs_blob28.png"); }
+#blob29Holder{background-image:url("./assets/dhukarr/blobs_blob29.png"); }
+#blob30Holder{background-image:url("./assets/dhukarr/blobs_blob30.png"); }
+#blob31Holder{background-image:url("./assets/dhukarr/blobs_blob31.png"); }
+#blob32Holder{background-image:url("./assets/dhukarr/blobs_blob32.png"); }
+#blob33Holder{background-image:url("./assets/dhukarr/blobs_blob33.png"); }
+#blob34Holder{background-image:url("./assets/dhukarr/blobs_blob34.png"); }
+#blob35Holder{background-image:url("./assets/dhukarr/blobs_blob35.png"); }
+#blob36Holder{background-image:url("./assets/dhukarr/blobs_blob36.png"); }
+#blob37Holder{background-image:url("./assets/dhukarr/blobs_blob37.png"); }
+#blob38Holder{background-image:url("./assets/dhukarr/blobs_blob38.png"); }
+#blob39Holder{background-image:url("./assets/dhukarr/blobs_blob39.png"); }
+#blob40Holder{background-image:url("./assets/dhukarr/blobs_blob40.png"); }
+
 .dhukarrScreen .padThinner{ padding-left:100px; padding-right:100px;}
 .dhukarrScreen .marginTop{margin-top:100px;}
 .dhukarrScreen .marginTopLarge{margin-top:170px;}
 .dhukarrScreen .paddingBottom{padding-bottom:100px;}
 .dhukarrSection{    display: flex; }
+.dhukarrSectionTop{  align-items: flex-start; }
 .dhukarrSectionContent{flex:1; display: flex; flex-direction: column;}
 .dhukarrSectionContentRow{display: flex; flex-direction: row;}
 .dhukarrSectionMiddle{width:200px;}

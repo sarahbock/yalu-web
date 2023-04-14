@@ -348,16 +348,202 @@ const Dhukarr = () => {
 
         <SectionHolder id='3'>
 
-            <DhukarrSection>
+            <DhukarrSection align="top">
 
               <DhukarrContent orientation="column">
-                Left column
+                
+              <Blob 
+                id='24' 
+                colour='orange'
+                english='The family give space to the mother and baby  so the baby can sleep well without disturbance – but not far, staying close.'
+                yolngu='Gurruṯumirri ŋuli gurrupan dhaḻakarr ŋäṉḏi’mirriŋuw ga yothuw ŋayi dhu yothu ŋorra ga manymakkum ŋula nhämiriw.'
+                language={language}
+                audio={true}
+                style={{marginTop:'20px', marginBottom:'40px' }}
+                />
+
+              <Blob 
+                id='26' 
+                colour='orange'
+                english='Family members choose names for the child: connecting to the baby’s ancestors through songlines, and the land and the sea and the sky (Yirritja or Dhuwa).'
+                yolngu='Gurruṯumirriy ŋuli gurrupan yäku yothuny nhanŋu yarraṯaŋur - märipuluwal ga yapapuluwal ga gäthupulu ga nhä nhanŋu bäpurru yothuw.'
+                language={language}
+                audio={true}
+                style={{marginBottom:'40px' }}
+                />
+
+                <Blob 
+                id='27' 
+                colour='orange'
+                english='Mother rubs the baby with breastmilk to make the body strong and so they sleep well; family clear the baby’s blocked nose by sucking so the baby can breathe well.'
+                yolngu='Ŋäṉḏi’mirriŋu ŋuli ŋaminiy ŋamunkurryu  ḏälkum yothuny rumbal märr ŋayi dhu galŋa- ŋamathirr ga ŋorra latjukum. Ga wiripuny ŋayi ŋuli ŋurrtji ŋuḻkthun märr ŋayi dhu ŋir’yun manymakkum.'
+                language={language}
+                audio={true}
+                style={{marginBottom:'40px' }}
+                />
+
+                <Blob 
+                id='30' 
+                colour='brown'
+                english='Family teach the newborn even when tiny, for example, language and kinship. '
+                yolngu='Gurruṯumirriy yothuwal ŋuli marŋgikum ŋäṉarrnha yän dhärukku ga gurruṯuw.'
+                language={language}
+                audio={true}
+                style={{marginBottom:'40px' }}
+                />
+
+                <Blob 
+                id='32' 
+                colour='brown'
+                english='Family constantly communicate with the baby - ‘building up their brain through talk’ (ref).'
+                yolngu='Gurruṯu’mirrinydja ŋuli ŋurru-yirr’yun dhäruk waŋanharaw yothuw bitjan bili .'
+                language={language}
+                audio={true}
+                style={{marginBottom:'40px' }}
+                />
+
+                <Blob 
+                id='34' 
+                colour='orange'
+                english='The child is not shown to mother’s brothers too soon after birth because of kinship respect protocols between brother and sister: brothers can’t see their sister’s newborn child.'
+                yolngu=''
+                language={language}
+                audio={true}
+                style={{marginBottom:'40px' }}
+                />
+
+                <Blob 
+                id='37' 
+                colour='brown'
+                english='Family hold and care for the baby all the time. And don’t leave the baby alone.'
+                yolngu='Bukmakthu gurruṯumirriy ŋuli dhangi’yun yothuny ga djäga bitjan bili walu-ŋupan. Ga yaka napurr ŋuli ganarrtham yothuny gänaŋulil.'
+                language={language}
+                audio={true}
+                style={{ width:'100%', marginBottom:'40px' }}
+                />
+
+              <Blob 
+                id='38' 
+                colour='orange'
+                english='Soon after birth, during a ‘smoking ceremony’, maternal grandmother and other close family move the child in their two hands through the smoke, so the child will grow strong and sleep well. Also they talk to the baby, giving spiritual advice about their pathway and how they should continue to behave as they grow. '
+                yolngu='Dhuḏi-guthanamirr dhuwal rom balanya nhakun yothuny yan ŋuli goŋdhu märramay ŋayatham bala gäma ŋanya ŋäwuḻuḻkurr märr ŋanya dhu ḏälkum rumbal ga yakurr nhanŋu dhu gurrupan manymak. Ga bulu ŋanya gurrupan raypirri – bala walal ŋuli ŋaḻapaḻmirri ḻakaraman nhanukal nhaltjan ŋayi dhu ŋuthan.'
+                language={language}
+                audio={true}
+                style={{ width:'200%' }}
+                textStyle={{width:'80%'}}
+                />
+
+              <Blob 
+                id='39' 
+                colour='brown'
+                english='Grandparents support and offer advice to mum and dad and rest of the family so they understand how to care for the child.'
+                yolngu=''
+                language={language}
+                audio={true}
+                style={{marginBottom:'40px' }}
+                />
+
+              </DhukarrContent>
+
+              <DhukarrContent orientation="column">
+
+              <Blob 
+                id='25' 
+                colour='grey'
+                english='Family test hearing and vision and body – e.g. checking response to high and low sounds; checking how baby’s eyes track hand or body movements; finding out what support that child needs and how to communicate. If the baby has a problem family think about what the mother ate during pregnancy that might have caused it.'
+                yolngu=''
+                language={language}
+                audio={true}
+                style={{marginTop:'40px', marginBottom:'40px' }}
+                />
+
+                <Blob 
+                id='23' 
+                colour='brown'
+                english='When the baby sees the world (at the time of birth) close family introduce themselves to the baby telling their kinship connection - this continues from birth throughout childhood whenever family meet the child.'
+                yolngu='Ŋunhi ŋuli yothuy wäŋa nhäma, ŋayi gurruṯumirriy yothuwal ŋuli waŋan gurruṯu lakaranhamirra nhanukal yothuwal.'
+                language={language}
+                audio={true}
+                style={{marginBottom:'40px' }}
+                />
+
+                <Blob 
+                id='31' 
+                colour='orange'
+                english='The family use child language and sign language for example food, grandfather, come for a cuddle…'
+                yolngu='Yothuwal gurruṯumirriy ŋuli yalŋgi matha waŋa ga goŋdhu ŋuli milkum yothuw balanya nhakun ŋatha, ŋathi, wäthun yothuw dhangi’yunaraw’.'
+                language={language}
+                audio={true}
+                style={{marginBottom:'40px' }}
+                />
+
+                <Blob 
+                id='33' 
+                colour='orange'
+                english='When the child is sick family collect and prepare bush medicine – eucalyptus leaves and other healing plants - leaves and bark and other traditional medicine from the beach for healing the baby. '
+                yolngu='Ŋunhi ŋuli yothu rirrikthun ŋayi ŋuli gurruṯumirriy guŋga’yun djäma gaḏayka ga wiripuwiripu ḏukthunamirr mala man’tjarr ga dharpa ga wiripuny raŋipuy mala rerriw ḏukmaranharaw ga ḻaymaranharaw.'
+                language={language}
+                audio={true}
+                style={{marginBottom:'40px', position: 'relative', left: '40px', top:'20px'  }}
+                
+                />
+
+                <Blob 
+                id='36' 
+                colour='brown'
+                english='Father supports the mother in caring for the child. Immediate to extended family also care for the child.'
+                yolngu='Bäpa’mirriŋuy ŋuli guŋga’yun ŋäṉḏi’miriŋuny djägaw yothuw.  Ga bulu ŋuli gurruṯumirr bukmak djäga ŋurikiyi yothuw.'
+                language={language}
+                audio={true}
+                style={{ position: 'relative', left: '40px', top:'20px' }}
+                />
+
+                <Blob 
+                  id='40' 
+                  colour='brown'
+                  english='The baby is included in all family activities – hunting, visiting, shopping, playing, ceremony.'
+                  yolngu='Yothu ŋuli malthun bitjan bili bukmakku gurruṯumirriw - wakalkurr, huntingkurr ga bäpurrukurr.'
+                  language={language}
+                  audio={true}
+                  style={{ position: 'relative', top: '700px', left:'60px' }}
+                  />
+
               </DhukarrContent>
 
               <DhukarrMiddle/>
 
               <DhukarrContent orientation="column">
-                Right column
+                
+                <Blob 
+                  id='28' 
+                  colour='yellow'
+                  english='The baby recognises mother’s and father’s voice and smell –  recognising the smell makes the baby feel comforted.'
+                  yolngu='Yothuy dharaŋan ŋuli ŋäṉḏi’mirriŋuny ga bäpa’mirriŋuny ga bulu ŋayi ŋuli ŋäma rirrakay ga buŋgan ŋuli nhuman dharaŋan. Ga wiripuny ŋayi marŋgi buŋgangu bala ŋanya ŋuli ŋayaŋu mulka’kuman.'
+                  language={language}
+                  audio={true}
+                  style={{marginTop:'30px' }}
+                  />
+
+                <Blob 
+                id='29' 
+                colour='yellow'
+                english='The baby communicates with family: for example, the baby cries to bring the mother back to have the taste of breastmilk; baby expresses discomfort when wet or dirty nappy. '
+                yolngu='Yothuy ŋuli marŋgi gurrupan gurruṯumirriny: balanya nhakun ŋaṉḏi’mirriŋuny ŋayi ŋuli rälimirriyam ŋäthi ŋaminiw dhäkaywu ga wiripuny ŋayi yothu dhu melnyaŋ’thun waryun ga biḻkthun ŋayi dhu bala ŋäthin.'
+                language={language}
+                audio={true}
+                style={{ position: 'relative',  top:'80px'}}
+                />
+                
+                <Blob 
+                id='35' 
+                colour='yellow'
+                english='The baby recognises and responds to immediate family. The baby feels the person that holds them. They hear the voices of their family and they respond e.g. smiles, eye contact, excitement, movement reacting to familiar immediate family – looking or turning head to see who’s speaking.'
+                yolngu='Yothuy ŋuli dhäkay-ŋäma Yolŋuny goŋ-dhangi’yunawuy. Ga rirrakay ŋäma gurruṯu’mirriny ga ŋayi ŋuli yothuy ŋäma dharaŋan bala ŋäman ŋunhiyi rirrakay bala ŋupana.'
+                language={language}
+                audio={true}
+                style={{ position: 'relative', top:'140px', paddingTop: '100px', paddingBottom: '50px', paddingLeft:'50px', paddingRight: '50px' }}
+                />
+
               </DhukarrContent>
 
               <Sidebar 
@@ -368,6 +554,57 @@ const Dhukarr = () => {
                 />
             
             </DhukarrSection>
+
+           {/*  
+           <DhukarrSection>
+
+              <DhukarrContent orientation="column">
+
+              <Blob 
+                id='38' 
+                colour='orange'
+                english='Soon after birth, during a ‘smoking ceremony’, maternal grandmother and other close family move the child in their two hands through the smoke, so the child will grow strong and sleep well. Also they talk to the baby, giving spiritual advice about their pathway and how they should continue to behave as they grow. '
+                yolngu='Dhuḏi-guthanamirr dhuwal rom balanya nhakun yothuny yan ŋuli goŋdhu märramay ŋayatham bala gäma ŋanya ŋäwuḻuḻkurr märr ŋanya dhu ḏälkum rumbal ga yakurr nhanŋu dhu gurrupan manymak. Ga bulu ŋanya gurrupan raypirri – bala walal ŋuli ŋaḻapaḻmirri ḻakaraman nhanukal nhaltjan ŋayi dhu ŋuthan.'
+                language={language}
+                audio={true}
+                />
+
+              </DhukarrContent>
+
+            </DhukarrSection>
+
+            <DhukarrSection>
+
+              <DhukarrContent orientation="column">
+
+              <Blob 
+                id='39' 
+                colour='brown'
+                english='Grandparents support and offer advice to mum and dad and rest of the family so they understand how to care for the child.'
+                yolngu=''
+                language={language}
+                audio={true}
+                />
+
+              </DhukarrContent>
+
+              <DhukarrContent orientation="column">
+
+                <Blob 
+                  id='40' 
+                  colour='brown'
+                  english='The baby is included in all family activities – hunting, visiting, shopping, playing, ceremony.'
+                  yolngu='Yothu ŋuli malthun bitjan bili bukmakku gurruṯumirriw - wakalkurr, huntingkurr ga bäpurrukurr.'
+                  language={language}
+                  audio={true}
+                  />
+
+                </DhukarrContent>
+
+            </DhukarrSection>
+           
+            */} 
+            
 
            </SectionHolder>
 
