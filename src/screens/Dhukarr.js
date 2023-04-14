@@ -554,56 +554,6 @@ const Dhukarr = () => {
                 />
             
             </DhukarrSection>
-
-           {/*  
-           <DhukarrSection>
-
-              <DhukarrContent orientation="column">
-
-              <Blob 
-                id='38' 
-                colour='orange'
-                english='Soon after birth, during a ‘smoking ceremony’, maternal grandmother and other close family move the child in their two hands through the smoke, so the child will grow strong and sleep well. Also they talk to the baby, giving spiritual advice about their pathway and how they should continue to behave as they grow. '
-                yolngu='Dhuḏi-guthanamirr dhuwal rom balanya nhakun yothuny yan ŋuli goŋdhu märramay ŋayatham bala gäma ŋanya ŋäwuḻuḻkurr märr ŋanya dhu ḏälkum rumbal ga yakurr nhanŋu dhu gurrupan manymak. Ga bulu ŋanya gurrupan raypirri – bala walal ŋuli ŋaḻapaḻmirri ḻakaraman nhanukal nhaltjan ŋayi dhu ŋuthan.'
-                language={language}
-                audio={true}
-                />
-
-              </DhukarrContent>
-
-            </DhukarrSection>
-
-            <DhukarrSection>
-
-              <DhukarrContent orientation="column">
-
-              <Blob 
-                id='39' 
-                colour='brown'
-                english='Grandparents support and offer advice to mum and dad and rest of the family so they understand how to care for the child.'
-                yolngu=''
-                language={language}
-                audio={true}
-                />
-
-              </DhukarrContent>
-
-              <DhukarrContent orientation="column">
-
-                <Blob 
-                  id='40' 
-                  colour='brown'
-                  english='The baby is included in all family activities – hunting, visiting, shopping, playing, ceremony.'
-                  yolngu='Yothu ŋuli malthun bitjan bili bukmakku gurruṯumirriw - wakalkurr, huntingkurr ga bäpurrukurr.'
-                  language={language}
-                  audio={true}
-                  />
-
-                </DhukarrContent>
-
-            </DhukarrSection>
-           
-            */} 
             
 
            </SectionHolder>
@@ -618,13 +568,116 @@ const Dhukarr = () => {
             <DhukarrSection>
 
               <DhukarrContent orientation="column">
-                Left column
+                
+              <Blob 
+                id='45' 
+                colour='brown'
+                english='Family sing lullabies to the baby.'
+                yolngu='Gurruṯumirriy ŋuli ḏar’ṯaryun manikay yothuwal.'
+                language={language}
+                audio={true}
+                />
+
+              <Blob 
+                id='43' 
+                colour='grey'
+                english='Family monitor baby’s health through checking every part of the body and body functions.'
+                yolngu='Gurruṯumirriy ŋuli nhäma bukmak rumbal yothuny  nhaltjan ŋayi ga ŋuthan.'
+                language={language}
+                audio={true}
+                />
+
+              <Blob 
+                id='44' 
+                colour='orange'
+                english='Mother continues to avoid certain foods to protect the breast-feeding baby from harmful effects.'
+                yolngu='Baḏak rom ga ŋorra yaka dhu ḻuka ŋatha bawalamirr ŋäṉḏi’mirriŋuy ŋunhi yothu nyumukuṉiny ga yalŋgi yän.'
+                language={language}
+                audio={true}
+                />
+
+              <Blob 
+                id='46' 
+                colour='orange'
+                english='Family can now introduce the baby to mother’s brothers.'
+                yolngu='Ŋunhi yothu ŋuli märr gurrŋanthirra bala ŋapipi’mirriŋuy ŋuli nhäman.'
+                language={language}
+                audio={true}
+                />
+
+              <Blob 
+                id='47' 
+                colour='brown'
+                english='The family effectively monitor and recognise the child’s development.'
+                yolngu='Gurruṯumirriy yothuwal ŋuli dharaŋaṉ nhäman nhanŋu ŋunhi gakal dhuwal mirithirr manymak.'
+                language={language}
+                audio={true}
+                />
+
               </DhukarrContent>
 
               <DhukarrMiddle/>
 
               <DhukarrContent orientation="column">
-                Right column
+               
+              <Blob 
+                id='48' 
+                colour='light'
+                english='Baby communicates their thoughts and feelings through their body movement and facial expressions that the family recognise.'
+                yolngu='Yothuy ŋuli ŋayaŋuy ga guyaŋanhawuyyu rumbalyu ga bukuy milkum, ga gurruṯu’mirri ŋuli dharaŋan.'
+                language={language}
+                audio={true}
+                />
+
+              <Blob 
+                id='50' 
+                colour='light'
+                english='Vomiting (a little) is a sign that baby is starting to vocalise.'
+                yolngu='Gakthunamirr gakal nhanŋu yothu ŋayi dhu marrtji waŋa’waŋan.'
+                language={language}
+                audio={true}
+                />
+
+              </DhukarrContent>
+              
+              <DhukarrContent orientation="column">
+              
+              <Blob 
+                id='42' 
+                colour='light'
+                english='The baby is starting to recognise extended family.'
+                yolngu='Yothuy ŋuli dhoka dharaŋan bukmaknha gurruṯumirriny mala.'
+                language={language}
+                audio={true}
+                />
+
+              <Blob 
+                id='49' 
+                colour='light'
+                english='When the baby talks (vocalises) and cries a lot it helps the body grow strong.'
+                yolngu='Yothuny ŋuli ga waŋa ga bulu ŋäthi ŋunhiyiny ŋanya ŋuli ga ḏälkum nhanŋu rumbal.'
+                language={language}
+                audio={true}
+                />
+
+              <Blob 
+                id='51' 
+                colour='light'
+                english='When the baby sees and/or hears family members the baby starts ‘talking’ - often over the phone!'
+                yolngu='Yothuy ŋuli ŋäma ga nhäma gurruṯu’mirriny bala ŋayi ŋuli waŋan gurruṯu’mirrwal. '
+                language={language}
+                audio={true}
+                />
+
+              <Blob 
+                id='52' 
+                colour='yellow'
+                english='The baby is starting to learn identity and connections: family talking into the baby’s ears, teaching about their name, subsection, their language and kinship connections.'
+                yolngu='Yothuy ŋuli märr dharaŋan yol ŋayi mälk, yol ŋayi yäku ga nhä nhanŋu dhäruk ga nhä nhanŋu gurruṯu, ŋayi ŋuli ŋäṉḏi’mirriŋuy ga wiripu Yolŋuy marŋgikum lakaram yothuwal buthurulil.'
+                language={language}
+                audio={true}
+                />
+
               </DhukarrContent>
 
               <Sidebar 
