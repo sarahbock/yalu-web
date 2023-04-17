@@ -8,7 +8,7 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
   const introBlob = id.substr(0,1) ==='0';
   const classId = introBlob ? 'intro'+id+'Holder' : 'blob'+id+'Holder';
   const soundFile = audio ? require('../../assets/dhukarr/mp3/recording'+id+'.mp3') : null;
-  console.log('../../assets/dhukarr/mp3/recording'+id+'.mp3')
+  //console.log('../../assets/dhukarr/mp3/recording'+id+'.mp3')
   
   let colourClass = '';
   switch ( colour ) {

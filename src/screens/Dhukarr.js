@@ -11,7 +11,7 @@ import SectionHolder from '../components/Dhukarr/SectionHolder';
 import DhukarrSection from '../components/Dhukarr/DhukarrSection';
 import DhukarrContent from '../components/Dhukarr/DhukarrContent';
 import DhukarrMiddle from '../components/Dhukarr/DhukarrMiddle';
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/Dhukarr/Sidebar';
 
 const Dhukarr = () => {
 
@@ -166,7 +166,7 @@ const Dhukarr = () => {
 
              {/*SIDE BAR - ONGOING*/}
 
-             <Sidebar 
+             <Sidebar background={false}  
               id='0' 
               english='Things that are ongoing throughout the dhukarr'
               yolngu='Dhuwandja dhäwu mala baḏaknha ŋuli bitjana bili  marrtji weyinŋumirra '
@@ -257,10 +257,10 @@ const Dhukarr = () => {
 
               </DhukarrContent>
 
-              <Sidebar 
+              <Sidebar background={true}  
                 id='1' 
-                english=''
-                yolngu=''
+                english='Things that are ongoing throughout the dhukarr'
+                yolngu='Dhuwandja dhäwu mala baḏaknha ŋuli bitjana bili  marrtji weyinŋumirra'
                 language={language}
                 />
             
@@ -331,10 +331,10 @@ const Dhukarr = () => {
               
               </DhukarrContent>
 
-              <Sidebar 
+              <Sidebar background={true}  
                 id='2' 
-                english=''
-                yolngu=''
+                english='During pregnancy'
+                yolngu='Yothumirriw miyalkku gakal'
                 language={language}
                 />
             
@@ -546,9 +546,9 @@ const Dhukarr = () => {
 
               </DhukarrContent>
 
-              <Sidebar 
+              <Sidebar background={true}  
                 id='3' 
-                english='Newborn'
+                english='When it’s time to be born'
                 yolngu='Dhuwandja dhäwu Ŋäṉarrwu yothuw'
                 language={language}
                 />
@@ -689,7 +689,7 @@ const Dhukarr = () => {
 
               </DhukarrContent>
 
-              <Sidebar 
+              <Sidebar background={true}  
                 id='4' 
                 english='Skin getting darker'
                 yolngu='Dhuwandja dhäwu ŋunhi gurrŋan’thirra ŋuli yothu'
@@ -907,7 +907,7 @@ const Dhukarr = () => {
 
               </DhukarrContent>
 
-              <Sidebar 
+              <Sidebar background={true}  
                 id='5' 
                 english='Turning over stage'
                 yolngu='Dhuwandja dhäwu yothuw bilyu’pilyunamirriw '
@@ -1070,7 +1070,7 @@ const Dhukarr = () => {
 
               </DhukarrContent>
 
-              <Sidebar 
+              <Sidebar background={true}  
                 id='6' 
                 english='Sitting up stage'
                 yolngu='Dhuwandja dhäwu yothuw nhina’nhinanhamirriw'
@@ -1221,7 +1221,7 @@ const Dhukarr = () => {
 
               </DhukarrContent>
 
-              <Sidebar 
+              <Sidebar background={true}  
                 id='7' 
                 english='Crawling stage'
                 yolngu='Dhuwandja dhäwu yothuw gaḻ’yunamirriw'
@@ -1328,7 +1328,7 @@ const Dhukarr = () => {
 
               </DhukarrContent>
 
-              <Sidebar 
+              <Sidebar background={true}  
                 id='8' 
                 english='Standing up'
                 yolngu='Dhuwandja dhäwu yothuw dhärra’tharranhamirriw'
@@ -1423,7 +1423,7 @@ const Dhukarr = () => {
 
               </DhukarrContent>
 
-              <Sidebar 
+              <Sidebar background={true}  
                 id='9' 
                 english=''
                 yolngu='Dhuwandja dhäwu yothuw marrtji’marrtjinyamirriw'
@@ -1525,7 +1525,7 @@ const Dhukarr = () => {
               
               </DhukarrContent>
 
-              <Sidebar 
+              <Sidebar background={true}  
                 id='10' 
                 english='Toddler stage'
                 yolngu='Dhuwandja dhäwu yothuw djandjanmirriw ḏälnha marrtjinyaraw '
@@ -1609,7 +1609,7 @@ const Dhukarr = () => {
 
               </DhukarrContent>
 
-              <Sidebar 
+              <Sidebar background={true}  
                 id='11' 
                 english='Running, jumping and playing stage'
                 yolngu='Dhuwandja dhäwu yothuw waṉḏinyamirr ga wapthunamirr  ga buḻ’yunamirr'
@@ -1690,7 +1690,7 @@ const Dhukarr = () => {
 
               </DhukarrContent>
 
-              <Sidebar 
+              <Sidebar background={true}  
                 id='12' 
                 english='Around preschool age'
                 yolngu='Dhuwandja dhäwu yothuw dharaŋanamirriw '
@@ -1780,7 +1780,7 @@ const Dhukarr = () => {
 
             </DhukarrContent>
 
-            <Sidebar 
+            <Sidebar background={true}  
               id='13' 
               english='From preschool age and onwards'
               yolngu='Dhuwandja dhäwu yothuw ŋunhi ŋayi ŋuli mirithirra dharaŋan ga marŋgithirra '
@@ -1843,7 +1843,7 @@ const Dhukarr = () => {
               
               </DhukarrContent>
 
-              <Sidebar 
+              <Sidebar background={true}  
                 id='14' 
                 english='Pre-adolescent stage'
                 yolngu='Dhuwandja dhäwu yothuw märr ŋaḻapaḻnha dhuŋgarramirr'

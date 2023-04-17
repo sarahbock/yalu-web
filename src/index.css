@@ -386,7 +386,8 @@ cursor: pointer;
 .dhukarrSectionContentWide {flex: 2;}
 .dhukarrSectionContentRow{display: flex; flex-direction: row;}
 .dhukarrSectionMiddle{width:200px;}
-.dhukarrScreen .dhukarrSectionSideBar{    margin-right: -45px; margin-left: 30px;}
+.dhukarrScreen .dhukarrSectionSideBar{    margin-right: -50px; margin-left: 30px; height: 100%; background-color: #843c0b42; padding:0 15px;}
+.dhukarrScreen .dhukarrSectionSideBarNoBg{background: none;}
 .dhukarrScreen .sideBarText{writing-mode: vertical-rl;text-orientation: mixed; color: #841a0c; font-family: 'KGBlank', Arial, sans-serif; font-weight: normal; }
 .dhukarrScreen .sideBarTextNumber {display:inline; writing-mode: horizontal-tb; text-orientation: initial;     padding: 20px 0 20px 0;}
 .dhukarrScreen a{color:#831C19;}

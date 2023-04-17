@@ -1,10 +1,11 @@
 import React from 'react';
-import SoundPlayer from '../components/SoundPlayer';
-const Sidebar = ({ id, english, yolngu, language, audio }) => {
+import SoundPlayer from '../SoundPlayer';
+const Sidebar = ({ id, english, yolngu, language, audio, background }) => {
 
+  const componentClass = background ? 'dhukarrSectionSideBar' : 'dhukarrSectionSideBar dhukarrSectionSideBarNoBg';
   return(
 
-    <div className='dhukarrSectionSideBar' id={'sidebar'+id}>
+    <div className={componentClass} id={'sidebar'+id}>
 
         <div className='sideBarText'>
 
