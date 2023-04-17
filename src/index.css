@@ -340,6 +340,15 @@ cursor: pointer;
 #blob109Holder{background-image:url("./assets/dhukarr/blobs_blob109.png"); }
 #blob110Holder{background-image:url("./assets/dhukarr/blobs_blob110.png"); }
 
+/*SECTION 10 BLOBS*/
+#blob112Holder{background-image:url("./assets/dhukarr/blobs_blob112.png"); }
+#blob113Holder{background-image:url("./assets/dhukarr/blobs_blob113.png"); }
+#blob114Holder{background-image:url("./assets/dhukarr/blobs_blob114.png"); }
+#blob115Holder{background-image:url("./assets/dhukarr/blobs_blob115.png"); }
+#blob116Holder{background-image:url("./assets/dhukarr/blobs_blob116.png"); }
+#blob117Holder{background-image:url("./assets/dhukarr/blobs_blob117.png"); }
+#blob118Holder{background-image:url("./assets/dhukarr/blobs_blob118.png"); }
+
 .dhukarrScreen .padThinner{ padding-left:100px; padding-right:100px;}
 .dhukarrScreen .marginTop{margin-top:100px;}
 .dhukarrScreen .marginTopLarge{margin-top:170px;}

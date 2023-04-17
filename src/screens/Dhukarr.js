@@ -1385,7 +1385,7 @@ const Dhukarr = () => {
                   language={language}
                   audio={true}
                   style={{position: 'relative', left: '-50px', marginTop:'40px'}}
-                  textStyle={{}}
+                  textStyle={{width:'70%'}}
                   />
               <Blob 
                   id='108' 
@@ -1405,7 +1405,7 @@ const Dhukarr = () => {
                   yolngu='Yothu dhu ŋurru-yirr’yun marŋgithirr Balandaw mathaw.'
                   language={language}
                   audio={true}
-                  style={{position: 'relative', left: '50px', marginTop:'40px', width:'50%'}}
+                  style={{position: 'relative', left: '50px', marginTop:'40px', width:'70%'}}
                   textStyle={{width:'50%'}}
                   />
               <Blob 
@@ -1418,6 +1418,7 @@ const Dhukarr = () => {
                   style={{position: 'relative', left: '-100px', marginTop:'40px', width:'100%'}}
                   textStyle={{width:'50%'}}
                   />
+             
               
 
               </DhukarrContent>
@@ -1440,16 +1441,88 @@ const Dhukarr = () => {
 
            <SectionHolder id='10'>
 
-            <DhukarrSection>
+            <DhukarrSection align='top'>
 
               <DhukarrContent orientation="column">
-                Left column
+                
+              <Blob 
+                  id='115' 
+                  colour='orange'
+                  english='Mother and family are supporting the child to eat more soft food to strengthen their body, teeth, everything. Family give a lot of food to encourage the child to reduce breast feeding.'
+                  yolngu='Ŋäṉḏi’mirriŋuy ga gurruṯumirriy mala yothuwal ŋuli marŋgikum nhaltjan dhu ŋatha luka ga ḏälkum rumbal ga lirra ga bukmak.  Walal ŋuli gurrupan dharrwa ŋatha mala märr yothu dhu gulyun ŋaminiŋur. '
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '-30px', marginTop:'400px', width:'80%'}}
+                  textStyle={{width:'70%'}}
+                  />
+
               </DhukarrContent>
 
               <DhukarrMiddle/>
 
               <DhukarrContent orientation="column">
-                Right column
+                
+              <Blob 
+                  id='112' 
+                  colour='yellow'
+                  english='The child goes and spends time with different family members–so they get to know and connect with close family and extended family. The kinship connections are  strongly embedded in the Yolŋu system.'
+                  yolngu='Yothuny ŋuli malthun ga nhina wiripuwal gurruṯu’mirriwal – ŋayi dhu marŋgithirr bukmakku  gurruṯu’mirriw galkipuywu ga barrkupuywu. Bili gurruṯumirr dhuwal djinawa romŋur ḻukuŋur Yolŋuwal.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '-150px', marginTop:'40px'}}
+                  textStyle={{width:'80%'}}
+                  />
+              <Blob 
+                  id='113' 
+                  colour='yellow'
+                  english='As the child is growing up they are learning about land, sea, totems, fish, stingray, turtles, food from the bush and rain forest and shellfish from the beach.'
+                  yolngu='Ŋunhi yothu ŋuli djaka-ŋuthan ŋaḻapaḻyirr walal ŋuli marŋgithirra wäŋaw, gapuw, waŋarrwu malaŋu, guyaw ga maranydjalkku ga miyapunuw malaŋuw, ŋathaw mala ḏiltjipuywu ga retjapuywu ga raŋipuywu maypalwu malaŋuw.'
+                  language={language}
+                  audio={true}
+                  style={{}}
+                  textStyle={{}}
+                  />
+              <Blob 
+                  id='114' 
+                  colour='light'
+                  english='The child listens to stories and has conversations with others.'
+                  yolngu='Yothuy ga ŋäma dhäwu gurruṯumirriwuŋ ga waŋanhamirr bala-räli’yunmirr.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '-50px', marginTop:'40px'}}
+                  textStyle={{width:'80%'}}
+                  />
+              <Blob 
+                  id='117' 
+                  colour='light'
+                  english='The child goes with family to collect shellfish, fish and fruit.'
+                  yolngu='Yothu ŋuli malthun gurruṯumirriw märranharaw maypalwu ga guyaw ga borumgu mala. '
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '30px', marginTop:'40px'}}
+                  textStyle={{width:'100%'}}
+                  />
+              <Blob 
+                  id='116' 
+                  colour='light'
+                  english='The child is learning through going to playgroup and childcare – understanding more about the pathways to follow in two worlds. The child is building more connection and overcoming fear of strangers. '
+                  yolngu='Yothu ŋuli marŋgithirr ŋunhal playgroupŋur wo Childcareŋur märr ŋayi dhu dharaŋan marrmaw’ dhukarrwu ga romgu nhaltjan ŋayi dhu ga yothu ŋirrimbum. Ga bulu nhaku ŋayi dhu yothu dharaŋan waŋganyŋuny djamarrkuḻiny ga ŋaḻapaḻmirriny ga Balandany mala märr ŋayi dhu yothu yaka barrarirr ga gora.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '-50px', marginTop:'40px'}}
+                  textStyle={{width:'100%'}}
+                  />
+              <Blob 
+                  id='118' 
+                  colour='yellow'
+                  english='When the child feels unsafe (e.g. hearing a strange sound) the child will run to close family for a cuddle. The child stands behind the mother holding her firmly and hiding their face. '
+                  yolngu='Yothuy ŋuli marŋgikum ŋunhi ŋayi dhu ŋoy-marrmarryun ga barrarirr ŋayi dhu gurruṯu’mirriwal waṉḏirr ga dhaŋgi’yun mirithirr. Ŋaraka’ŋur ga yaŋara’ŋur dhärra ŋäṉḏi’mirriŋuwal ŋayatham yaŋara ḏälkum ga buku-djuḻulyun dhärra.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '0', marginTop:'40px', }}
+                  textStyle={{width:'100%'}}
+                  />
+
               </DhukarrContent>
 
               <Sidebar 
