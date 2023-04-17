@@ -1522,7 +1522,7 @@ const Dhukarr = () => {
                   style={{position: 'relative', left: '0', marginTop:'40px', }}
                   textStyle={{width:'100%'}}
                   />
-
+              
               </DhukarrContent>
 
               <Sidebar 
@@ -1542,16 +1542,71 @@ const Dhukarr = () => {
 
          <SectionHolder id='11'>
 
-            <DhukarrSection>
+            <DhukarrSection align='top'>
 
               <DhukarrContent orientation="column">
-                Left column
+               
+              <Blob 
+                  id='120' 
+                  colour='grey'
+                  english='Family always assess and support the child’s language development by modeling strong language and encouraging the child to copy.'
+                  yolngu='Gurruṯumirriy ŋuli ŋäma dhäruk mala yothuny ga dälkum nhaltjan ŋayi dhu waŋa ḏäl matha ga bulu ŋayi ŋuli wanaŋgunhamirr dhäruk mala märr ŋayi dhu ḏälthirr.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '-60px', marginTop:'40px', width:'80%' }}
+                  textStyle={{width:'70%'}}
+                  />
+
+              <Blob 
+                  id='121' 
+                  colour='grey'
+                  english='Family watch the child - assessing and correcting their ceremonial dancing.'
+                  yolngu='Gurruṯumirriy ŋuli nhäma yothuny ga dhunupayam nhaltjan ŋayi dhu burr’yun.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '-20px', marginTop:'40px',  width:'50%'}}
+                  textStyle={{width:'80%'}}
+                  />
+
+
+
               </DhukarrContent>
 
               <DhukarrMiddle/>
 
               <DhukarrContent orientation="column">
-                Right column
+               
+              <Blob 
+                  id='122' 
+                  colour='yellow'
+                  english='The child knows sign language for many things, for example, kinship relationships, animals, fire, water and other common things in their environment.'
+                  yolngu='Yothu dhuwal marŋgi ŋayi dhu goŋdhu wanaŋgum ga milkum nhä mala gurruṯu ga warrakan ŋayi dhu milkum rumbalyu.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '-170px', marginTop:'40px', width:'120%' }}
+                  textStyle={{width:'50%'}}
+                  />
+              <Blob 
+                  id='123' 
+                  colour='yellow'
+                  english='The child already knows his family and sits close to them, watching and listening, to learn about the songs and dancing in ceremony area.'
+                  yolngu='Ŋayi yothu biliny marŋgin nhanukalaŋaw gurruṯumirriw, ŋayi ga nhina gurruṯu’mirriwal galki ga nhäma ga ŋäma ŋayi ga märr ŋayi dhu marŋgithirra manikaywu ga buŋgulwu.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '0px', marginTop:'60px', }}
+                  textStyle={{width:'100%'}}
+                  />
+              <Blob 
+                  id='124' 
+                  colour='yellow'
+                  english='Through ceremonial dancing the child shows their skills in understanding connections (recognizing their clan songs),  listening to and remembering the beat and the words of the songline and responding with the right actions.'
+                  yolngu='Yothuny dhuwal marŋgi nhä ŋunhi manikay ŋuli ḏar’ṯaryun ga ŋayi ŋuli dhunupan burr’yuna.  Bili ŋayi ŋuli ŋäma ga nhäma nhaltjan ga biḻma ga buŋgul marrtji ŋayi ŋuli milkum nhanŋuwuy ŋayi marŋgithinyawuy gurruṯumirriwal.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '-100px', marginTop:'60px', width:'120%'  }}
+                  textStyle={{width:'50%'}}
+                  />
+
               </DhukarrContent>
 
               <Sidebar 
