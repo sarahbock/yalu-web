@@ -1630,13 +1630,64 @@ const Dhukarr = () => {
             <DhukarrSection>
 
               <DhukarrContent orientation="column">
-                Left column
+                &nbsp;
               </DhukarrContent>
 
               <DhukarrMiddle/>
 
               <DhukarrContent orientation="column">
-                Right column
+              
+              <Blob 
+                  id='126' 
+                  colour='yellow'
+                  english='The child practices cultural skills in play, copying what they have seen adults do, e.g. throwing themselves on the sand imitating mourning; making and practicing with toy spears; singing and dancing their songlines – they know which songs connect with their moiety. This process has supported the development of the Yolŋu child’s identity  since our ancestors gave us life.'
+                  yolngu='Ŋunhi ŋayi yothu ŋaḻapaḻnha ŋayi ŋuli wanaŋgum, nhakun marŋgithirr manapan ŋurrkanhamirr munathalil yan nhakun ŋayi ga ŋäthi gurruṯumirriw. Ga wiripuny gaṟa djäma ga manikay ḏar’ṯaryun wo burr’yun. Walal marŋgi nhä mala manikay walal ŋuli dar’taryun dhuwa wo yirritja. Ga dhärranhayŋu dhuwal gakal Yolŋuw djamarrkuliw’.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '0px', marginTop:'50px' }}
+                  textStyle={{width:'80%'}}
+                  />
+              <Blob 
+                  id='127' 
+                  colour='yellow'
+                  english='The child is learning cultural communication rules and protocols e.g. not saying the name of someone who has died – or similar sounding words; respectful avoidance in communication with some relatives; and styles of communication with different kin e.g. teasing between grandchild and maternal grandmother and her siblings. The child knows this cultural system has always been there and won’t change. '
+                  yolngu='Ga yothuny mala marŋgi nha mala rom ŋunhi balanya nhakun: gurruṯumirr ŋuli bäyŋuthirr ga yaka yäku dhu lakaram ga rom’rumthunamirr, gakalwu ŋayi yothu marŋgithirr. Ga wiripuny napurr ŋuli lakaram wakalmanydji – ŋunhiyi märi maṉḏa balanya nhakun märi ga gutharra – dhuwal ŋayi rom gurruṯuŋur dhäranhayŋu  -  bayŋu dhu djämbi ga balanya. '
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '0px', marginTop:'20px' }}
+                  textStyle={{width:'80%'}}
+                  />
+              <Blob 
+                  id='128' 
+                  colour='yellow'
+                  english='The child is proving their learning - physical and cognitive development and identity - through the process of their journey along the pathway.'
+                  yolngu='Yothu ŋayi ga gakal nhanŋuwuy ŋayi milkum ŋunhalatjandi dhukarrkurr. Marŋgithinyamirr gakal mirithirr manymak yothu rumbalwu ga mulkurrwu.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '-50px', marginTop:'20px' }}
+                  textStyle={{}}
+                  />
+              <Blob 
+                  id='130' 
+                  colour='light'
+                  english='The child is learning more about play equipment and toys - from the Balanda world.'
+                  yolngu='Yothu ga marŋgithirr gakalwu wakalwu buḻ’yunamirriw girriw’ malaŋu.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '-150px', marginTop:'20px' }}
+                  textStyle={{width:'80%'}}
+                  />
+              <Blob 
+                  id='129' 
+                  colour='light'
+                  english='The child is expanding their learning environment to include the school/playgroup areas.'
+                  yolngu='Yothu ga marŋgithinyamirriŋur djinawa wukirriŋur ga bawalamirriŋur.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '50px', marginTop:'20px', marginBottom:'20px' }}
+                  textStyle={{width:'80%'}}
+                  />
+
               </DhukarrContent>
 
               <Sidebar 
@@ -1657,16 +1708,76 @@ const Dhukarr = () => {
 
          <SectionHolder id='13'>
 
-          <DhukarrSection>
+          <DhukarrSection align='top'>
 
             <DhukarrContent orientation="column">
-              Left column
+              
+              <Blob 
+                  id='132' 
+                  colour='brown'
+                  english='Family teach the child about water, moon, wind, flowers and tides to connect the child to the knowledge they need for collecting food from the sea and from the land e.g. many kinds of shellfish, stingray, turtle, crayfish, fish, mudcrabs, mangrove worms, yams, fruit, wallaby, goanna, lizards, wild honey.'
+                  yolngu='Gurruṯumirriy ŋuli marŋgi gurrupan yothuny warrpam’ku malaŋuw nhakun gapuw, ŋalindiw, wataw, burwuw’ ga raŋiwu märr ŋayi dhu marŋgithirr märranharaw ŋathaw raŋipuywu ga diltjipuywu.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '-35%', marginTop:'50px', width:'150%'}}
+                  textStyle={{width:'50%'}}
+                  />
+
             </DhukarrContent>
 
             <DhukarrMiddle/>
 
-            <DhukarrContent orientation="column">
-              Right column
+            <DhukarrContent orientation="column" flex={2}>
+              
+              <Blob 
+                  id='133' 
+                  colour='yellow'
+                  english='When the child hears the kinship term they understand how they connect to that person. '
+                  yolngu='Yothuy ŋuli dharaŋan gurruṯu ŋäma bala guyaŋan ŋunhi ŋayi gurruṯumirr nhanŋu.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '0px', marginTop:'80px' }}
+                  textStyle={{width:'80%'}}
+                  />
+
+              <Blob 
+                  id='134' 
+                  colour='yellow'
+                  english='The child understands their connections to the environment.'
+                  yolngu='Marŋgi ŋayi yothu ŋunhi wäŋa nhanŋu gurruṯu’mirr.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '0px', marginTop:'50px' }}
+                  textStyle={{width:'60%'}}
+                  />
+
+              <DhukarrContent orientation="row">
+                
+                <Blob 
+                    id='136' 
+                    colour='yellow'
+                    english='The child talks with family asking questions - the child wants to understand more deeply about their individual and group kinship relationships and ancestral connections.'
+                    yolngu='Yothuy ŋuli waŋa ga ŋäŋ’thun ga dhä-birrka’yun gurruṯumirriny – yothuy dhu guyaŋa ga dharaŋan nhanŋu gurruṯu’mirriny ga wanhaŋur ŋayi yarraṯaŋur balanya nhakun märipulu, wakupulu, yapapulu ga ŋäṉḏipulu.'
+                    language={language}
+                    audio={false}
+                    style={{position: 'relative', left:'-50px', top:'50px', marginTop:'20px', flex:3 }}
+                    textStyle={{width:'60%'}}
+                    />
+
+                <Blob 
+                    id='135' 
+                    colour='light'
+                    english='The child collects shellfish and fruit themselves with help from older children or adults.'
+                    yolngu='Yothu mala ŋuli marŋgithirr borumgu ga maypalwu märranharaw - walal ŋuli ŋaḻapaḻmirriy djamarrkuliy’ ga gurruṯu’mirriy mala guŋga’yun walalany.'
+                    language={language}
+                    audio={true}
+                    style={{position: 'relative', marginTop:'20px', flex:2 }}
+                    textStyle={{width:'100%'}}
+                    />
+
+              </DhukarrContent>
+              
+
             </DhukarrContent>
 
             <Sidebar 
@@ -1690,13 +1801,46 @@ const Dhukarr = () => {
             <DhukarrSection>
 
               <DhukarrContent orientation="column">
-                Left column
+                
+              <Blob 
+                  id='138' 
+                  colour='brown'
+                  english='Family show the child the right process and pathway for them to slowly learn and become knowledgeable.'
+                  yolngu='Gurrutumirriy ŋuli milkum raypirri’yunawuy gakal yothuwal nhaltjan ŋayi dhu marrtji bala bulnha marŋgithirr dhukarrwu dharaŋanharaw.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '0px', marginTop:'50px' }}
+                  textStyle={{}}
+                  />
+
               </DhukarrContent>
 
               <DhukarrMiddle/>
 
               <DhukarrContent orientation="column">
-                Right column
+               
+               <Blob 
+                  id='139' 
+                  colour='yellow'
+                  english='The child choses what they want to follow – as their stage of development changes their mind changes too.'
+                  yolngu='Ŋunhi walalaŋ dhuŋgarra marrtji ŋuli djambi ga bulu walalaŋ guyaŋanhawuy.'
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '0px', marginTop:'50px' }}
+                  textStyle={{}}
+                  />
+                  
+               <Blob 
+                  id='140' 
+                  colour='yellow'
+                  english='When the child is growing older that is the time for them to sit with family to learn more – listening to stories about the land and totems and also to learn more about the right way to live so the child will listen to all the family.'
+                  yolngu='Yothu ŋunhi marrtji ŋaḻapaḻyirra ŋunhiyi nhanŋu ŋayi dhu nhinan gurruṯu’mirriwala ŋayi dhu marŋgithirra, ŋäma dhäwuw wäŋapuy ga waŋarrpuy ga bulu raypirri ŋayi dhu marrtji märram märr ŋayi dhu ga buthuru- bitjuna bukmakkun gurruṯumirriw mala. '
+                  language={language}
+                  audio={true}
+                  style={{position: 'relative', left: '0px', marginTop:'50px' }}
+                  textStyle={{}}
+                  />
+              
               </DhukarrContent>
 
               <Sidebar 
