@@ -1,14 +1,36 @@
-import React from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 
 import SoundPlayer from '../SoundPlayer';
+import Modal from '../UI/Modal';
 
-const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textStyle }) => {
+const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textStyle, animation }) => {
+
+  const [isVisible, setVisible] = useState(true);
+  const [entryOpen, setEntryOpen] = useState(false);
+
+  const domRef = useRef();
 
   const showBlobNumber = true;
   const introBlob = id.substr(0,1) ==='0';
   const classId = introBlob ? 'intro'+id+'Holder' : 'blob'+id+'Holder';
   const soundFile = audio ? require('../../assets/dhukarr/mp3/recording'+id+'.mp3') : null;
-  //console.log('../../assets/dhukarr/mp3/recording'+id+'.mp3')
+
+  //open/close entry state
+  const toggleEntryOpenState = () => {
+    setEntryOpen(!entryOpen);
+  };
+
+  useEffect(() => {
+    if (!animation) return;
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+    return () => observer.disconnect();
+  }, [animation]);
+
+  
+
   
   let colourClass = '';
   switch ( colour ) {
@@ -25,21 +47,40 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
   const englishText = showBlobNumber ? id+english : english;
   const yolnguText = showBlobNumber ? id+yolngu : yolngu;
 
+  const blobText = language ? yolngu ? yolnguText : englishText : englishText;
+
   return(
 
     <div 
-      className='blob' 
+      onClick={toggleEntryOpenState}
+      className={`
+        blob 
+        ${ isVisible ? 'is-visible' : animation ? '' : 'is-visible'}
+        `} 
+      ref={ domRef } 
       style={{
         ...style,
       }}
       id={classId}
       >
-        <div className={`${'blobText'} ${colourClass} ${textClass}`} style={textClass}>
 
-          { language ? 
-            <>{yolngu ? yolnguText : englishText} </> : 
-            <>{englishText}</>
-          }
+        {entryOpen &&
+          <Modal 
+            title={''} 
+            englishText={englishText} 
+            yolnguText={yolnguText} 
+            soundFile ={soundFile}
+            colourClass = {colourClass}
+            onConfirm={toggleEntryOpenState}
+            />
+        }
+
+        <div 
+          className={`blobText ${colourClass} ${textClass}`} 
+          style={textClass}
+          >
+
+          { blobText }
 
           { soundFile && <SoundPlayer source={soundFile}/> }
 

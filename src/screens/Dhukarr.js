@@ -103,6 +103,7 @@ const Dhukarr = () => {
             <BlobRow>
 
               <Blob 
+                animation={true}
                 id='8' 
                 colour='brown'
                 english='In the Yolŋu system, we all work together to care and support the child’s development.'
@@ -113,6 +114,7 @@ const Dhukarr = () => {
                 />
 
               <Blob 
+                animation={true}
                 id='3' 
                 colour='yellow'
                 english='The child knows what is best for their growth – when to sleep, eat, play (the child decides not the family).'
@@ -124,6 +126,7 @@ const Dhukarr = () => {
                 />
 
               <Blob 
+                animation={true}
                 id='5' 
                 colour='yellow'
                 english='Gurruṯu (kinship connection) testing—teaching—testing—teaching routines continue all the time until the child has demonstrated strong understanding of kinship concepts and their own relationship.'
@@ -138,6 +141,7 @@ const Dhukarr = () => {
               <BlobRow>
 
                 <Blob 
+                  animation={true}
                   id='7' 
                   colour='brown'
                   english='Grandparents support and offer advice to mum and dad and rest of the family so they understand how to care for the child.'
@@ -148,6 +152,7 @@ const Dhukarr = () => {
                   />
 
                 <Blob 
+                  animation={true}
                   id='4' 
                   colour='grey'
                   english='Family constantly observe and monitor how the child is developing in all areas (identity, skills, knowledge, character etc) - ‘watching what knowledge the child has caught’ (ref).'
@@ -159,6 +164,7 @@ const Dhukarr = () => {
                   />
 
                 <Blob 
+                  animation={true}
                   id='6' 
                   colour='yellow'
                   english='The child decides what they want or don’t want – they have autonomy – family don’t force them or hurt their feelings by refusing to give them what they want. '
@@ -195,6 +201,7 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
 
                 <Blob 
+                animation={true}
                 id='11' 
                 colour='brown'
                 english='Father and others provide healthy Yolŋu food for the pregnant woman e.g. shellfish, fish, kangaroo, some kinds of stingray, white clay, yams, wild fruits.'
@@ -206,6 +213,7 @@ const Dhukarr = () => {
                 <DhukarrContent orientation="row">
 
                   <Blob 
+                  animation={true}
                   id='12' 
                   colour='brown'
                   english='Pregnant woman can walk around and work a little bit.'
@@ -216,6 +224,7 @@ const Dhukarr = () => {
                   />
 
                 <Blob 
+                  animation={true}
                   id='14' 
                   colour='orange'
                   english='Family observe and recognise early signs that the woman is pregnant.'
@@ -228,6 +237,7 @@ const Dhukarr = () => {
                 </DhukarrContent>
 
                 <Blob 
+                  animation={true}
                   id='13' 
                   colour='brown'
                   english='Yolŋu have guidelines for avoiding certain foods to protect the baby from harmful effects  e.g. Yirritja turtle, some kinds of stingray, young sharks, hot tea, eggs of seafood – can cause physical disability.'
@@ -243,6 +253,7 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
                 
               <Blob 
+                animation={true}
                 id='15' 
                 colour='yellow'
                 english='Soon after conception, the spirit of the baby communicates with a family member in a dream or through a sign e.g. unusual behaviour of an animal that is the same moiety and totem of the child – the person who gets the message has a lifelong strong connection to that child - like a ‘godparent’.'
@@ -255,6 +266,7 @@ const Dhukarr = () => {
                 />
 
               <Blob 
+                animation={true}
                 id='16' 
                 colour='yellow'
                 english='Mother, father and other family members communicate with the baby during pregnancy and the baby responds
@@ -292,6 +304,7 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
                 
                 <Blob 
+                animation={true}
                 id='18' 
                 colour='brown'
                 english='Family stay close to the mother, talk to her and encourage her.'
@@ -304,6 +317,7 @@ const Dhukarr = () => {
                 <DhukarrContent orientation="row">
 
                   <Blob 
+                    animation={true}
                     id='19' 
                     colour='orange'
                     english='Family talk to encourage the baby to come when the time is right to be born.'
@@ -314,6 +328,7 @@ const Dhukarr = () => {
                     />
 
                   <Blob 
+                    animation={true}
                     id='20' 
                     colour='orange'
                     english='Mother walks a lot to encourage the baby to come.'
@@ -332,6 +347,7 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
                 
                 <Blob 
+              animation={true}
               id='21' 
               colour='light'
               english='Baby kicks and moves down, giving the mother back pain, to show the time is close - the baby is ready to come out and be with the mother.'
@@ -365,6 +381,7 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
                 
               <Blob 
+                animation={true}
                 id='24' 
                 colour='orange'
                 english='The family give space to the mother and baby  so the baby can sleep well without disturbance – but not far, staying close.'
@@ -375,6 +392,7 @@ const Dhukarr = () => {
                 />
 
               <Blob 
+                animation={true}
                 id='26' 
                 colour='orange'
                 english='Family members choose names for the child: connecting to the baby’s ancestors through songlines, and the land and the sea and the sky (Yirritja or Dhuwa).'
@@ -385,6 +403,7 @@ const Dhukarr = () => {
                 />
 
                 <Blob 
+                animation={true}
                 id='27' 
                 colour='orange'
                 english='Mother rubs the baby with breastmilk to make the body strong and so they sleep well; family clear the baby’s blocked nose by sucking so the baby can breathe well.'
@@ -395,6 +414,7 @@ const Dhukarr = () => {
                 />
 
                 <Blob 
+                animation={true}
                 id='30' 
                 colour='brown'
                 english='Family teach the newborn even when tiny, for example, language and kinship. '
@@ -405,6 +425,7 @@ const Dhukarr = () => {
                 />
 
                 <Blob 
+                animation={true}
                 id='32' 
                 colour='brown'
                 english='Family constantly communicate with the baby - ‘building up their brain through talk’ (ref).'
@@ -415,6 +436,7 @@ const Dhukarr = () => {
                 />
 
                 <Blob 
+                animation={true}
                 id='34' 
                 colour='orange'
                 english='The child is not shown to mother’s brothers too soon after birth because of kinship respect protocols between brother and sister: brothers can’t see their sister’s newborn child.'
@@ -426,6 +448,7 @@ const Dhukarr = () => {
                 />
 
                 <Blob 
+                animation={true}
                 id='37' 
                 colour='brown'
                 english='Family hold and care for the baby all the time. And don’t leave the baby alone.'
@@ -436,7 +459,8 @@ const Dhukarr = () => {
                 />
 
               <Blob 
-                id='38' 
+                animation={true}
+id='38' 
                 colour='orange'
                 english='Soon after birth, during a ‘smoking ceremony’, maternal grandmother and other close family move the child in their two hands through the smoke, so the child will grow strong and sleep well. Also they talk to the baby, giving spiritual advice about their pathway and how they should continue to behave as they grow. '
                 yolngu='Dhuḏi-guthanamirr dhuwal rom balanya nhakun yothuny yan ŋuli goŋdhu märramay ŋayatham bala gäma ŋanya ŋäwuḻuḻkurr märr ŋanya dhu ḏälkum rumbal ga yakurr nhanŋu dhu gurrupan manymak. Ga bulu ŋanya gurrupan raypirri – bala walal ŋuli ŋaḻapaḻmirri ḻakaraman nhanukal nhaltjan ŋayi dhu ŋuthan.'
@@ -447,7 +471,8 @@ const Dhukarr = () => {
                 />
 
               <Blob 
-                id='39' 
+                animation={true}
+id='39' 
                 colour='brown'
                 english='Grandparents support and offer advice to mum and dad and rest of the family so they understand how to care for the child.'
                 yolngu=''
@@ -461,7 +486,8 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
 
               <Blob 
-                id='25' 
+                animation={true}
+id='25' 
                 colour='grey'
                 english='Family test hearing and vision and body – e.g. checking response to high and low sounds; checking how baby’s eyes track hand or body movements; finding out what support that child needs and how to communicate. If the baby has a problem family think about what the mother ate during pregnancy that might have caused it.'
                 yolngu=''
@@ -471,7 +497,8 @@ const Dhukarr = () => {
                 />
 
                 <Blob 
-                id='23' 
+                animation={true}
+id='23' 
                 colour='brown'
                 english='When the baby sees the world (at the time of birth) close family introduce themselves to the baby telling their kinship connection - this continues from birth throughout childhood whenever family meet the child.'
                 yolngu='Ŋunhi ŋuli yothuy wäŋa nhäma, ŋayi gurruṯumirriy yothuwal ŋuli waŋan gurruṯu lakaranhamirra nhanukal yothuwal.'
@@ -481,7 +508,8 @@ const Dhukarr = () => {
                 />
 
                 <Blob 
-                id='31' 
+                animation={true}
+id='31' 
                 colour='orange'
                 english='The family use child language and sign language for example food, grandfather, come for a cuddle…'
                 yolngu='Yothuwal gurruṯumirriy ŋuli yalŋgi matha waŋa ga goŋdhu ŋuli milkum yothuw balanya nhakun ŋatha, ŋathi, wäthun yothuw dhangi’yunaraw’.'
@@ -491,7 +519,8 @@ const Dhukarr = () => {
                 />
 
                 <Blob 
-                id='33' 
+                animation={true}
+id='33' 
                 colour='orange'
                 english='When the child is sick family collect and prepare bush medicine – eucalyptus leaves and other healing plants - leaves and bark and other traditional medicine from the beach for healing the baby. '
                 yolngu='Ŋunhi ŋuli yothu rirrikthun ŋayi ŋuli gurruṯumirriy guŋga’yun djäma gaḏayka ga wiripuwiripu ḏukthunamirr mala man’tjarr ga dharpa ga wiripuny raŋipuy mala rerriw ḏukmaranharaw ga ḻaymaranharaw.'
@@ -502,7 +531,8 @@ const Dhukarr = () => {
                 />
 
                 <Blob 
-                id='36' 
+                animation={true}
+id='36' 
                 colour='brown'
                 english='Father supports the mother in caring for the child. Immediate to extended family also care for the child.'
                 yolngu='Bäpa’mirriŋuy ŋuli guŋga’yun ŋäṉḏi’miriŋuny djägaw yothuw.  Ga bulu ŋuli gurruṯumirr bukmak djäga ŋurikiyi yothuw.'
@@ -512,6 +542,7 @@ const Dhukarr = () => {
                 />
 
                 <Blob 
+                  animation={true}
                   id='40' 
                   colour='brown'
                   english='The baby is included in all family activities – hunting, visiting, shopping, playing, ceremony.'
@@ -528,8 +559,9 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
                 
                 <Blob 
+                  animation={true}
                   id='28' 
-                  colour='yellow'
+                  colour='light'
                   english='The baby recognises mother’s and father’s voice and smell –  recognising the smell makes the baby feel comforted.'
                   yolngu='Yothuy dharaŋan ŋuli ŋäṉḏi’mirriŋuny ga bäpa’mirriŋuny ga bulu ŋayi ŋuli ŋäma rirrakay ga buŋgan ŋuli nhuman dharaŋan. Ga wiripuny ŋayi marŋgi buŋgangu bala ŋanya ŋuli ŋayaŋu mulka’kuman.'
                   language={language}
@@ -538,8 +570,9 @@ const Dhukarr = () => {
                   />
 
                 <Blob 
+                animation={true}
                 id='29' 
-                colour='yellow'
+                colour='light'
                 english='The baby communicates with family: for example, the baby cries to bring the mother back to have the taste of breastmilk; baby expresses discomfort when wet or dirty nappy. '
                 yolngu='Yothuy ŋuli marŋgi gurrupan gurruṯumirriny: balanya nhakun ŋaṉḏi’mirriŋuny ŋayi ŋuli rälimirriyam ŋäthi ŋaminiw dhäkaywu ga wiripuny ŋayi yothu dhu melnyaŋ’thun waryun ga biḻkthun ŋayi dhu bala ŋäthin.'
                 language={language}
@@ -548,8 +581,9 @@ const Dhukarr = () => {
                 />
                 
                 <Blob 
+                animation={true}
                 id='35' 
-                colour='yellow'
+                colour='light'
                 english='The baby recognises and responds to immediate family. The baby feels the person that holds them. They hear the voices of their family and they respond e.g. smiles, eye contact, excitement, movement reacting to familiar immediate family – looking or turning head to see who’s speaking.'
                 yolngu='Yothuy ŋuli dhäkay-ŋäma Yolŋuny goŋ-dhangi’yunawuy. Ga rirrakay ŋäma gurruṯu’mirriny ga ŋayi ŋuli yothuy ŋäma dharaŋan bala ŋäman ŋunhiyi rirrakay bala ŋupana.'
                 language={language}
@@ -583,7 +617,8 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
                 
               <Blob 
-                id='45' 
+                animation={true}
+id='45' 
                 colour='brown'
                 english='Family sing lullabies to the baby.'
                 yolngu='Gurruṯumirriy ŋuli ḏar’ṯaryun manikay yothuwal.'
@@ -593,7 +628,8 @@ const Dhukarr = () => {
                 />
 
               <Blob 
-                id='43' 
+                animation={true}
+id='43' 
                 colour='grey'
                 english='Family monitor baby’s health through checking every part of the body and body functions.'
                 yolngu='Gurruṯumirriy ŋuli nhäma bukmak rumbal yothuny  nhaltjan ŋayi ga ŋuthan.'
@@ -603,7 +639,8 @@ const Dhukarr = () => {
                 />
 
               <Blob 
-                id='44' 
+                animation={true}
+id='44' 
                 colour='orange'
                 english='Mother continues to avoid certain foods to protect the breast-feeding baby from harmful effects.'
                 yolngu='Baḏak rom ga ŋorra yaka dhu ḻuka ŋatha bawalamirr ŋäṉḏi’mirriŋuy ŋunhi yothu nyumukuṉiny ga yalŋgi yän.'
@@ -612,7 +649,8 @@ const Dhukarr = () => {
                 />
 
               <Blob 
-                id='46' 
+                animation={true}
+id='46' 
                 colour='orange'
                 english='Family can now introduce the baby to mother’s brothers.'
                 yolngu='Ŋunhi yothu ŋuli märr gurrŋanthirra bala ŋapipi’mirriŋuy ŋuli nhäman.'
@@ -621,7 +659,8 @@ const Dhukarr = () => {
                 />
 
               <Blob 
-                id='47' 
+                animation={true}
+id='47' 
                 colour='brown'
                 english='The family effectively monitor and recognise the child’s development.'
                 yolngu='Gurruṯumirriy yothuwal ŋuli dharaŋaṉ nhäman nhanŋu ŋunhi gakal dhuwal mirithirr manymak.'
@@ -637,7 +676,8 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
                
               <Blob 
-                id='48' 
+                animation={true}
+id='48' 
                 colour='light'
                 english='Baby communicates their thoughts and feelings through their body movement and facial expressions that the family recognise.'
                 yolngu='Yothuy ŋuli ŋayaŋuy ga guyaŋanhawuyyu rumbalyu ga bukuy milkum, ga gurruṯu’mirri ŋuli dharaŋan.'
@@ -647,7 +687,8 @@ const Dhukarr = () => {
                 />
 
               <Blob 
-                id='50' 
+                animation={true}
+id='50' 
                 colour='light'
                 english='Vomiting (a little) is a sign that baby is starting to vocalise.'
                 yolngu='Gakthunamirr gakal nhanŋu yothu ŋayi dhu marrtji waŋa’waŋan.'
@@ -661,7 +702,8 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
               
               <Blob 
-                id='42' 
+                animation={true}
+id='42' 
                 colour='light'
                 english='The baby is starting to recognise extended family.'
                 yolngu='Yothuy ŋuli dhoka dharaŋan bukmaknha gurruṯumirriny mala.'
@@ -671,7 +713,8 @@ const Dhukarr = () => {
                 />
 
               <Blob 
-                id='49' 
+                animation={true}
+id='49' 
                 colour='light'
                 english='When the baby talks (vocalises) and cries a lot it helps the body grow strong.'
                 yolngu='Yothuny ŋuli ga waŋa ga bulu ŋäthi ŋunhiyiny ŋanya ŋuli ga ḏälkum nhanŋu rumbal.'
@@ -681,7 +724,8 @@ const Dhukarr = () => {
                 />
 
               <Blob 
-                id='51' 
+                animation={true}
+id='51' 
                 colour='light'
                 english='When the baby sees and/or hears family members the baby starts ‘talking’ - often over the phone!'
                 yolngu='Yothuy ŋuli ŋäma ga nhäma gurruṯu’mirriny bala ŋayi ŋuli waŋan gurruṯu’mirrwal. '
@@ -691,7 +735,8 @@ const Dhukarr = () => {
                 />
 
               <Blob 
-                id='52' 
+                animation={true}
+id='52' 
                 colour='yellow'
                 english='The baby is starting to learn identity and connections: family talking into the baby’s ears, teaching about their name, subsection, their language and kinship connections.'
                 yolngu='Yothuy ŋuli märr dharaŋan yol ŋayi mälk, yol ŋayi yäku ga nhä nhanŋu dhäruk ga nhä nhanŋu gurruṯu, ŋayi ŋuli ŋäṉḏi’mirriŋuy ga wiripu Yolŋuy marŋgikum lakaram yothuwal buthurulil.'
@@ -725,7 +770,8 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column" flex={2}>
                 
               <Blob 
-                id='54' 
+                animation={true}
+id='54' 
                 colour='grey'
                 english='Families encourage the child to notice and localise the source of a sound – planes, birds, cars… pointing, turning their head, telling the child what it is.'
                 yolngu='Bukmakthu ŋuli gurruṯumirriy yothuwal marŋgikum bukmakku rirrakay mala balanya nhakun biḻanygu, mutikaw, warrakangu.. Ga bulu ŋuli melkum yothuwal goŋdhu ga mulkurr bilmaram märr ŋayi dhu nhäma ga gurruṯumirriy ŋuli ḻakaram yäku mala.'
@@ -735,7 +781,8 @@ const Dhukarr = () => {
                 />
 
               <Blob 
-                id='55' 
+                animation={true}
+id='55' 
                 colour='brown'
                 english='Family sing the child’s clan songs.'
                 yolngu='Gurruṯumirriy ŋuli ḏar’ṯaryun ŋurikiyi yothuw nhanŋuwuy manikay bäpurrukurr.'
@@ -745,7 +792,8 @@ const Dhukarr = () => {
                 />
 
               <Blob 
-                id='56' 
+                animation={true}
+id='56' 
                 colour='brown'
                 english='Close family care for the child so the child gets to know them, for example grandmothers, grandfathers, aunts, uncles, brothers and sisters.'
                 yolngu='Gurruṯumirriy ŋuli guŋga’yun yothuny märr ŋayi dhu yothuy dharaŋan gurruṯumirriny, balanya nhakun momuny, mari’muny, märiny, ŋathiny, mukulnha, ŋapipiny, yapany ga wawany. '
@@ -755,7 +803,8 @@ const Dhukarr = () => {
                 />
 
               <Blob 
-                id='62' 
+                animation={true}
+id='62' 
                 colour='grey'
                 english='Family help the child to sit and stand - testing the bones and body and feet.'
                 yolngu='Gurruṯu’mirriy ŋuli guŋga’yun yothuny dhärranharaw birrka’yun ŋuli rumbal ga ŋaraka ga luku.'
@@ -765,7 +814,8 @@ const Dhukarr = () => {
                 />
 
               <Blob 
-                id='63' 
+                animation={true}
+id='63' 
                 colour='orange'
                 english='Family make the food soft in their mouth then gives to the child so they don’t choke.'
                 yolngu='Gurruṯumirriy mala ŋuli ŋatha yalŋgikum gurrapanaraw yothuw dhurrwaray märr walal dhu yaka gaṯmaram.'
@@ -775,7 +825,8 @@ const Dhukarr = () => {
                 />
 
               <Blob 
-                id='64' 
+                animation={true}
+id='64' 
                 colour='grey'
                 english='Family watch carefully for allergic reactions to any food.'
                 yolngu='Gurruṯumirriy mala ŋuli nhäma yothu nhä mala ŋatha walalaŋ yaka manymak.'
@@ -785,7 +836,8 @@ const Dhukarr = () => {
                 />
 
               <Blob 
-                id='67' 
+                animation={true}
+id='67' 
                 colour='grey'
                 english='All the family test the child’s recognition of their kinship connections by asking, for example,  ‘where is mother, where is sister?’ and watching if the child understands and turns to or looks at the right person. '
                 yolngu='Bukmak gurruṯumirriy ŋuli birrka’yun ŋunhi yothuny gurruṯu mala balanya nhakun ‘wanha ŋäṉdi? wanha yapa?’ ga nhäma ŋayi ŋuli ga rirrakay ŋayi ŋuli ŋäma.'
@@ -804,7 +856,8 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
               
               <Blob 
-                id='57' 
+                animation={true}
+id='57' 
                 colour='light'
                 english='The baby listens to and notices the tune of the song e.g. their own clan song.'
                 yolngu='Yothuy ŋuli rirrakay manikay nhanŋuwuy ŋäma ga dharaŋan.'
@@ -815,7 +868,8 @@ const Dhukarr = () => {
                 />
 
               <Blob 
-                id='58' 
+                animation={true}
+id='58' 
                 colour='light'
                 english='The child reaches for the person or cries for that person that they recognise – and turns away from someone they don’t know.'
                 yolngu='Yothuy ŋuli dharaŋan gurruṯumirriny bala walal ŋuli ŋäthi malthuna. Ga wiripuny walal ŋuli yaka dharaŋan gurruṯumirriny bala yothuy ŋuli ŋäthi ga yakan nhäma ŋanya. '
@@ -830,6 +884,7 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
                 
                 <Blob 
+                  animation={true}
                   id='60' 
                   colour='light'
                   english='The child is noticing and recognising sounds in the environment.'
@@ -841,6 +896,7 @@ const Dhukarr = () => {
                   />
 
                 <Blob 
+                  animation={true}
                   id='59' 
                   colour='light'
                   english='Starting to use sign language e.g. for food, calling someone to come to them, kinship sign for maternal grandfather (favourite early sign because it’s easy to do and intensely encouraged).'
@@ -852,6 +908,7 @@ const Dhukarr = () => {
                   />
 
                 <Blob 
+                  animation={true}
                   id='61' 
                   colour='light'
                   english='The child is talking (vocalising) a lot. Family often interpret vocalisations as meaningful words.'
@@ -863,6 +920,7 @@ const Dhukarr = () => {
                   />
 
                 <Blob 
+                  animation={true}
                   id='65' 
                   colour='yellow'
                   english='The child already knows his family and sits close to them, watching and listening, to learn about the songs and dancing in ceremony area.'
@@ -874,6 +932,7 @@ const Dhukarr = () => {
                   />
 
                 <Blob 
+                  animation={true}
                   id='66' 
                   colour='yellow'
                   english='The child starts to eat soft foods e.g. fish, fruit and vegetables. The start to smell, taste and try different food.'
@@ -885,6 +944,7 @@ const Dhukarr = () => {
                   />
 
                 <Blob 
+                  animation={true}
                   id='68' 
                   colour='yellow'
                   english='The child is learning by themselves to develop their strength in many ways – independence is encouraged by families.'
@@ -896,6 +956,7 @@ const Dhukarr = () => {
                   />
 
                 <Blob 
+                  animation={true}
                   id='69' 
                   colour='yellow'
                   english='The baby feels strength within their body and forces themselves to try the next level and feels excited.'
@@ -907,6 +968,7 @@ const Dhukarr = () => {
                   />
 
                 <Blob 
+                  animation={true}
                   id='70' 
                   colour='yellow'
                   english='Diarrhoea is a sign that the baby is ready to roll over, crawl, walk, run, talk and stand up.'
@@ -943,6 +1005,7 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
                 
               <Blob 
+                  animation={true}
                   id='71' 
                   colour='orange'
                   english='Giving the child a hot sand massage to strengthen knee, hip and leg muscles for crawling, standing, walking (done in sitting and crawling stages).'
@@ -954,6 +1017,7 @@ const Dhukarr = () => {
                   />
 
                 <Blob 
+                  animation={true}
                   id='72' 
                   colour='brown'
                   english='Lots of encouraging words from family including other kids – talking to the child who gets excited.'
@@ -965,6 +1029,7 @@ const Dhukarr = () => {
                   />
 
                 <Blob 
+                  animation={true}
                   id='75' 
                   colour='brown'
                   english='Family support and connect the child to the world to help that child feel safe and comfortable – not shy or scared.'
@@ -976,6 +1041,7 @@ const Dhukarr = () => {
                   />
 
                 <Blob 
+                  animation={true}
                   id='80' 
                   colour='brown'
                   english='Families teach and test child’s understanding of names of people and things around them – watching to see if they look in the right direction when they hear the word.'
@@ -994,6 +1060,7 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
                
               <Blob 
+                  animation={true}
                   id='73' 
                   colour='yellow'
                   english='Child is learning names of immediate family and recognising extended family.'
@@ -1005,6 +1072,7 @@ const Dhukarr = () => {
                   />
 
               <Blob 
+                  animation={true}
                   id='74' 
                   colour='light'
                   english='The child gets pain in their mouth, indicating that a tooth is coming (might happen earlier before sitting up stage).'
@@ -1016,6 +1084,7 @@ const Dhukarr = () => {
                   />
 
               <Blob 
+                  animation={true}
                   id='76' 
                   colour='yellow'
                   english='The child is strong and capable to understand how to follow their pathway.'
@@ -1027,6 +1096,7 @@ const Dhukarr = () => {
                   />
 
               <Blob 
+                  animation={true}
                   id='77' 
                   colour='light'
                   english='The child is learning to recognise family’s feelings and emotions.'
@@ -1038,6 +1108,7 @@ const Dhukarr = () => {
                   />
 
               <Blob 
+                  animation={true}
                   id='78' 
                   colour='light'
                   english='The child copies facial expressions of excitement, anger, worry, happiness and funny faces when family show them – a frequent activity with many family members.'
@@ -1049,6 +1120,7 @@ const Dhukarr = () => {
                   />
               
               <Blob 
+                  animation={true}
                   id='81' 
                   colour='light'
                   english='The child is learning to grab things and put them in their mouth. '
@@ -1060,6 +1132,7 @@ const Dhukarr = () => {
                   />
 
               <Blob 
+                  animation={true}
                   id='82' 
                   colour='light'
                   english='The child is moving their body – dancing – when they hear a song or clapsticks or didgeridoo, showing the family what the child knows – a clever child. '
@@ -1071,6 +1144,7 @@ const Dhukarr = () => {
                   />
 
               <Blob 
+                  animation={true}
                   id='83' 
                   colour='light'
                   english='The child understands some words, e.g. close family names and kinship terms and common objects in their environment. They show their understanding by looking towards whatever the family names. '
@@ -1106,6 +1180,7 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
                 
               <Blob 
+                  animation={true}
                   id='85' 
                   colour='brown'
                   english='Family are teaching the child language all the time, for example words and hand signs about kinship – and testing their learning.'
@@ -1117,6 +1192,7 @@ const Dhukarr = () => {
                   />
 
               <Blob 
+                  animation={true}
                   id='86' 
                   colour='brown'
                   english='Family explain and teach the child about safe places for playing and crawling. '
@@ -1128,6 +1204,7 @@ const Dhukarr = () => {
                   />
 
               <Blob 
+                  animation={true}
                   id='88' 
                   colour='grey'
                   english='Family encourage the child to recognise and claim their connection to a close family member through cuddling that person and saying ‘she’s my mother/sister/cousin etc’ and the child responds by crying or getting angry or sad.'
@@ -1139,6 +1216,7 @@ const Dhukarr = () => {
                   />
 
               <Blob 
+                  animation={true}
                   id='92' 
                   colour='brown'
                   english='Family teach the child to be confident, not afraid or easily upset – e.g. distracting not giving sympathy if the child is hurt or upset. This is the character of the child we want to develop through calming them when they are hurt. '
@@ -1150,6 +1228,7 @@ const Dhukarr = () => {
                   />
 
               <Blob 
+                  animation={true}
                   id='93' 
                   colour='brown'
                   english='High priority for families is that children feel safe and loved. '
@@ -1167,6 +1246,7 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
                 
                 <Blob 
+                    animation={true}
                     id='87' 
                     colour='light'
                     english='The child copies what mother and other family show the child.'
@@ -1178,6 +1258,7 @@ const Dhukarr = () => {
                     />
 
                 <Blob 
+                    animation={true}
                     id='89' 
                     colour='light'
                     english='The child is following instructions and recognising tone of voice.'
@@ -1189,6 +1270,7 @@ const Dhukarr = () => {
                     />
 
                 <Blob 
+                    animation={true}
                     id='90' 
                     colour='light'
                     english='The child becomes interested to try different foods. '
@@ -1200,6 +1282,7 @@ const Dhukarr = () => {
                     />
 
                 <Blob 
+                    animation={true}
                     id='91' 
                     colour='light'
                     english='The child gets diarrhoea as a sign that the child will start to stand up.'
@@ -1211,6 +1294,7 @@ const Dhukarr = () => {
                     />
 
                 <Blob 
+                    animation={true}
                     id='94' 
                     colour='yellow'
                     english='The child is observing and remembering experiences with extended family.'
@@ -1222,6 +1306,7 @@ const Dhukarr = () => {
                     />
 
                 <Blob 
+                    animation={true}
                     id='95' 
                     colour='yellow'
                     english='The child learns through exploring what is good and bad e.g. experiencing dangerous things - knife, hot water, hot sand, fire –but family watch and explain danger to make sure they don’t hurt themselves: mistakes are allowed if they are safe.'
@@ -1257,6 +1342,7 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
                 
               <Blob 
+                  animation={true}
                   id='97' 
                   colour='orange'
                   english='Family hold the child’s hands to support then to stand and to walk.'
@@ -1268,6 +1354,7 @@ const Dhukarr = () => {
                   />
 
               <Blob 
+                  animation={true}
                   id='98' 
                   colour='grey'
                   english='Family encourage and praise the child when they show their development – in many areas.'
@@ -1285,6 +1372,7 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
                
                 <Blob 
+                  animation={true}
                   id='99' 
                   colour='light'
                   english='When the child stands, they feel for what they can hold for support.'
@@ -1296,6 +1384,7 @@ const Dhukarr = () => {
                   />
 
                 <Blob 
+                  animation={true}
                   id='100' 
                   colour='light'
                   english='When the child is able to stand and shows the family he/she knows how to dance – already learned from watching.'
@@ -1307,6 +1396,7 @@ const Dhukarr = () => {
                   />
 
                 <Blob 
+                  animation={true}
                   id='101' 
                   colour='light'
                   english='The child is ready to stand, wanting to pull her/himself up to strengthen the nerves, legs, feet, bones and their whole body.'
@@ -1318,6 +1408,7 @@ const Dhukarr = () => {
                   />
 
                 <Blob 
+                  animation={true}
                   id='102' 
                   colour='light'
                   english='When the child is vomiting a little it’s a sign that the child is starting to talk. '
@@ -1329,6 +1420,7 @@ const Dhukarr = () => {
                   />
 
                 <Blob 
+                  animation={true}
                   id='103' 
                   colour='light'
                   english='Family start to use adult language (not child language register) so the child will start to learn adult language.'
@@ -1364,6 +1456,7 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
                 
               <Blob 
+                  animation={true}
                   id='106' 
                   colour='orange'
                   english='Family are preparing the child for two worlds - introducing English words.'
@@ -1374,6 +1467,7 @@ const Dhukarr = () => {
                   textStyle={{width:'60%'}}
                   />
               <Blob 
+                  animation={true}
                   id='105' 
                   colour='brown'
                   english='Family repeatedly explain to the child what is safe or dangerous, good or bad, so the child understands. All family support and take care of the child - the child feels that care so doesn’t get upset and is safe.                   '
@@ -1391,6 +1485,7 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
                 
               <Blob 
+                  animation={true}
                   id='107' 
                   colour='yellow'
                   english='The child has expert ears for listening  – even when the are busy playing at the same time they are listening to all the sounds around them – close and distant. The child can pay attention to more than one thing at a time.'
@@ -1401,6 +1496,7 @@ const Dhukarr = () => {
                   textStyle={{width:'70%'}}
                   />
               <Blob 
+                  animation={true}
                   id='108' 
                   colour='yellow'
                   english='The child is learning the meaning of their names and their clan -  everything about their identity - and the stories connecting the child to the past and the present.'
@@ -1412,6 +1508,7 @@ const Dhukarr = () => {
                   />
 
               <Blob 
+                  animation={true}
                   id='109' 
                   colour='yellow'
                   english='The child is starting to learn English.'
@@ -1422,6 +1519,7 @@ const Dhukarr = () => {
                   textStyle={{width:'80%'}}
                   />
               <Blob 
+                  animation={true}
                   id='110' 
                   colour='yellow'
                   english='The child is listening to and understanding different Yolŋu languages The child is strongly learning their father’s language, cultural system and ceremony – this is important for developing a strong identity.'
@@ -1459,6 +1557,7 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
                 
               <Blob 
+                  animation={true}
                   id='115' 
                   colour='orange'
                   english='Mother and family are supporting the child to eat more soft food to strengthen their body, teeth, everything. Family give a lot of food to encourage the child to reduce breast feeding.'
@@ -1476,6 +1575,7 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
                 
               <Blob 
+                  animation={true}
                   id='112' 
                   colour='yellow'
                   english='The child goes and spends time with different family members–so they get to know and connect with close family and extended family. The kinship connections are  strongly embedded in the Yolŋu system.'
@@ -1486,6 +1586,7 @@ const Dhukarr = () => {
                   textStyle={{width:'80%'}}
                   />
               <Blob 
+                  animation={true}
                   id='113' 
                   colour='yellow'
                   english='As the child is growing up they are learning about land, sea, totems, fish, stingray, turtles, food from the bush and rain forest and shellfish from the beach.'
@@ -1496,6 +1597,7 @@ const Dhukarr = () => {
                   textStyle={{}}
                   />
               <Blob 
+                  animation={true}
                   id='114' 
                   colour='light'
                   english='The child listens to stories and has conversations with others.'
@@ -1506,6 +1608,7 @@ const Dhukarr = () => {
                   textStyle={{width:'80%'}}
                   />
               <Blob 
+                  animation={true}
                   id='117' 
                   colour='light'
                   english='The child goes with family to collect shellfish, fish and fruit.'
@@ -1516,6 +1619,7 @@ const Dhukarr = () => {
                   textStyle={{width:'100%'}}
                   />
               <Blob 
+                  animation={true}
                   id='116' 
                   colour='light'
                   english='The child is learning through going to playgroup and childcare – understanding more about the pathways to follow in two worlds. The child is building more connection and overcoming fear of strangers. '
@@ -1526,6 +1630,7 @@ const Dhukarr = () => {
                   textStyle={{width:'100%'}}
                   />
               <Blob 
+                  animation={true}
                   id='118' 
                   colour='yellow'
                   english='When the child feels unsafe (e.g. hearing a strange sound) the child will run to close family for a cuddle. The child stands behind the mother holding her firmly and hiding their face. '
@@ -1560,6 +1665,7 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
                
               <Blob 
+                  animation={true}
                   id='120' 
                   colour='grey'
                   english='Family always assess and support the child’s language development by modeling strong language and encouraging the child to copy.'
@@ -1571,6 +1677,7 @@ const Dhukarr = () => {
                   />
 
               <Blob 
+                  animation={true}
                   id='121' 
                   colour='grey'
                   english='Family watch the child - assessing and correcting their ceremonial dancing.'
@@ -1590,6 +1697,7 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
                
               <Blob 
+                  animation={true}
                   id='122' 
                   colour='yellow'
                   english='The child knows sign language for many things, for example, kinship relationships, animals, fire, water and other common things in their environment.'
@@ -1600,6 +1708,7 @@ const Dhukarr = () => {
                   textStyle={{width:'50%'}}
                   />
               <Blob 
+                  animation={true}
                   id='123' 
                   colour='yellow'
                   english='The child already knows his family and sits close to them, watching and listening, to learn about the songs and dancing in ceremony area.'
@@ -1610,6 +1719,7 @@ const Dhukarr = () => {
                   textStyle={{width:'100%'}}
                   />
               <Blob 
+                  animation={true}
                   id='124' 
                   colour='yellow'
                   english='Through ceremonial dancing the child shows their skills in understanding connections (recognizing their clan songs),  listening to and remembering the beat and the words of the songline and responding with the right actions.'
@@ -1651,6 +1761,7 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
               
               <Blob 
+                  animation={true}
                   id='126' 
                   colour='yellow'
                   english='The child practices cultural skills in play, copying what they have seen adults do, e.g. throwing themselves on the sand imitating mourning; making and practicing with toy spears; singing and dancing their songlines – they know which songs connect with their moiety. This process has supported the development of the Yolŋu child’s identity  since our ancestors gave us life.'
@@ -1661,6 +1772,7 @@ const Dhukarr = () => {
                   textStyle={{width:'80%'}}
                   />
               <Blob 
+                  animation={true}
                   id='127' 
                   colour='yellow'
                   english='The child is learning cultural communication rules and protocols e.g. not saying the name of someone who has died – or similar sounding words; respectful avoidance in communication with some relatives; and styles of communication with different kin e.g. teasing between grandchild and maternal grandmother and her siblings. The child knows this cultural system has always been there and won’t change. '
@@ -1671,6 +1783,7 @@ const Dhukarr = () => {
                   textStyle={{width:'80%'}}
                   />
               <Blob 
+                  animation={true}
                   id='128' 
                   colour='yellow'
                   english='The child is proving their learning - physical and cognitive development and identity - through the process of their journey along the pathway.'
@@ -1681,6 +1794,7 @@ const Dhukarr = () => {
                   textStyle={{}}
                   />
               <Blob 
+                  animation={true}
                   id='130' 
                   colour='light'
                   english='The child is learning more about play equipment and toys - from the Balanda world.'
@@ -1691,6 +1805,7 @@ const Dhukarr = () => {
                   textStyle={{width:'80%'}}
                   />
               <Blob 
+                  animation={true}
                   id='129' 
                   colour='light'
                   english='The child is expanding their learning environment to include the school/playgroup areas.'
@@ -1726,6 +1841,7 @@ const Dhukarr = () => {
             <DhukarrContent orientation="column">
               
               <Blob 
+                  animation={true}
                   id='132' 
                   colour='brown'
                   english='Family teach the child about water, moon, wind, flowers and tides to connect the child to the knowledge they need for collecting food from the sea and from the land e.g. many kinds of shellfish, stingray, turtle, crayfish, fish, mudcrabs, mangrove worms, yams, fruit, wallaby, goanna, lizards, wild honey.'
@@ -1743,6 +1859,7 @@ const Dhukarr = () => {
             <DhukarrContent orientation="column" flex={2}>
               
               <Blob 
+                  animation={true}
                   id='133' 
                   colour='yellow'
                   english='When the child hears the kinship term they understand how they connect to that person. '
@@ -1754,6 +1871,7 @@ const Dhukarr = () => {
                   />
 
               <Blob 
+                  animation={true}
                   id='134' 
                   colour='yellow'
                   english='The child understands their connections to the environment.'
@@ -1767,6 +1885,7 @@ const Dhukarr = () => {
               <DhukarrContent orientation="row">
                 
                 <Blob 
+                    animation={true}
                     id='136' 
                     colour='yellow'
                     english='The child talks with family asking questions - the child wants to understand more deeply about their individual and group kinship relationships and ancestral connections.'
@@ -1778,6 +1897,7 @@ const Dhukarr = () => {
                     />
 
                 <Blob 
+                    animation={true}
                     id='135' 
                     colour='light'
                     english='The child collects shellfish and fruit themselves with help from older children or adults.'
@@ -1816,6 +1936,7 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
                 
               <Blob 
+                  animation={true}
                   id='138' 
                   colour='brown'
                   english='Family show the child the right process and pathway for them to slowly learn and become knowledgeable.'
@@ -1833,6 +1954,7 @@ const Dhukarr = () => {
               <DhukarrContent orientation="column">
                
                <Blob 
+                  animation={true}
                   id='139' 
                   colour='yellow'
                   english='The child choses what they want to follow – as their stage of development changes their mind changes too.'
@@ -1844,6 +1966,7 @@ const Dhukarr = () => {
                   />
                   
                <Blob 
+                  animation={true}
                   id='140' 
                   colour='yellow'
                   english='When the child is growing older that is the time for them to sit with family to learn more – listening to stories about the land and totems and also to learn more about the right way to live so the child will listen to all the family.'

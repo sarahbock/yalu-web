@@ -159,20 +159,22 @@ cursor: pointer;
 
 
 /*AUDIO PLAYER*/
-#root .rhap_container, .rhap_container *:focus{
+#root .rhap_container, .rhap_container *:focus, #root-overlay .rhap_container{
   outline:none;
   box-shadow: none;
   background:none;
   padding: 0;
   margin-top: 5px;
 }
-#root .rhap_progress-section { display: none;}
+#root .rhap_progress-section, #root-overlay .rhap_progress-section{ display: none;}
 
-#root .rhap_main-controls-button{ color:#ffffff; }
-#root .blob .rhap_main-controls-button{ color:#831C19; }
-#root .blobBrown .rhap_main-controls-button{ color:#ffffff; }
-#root .blobOrange .rhap_main-controls-button{ color:#ffffff; }
-#root .blobGrey .rhap_main-controls-button{ color:#FFC153; }
+#root .rhap_main-controls-button, #root-overlay .rhap_main-controls-button{ color:#ffffff; }
+#root .blob .rhap_main-controls-button, #root-overlay .blob .rhap_main-controls-button{ color:#831C19; }
+#root .blobLight .rhap_main-controls-button, #root-overlay .blobLight .rhap_main-controls-button{ color:#831C19; }
+#root .blobBrown .rhap_main-controls-button, #root-overlay .blobBrown .rhap_main-controls-button{ color:#ffffff; }
+#root .blobOrange .rhap_main-controls-button, #root-overlay .blobOrange .rhap_main-controls-button{ color:#831C19; }
+#root .blobYellow .rhap_main-controls-button, #root-overlay .blobYellow .rhap_main-controls-button{ color:#831C19; }
+#root .blobGrey .rhap_main-controls-button, #root-overlay .blobGrey .rhap_main-controls-button{ color:#FFC153; }
 
 
 /*DHUKARR*/
@@ -206,7 +208,7 @@ cursor: pointer;
 .dhukarrScreen h3{color: #FFF; font-family: 'Ebrima', Arial, sans-serif; font-size: 22px; font-weight: normal;}
 .dhukarrScreen p{color: #FFF; font-family: 'Ebrima', Arial, sans-serif; font-size: 20px; font-weight: normal;}
 
-.blob{ padding: 60px;background-size: contain; background-repeat: no-repeat; display:flex; justify-content: center; align-items: center;     background-position: center; flex:1;}
+.blob{ padding: 60px;background-size: contain; background-repeat: no-repeat; display:flex; justify-content: center; align-items: center;     background-position: center; flex:1; cursor: pointer;}
 .blobRow{display:flex; align-items: flex-start;  justify-content: space-between;  }
 .blobRowThin{max-width: 1000px; margin:auto; justify-content: space-evenly; align-items: center;}
 .blobText{font-family: 'Ebrima', Arial, sans-serif; font-size: 16px; font-weight: normal;}
@@ -215,6 +217,29 @@ cursor: pointer;
 .blobYellow{color: #843c0c;}
 .blobLight{color: #843c0c;}
 .blobGrey{color: #efd32e;}
+
+/*Modal styles*/
+#root-overlay .blobBrown{background-color: #843C0D}
+#root-overlay .blobOrange {background-color: #C55A11;}
+#root-overlay .blobYellow {background-color: #FFC253;}
+#root-overlay .blobLight {background-color: #FDD680;}
+#root-overlay .blobGrey {background-color: #B97F73; }
+
+/*Animation stuff*/
+.blob {
+  opacity: 0;
+  transform: translateY(10vh);
+  visibility: hidden;
+  transition: opacity 0.2s ease-out, transform 0.6s ease-out;
+  will-change: opacity, visibility;
+}
+.blob.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+  display: flex; 
+}
+
 
 #intro01Holder{background-image:url("./assets/dhukarr/blobs_intro01.png");  position: relative; top: 50px;}
 #intro02Holder{background-image:url("./assets/dhukarr/blobs_intro02.png"); }
