@@ -103,7 +103,7 @@ const Dhukarr = () => {
             <BlobRow>
 
               <Blob 
-                animation={true}
+                animation={false}
                 id='8' 
                 colour='brown'
                 english='In the Yolŋu system, we all work together to care and support the child’s development.'
@@ -114,7 +114,7 @@ const Dhukarr = () => {
                 />
 
               <Blob 
-                animation={true}
+                animation={false}
                 id='3' 
                 colour='yellow'
                 english='The child knows what is best for their growth – when to sleep, eat, play (the child decides not the family).'
@@ -126,7 +126,7 @@ const Dhukarr = () => {
                 />
 
               <Blob 
-                animation={true}
+                animation={false}
                 id='5' 
                 colour='yellow'
                 english='Gurruṯu (kinship connection) testing—teaching—testing—teaching routines continue all the time until the child has demonstrated strong understanding of kinship concepts and their own relationship.'
@@ -141,7 +141,7 @@ const Dhukarr = () => {
               <BlobRow>
 
                 <Blob 
-                  animation={true}
+                  animation={false}
                   id='7' 
                   colour='brown'
                   english='Grandparents support and offer advice to mum and dad and rest of the family so they understand how to care for the child.'
@@ -152,7 +152,7 @@ const Dhukarr = () => {
                   />
 
                 <Blob 
-                  animation={true}
+                  animation={false}
                   id='4' 
                   colour='grey'
                   english='Family constantly observe and monitor how the child is developing in all areas (identity, skills, knowledge, character etc) - ‘watching what knowledge the child has caught’ (ref).'
@@ -164,7 +164,7 @@ const Dhukarr = () => {
                   />
 
                 <Blob 
-                  animation={true}
+                  animation={false}
                   id='6' 
                   colour='yellow'
                   english='The child decides what they want or don’t want – they have autonomy – family don’t force them or hurt their feelings by refusing to give them what they want. '
@@ -208,6 +208,7 @@ const Dhukarr = () => {
                 yolngu='Bäpa’mirriŋu ga wiripu gurruṯumirriy mala ŋuli märram Yolŋuw ŋatha yothumirriw ŋaṉḏimirriŋuw.'
                 language={language}
                 audio={true}
+                style={{position:'relative', left:'20px' }}
                 />
 
                 <DhukarrContent orientation="row">
@@ -220,7 +221,7 @@ const Dhukarr = () => {
                   yolngu='Miyalk dhu yothumirriny ŋayi dhu ga gaŋga djäma ga marrtji.'
                   language={language}
                   audio={true}
-                  style={{paddingTop: '40px', paddingBottom: '40px', paddingLeft:'30px', paddingRight: '30px' }}
+                  style={{position: 'relative', left: '10px', paddingTop: '40px', paddingBottom: '40px', paddingLeft:'30px', paddingRight: '30px' }}
                   />
 
                 <Blob 
@@ -231,7 +232,7 @@ const Dhukarr = () => {
                   yolngu='Gurruṯumirriy ŋuli nhäma ga marŋgithirr ŋunhi miyalknha ŋayi yothumirra.'
                   language={language}
                   audio={true}
-                  style={{ position: 'relative', left: '20px', paddingTop: '50px', paddingBottom: '40px', paddingLeft:'30px', paddingRight: '30px' }}
+                  style={{ position: 'relative', left: '30px', paddingTop: '50px', paddingBottom: '40px', paddingLeft:'30px', paddingRight: '30px' }}
                   />
 
                 </DhukarrContent>
@@ -244,6 +245,7 @@ const Dhukarr = () => {
                   yolngu='Rom ga ŋorra yaka dhu ḻuka ŋatha bawalamirr yothumirriy miyalkthu märr ŋayi dhu yothu yaka rirrikthun ga yalŋgiyirr.'
                   language={language}
                   audio={true}
+                  style={{position:'relative', left:'20px' }}
                   />
 
               </DhukarrContent>
@@ -311,7 +313,8 @@ const Dhukarr = () => {
                 yolngu='Gurruṯumirr ŋuli nhina galki yothumirriwal miyalkkal, ga guŋga’yun ŋanya waŋa.  '
                 language={language}
                 audio={true}
-                style={{position: 'relative', left: '-30px', top:'-20px'}}
+                style={{position: 'relative', left: '30px', width:'60%'}}
+                textStyle={{width:'70%'}}
                 />
 
                 <DhukarrContent orientation="row">
@@ -324,7 +327,7 @@ const Dhukarr = () => {
                     yolngu='Gurruṯumirr ŋuli ga waŋa yothuwal boṉdi’yun wäŋaw nhänharaw.'
                     language={language}
                     audio={true}
-                    style={{position: 'relative', left: '20px', top:'-20px', paddingTop: '40px', paddingBottom: '40px', paddingLeft:'30px', paddingRight: '30px' }}
+                    style={{position: 'relative', left: '20px', top:'-20px',  }}
                     />
 
                   <Blob 
@@ -335,7 +338,7 @@ const Dhukarr = () => {
                     yolngu='Ŋäṉḏimirriŋu ŋuli ga marrtjimarrtji märr galkikum yothuny dhawal- guyaŋanharaw.'
                     language={language}
                     audio={true}
-                    style={{ position: 'relative', left: '40px', top:'-30px', paddingTop: '50px', paddingBottom: '40px', paddingLeft:'30px', paddingRight: '30px' }}
+                    style={{ position: 'relative', left: '40px', top:'-30px', }}
                     />
 
                 </DhukarrContent>
@@ -354,7 +357,8 @@ const Dhukarr = () => {
               yolngu='Yothuy ga dhumurrdhumurryun guḻun ŋaṉḏi’mirriŋuny ga ḏiltjiŋur ŋaraka ŋuli ŋäṉḏi’mirriŋuny nhära ŋunhiyin ŋuli maŋutji-lakaram yothuny gurku’yunhawuy.'
               language={language}
               audio={true}
-              style={{marginLeft:'20px' }}
+              style={{marginLeft:'20px', width:'50%' }}
+              textStyle={{width:'80%'}}
               />
               
               </DhukarrContent>
@@ -410,7 +414,8 @@ const Dhukarr = () => {
                 yolngu='Ŋäṉḏi’mirriŋu ŋuli ŋaminiy ŋamunkurryu  ḏälkum yothuny rumbal märr ŋayi dhu galŋa- ŋamathirr ga ŋorra latjukum. Ga wiripuny ŋayi ŋuli ŋurrtji ŋuḻkthun märr ŋayi dhu ŋir’yun manymakkum.'
                 language={language}
                 audio={true}
-                style={{marginBottom:'40px' }}
+                style={{marginBottom:'40px', width:'70%' }}
+                textStyle={{width:'70%'}}
                 />
 
                 <Blob 
@@ -421,7 +426,7 @@ const Dhukarr = () => {
                 yolngu='Gurruṯumirriy yothuwal ŋuli marŋgikum ŋäṉarrnha yän dhärukku ga gurruṯuw.'
                 language={language}
                 audio={true}
-                style={{marginBottom:'40px' }}
+                style={{marginBottom:'40px', position:'relative', left:'20px' }}
                 />
 
                 <Blob 
@@ -432,7 +437,7 @@ const Dhukarr = () => {
                 yolngu='Gurruṯu’mirrinydja ŋuli ŋurru-yirr’yun dhäruk waŋanharaw yothuw bitjan bili .'
                 language={language}
                 audio={true}
-                style={{marginBottom:'40px' }}
+                style={{marginBottom:'40px', position:'relative', left:'20px' }}
                 />
 
                 <Blob 
@@ -455,30 +460,30 @@ const Dhukarr = () => {
                 yolngu='Bukmakthu gurruṯumirriy ŋuli dhangi’yun yothuny ga djäga bitjan bili walu-ŋupan. Ga yaka napurr ŋuli ganarrtham yothuny gänaŋulil.'
                 language={language}
                 audio={true}
-                style={{ width:'100%', marginBottom:'40px' }}
+                style={{ width:'100%', marginBottom:'40px', position:'relative', left:'20px' }}
                 />
 
               <Blob 
                 animation={true}
-id='38' 
+                id='38' 
                 colour='orange'
                 english='Soon after birth, during a ‘smoking ceremony’, maternal grandmother and other close family move the child in their two hands through the smoke, so the child will grow strong and sleep well. Also they talk to the baby, giving spiritual advice about their pathway and how they should continue to behave as they grow. '
                 yolngu='Dhuḏi-guthanamirr dhuwal rom balanya nhakun yothuny yan ŋuli goŋdhu märramay ŋayatham bala gäma ŋanya ŋäwuḻuḻkurr märr ŋanya dhu ḏälkum rumbal ga yakurr nhanŋu dhu gurrupan manymak. Ga bulu ŋanya gurrupan raypirri – bala walal ŋuli ŋaḻapaḻmirri ḻakaraman nhanukal nhaltjan ŋayi dhu ŋuthan.'
                 language={language}
                 audio={true}
                 style={{ width:'200%' }}
-                textStyle={{width:'80%'}}
+                textStyle={{width:'70%'}}
                 />
 
               <Blob 
                 animation={true}
-id='39' 
+                id='39' 
                 colour='brown'
                 english='Grandparents support and offer advice to mum and dad and rest of the family so they understand how to care for the child.'
                 yolngu=''
                 language={language}
                 audio={true}
-                style={{marginBottom:'40px' }}
+                style={{marginBottom:'40px', position:'relative', left:'20px' }}
                 />
 
               </DhukarrContent>
@@ -487,7 +492,7 @@ id='39'
 
               <Blob 
                 animation={true}
-id='25' 
+                id='25' 
                 colour='grey'
                 english='Family test hearing and vision and body – e.g. checking response to high and low sounds; checking how baby’s eyes track hand or body movements; finding out what support that child needs and how to communicate. If the baby has a problem family think about what the mother ate during pregnancy that might have caused it.'
                 yolngu=''
@@ -498,7 +503,7 @@ id='25'
 
                 <Blob 
                 animation={true}
-id='23' 
+                id='23' 
                 colour='brown'
                 english='When the baby sees the world (at the time of birth) close family introduce themselves to the baby telling their kinship connection - this continues from birth throughout childhood whenever family meet the child.'
                 yolngu='Ŋunhi ŋuli yothuy wäŋa nhäma, ŋayi gurruṯumirriy yothuwal ŋuli waŋan gurruṯu lakaranhamirra nhanukal yothuwal.'
@@ -509,7 +514,7 @@ id='23'
 
                 <Blob 
                 animation={true}
-id='31' 
+                id='31' 
                 colour='orange'
                 english='The family use child language and sign language for example food, grandfather, come for a cuddle…'
                 yolngu='Yothuwal gurruṯumirriy ŋuli yalŋgi matha waŋa ga goŋdhu ŋuli milkum yothuw balanya nhakun ŋatha, ŋathi, wäthun yothuw dhangi’yunaraw’.'
@@ -520,7 +525,7 @@ id='31'
 
                 <Blob 
                 animation={true}
-id='33' 
+                id='33' 
                 colour='orange'
                 english='When the child is sick family collect and prepare bush medicine – eucalyptus leaves and other healing plants - leaves and bark and other traditional medicine from the beach for healing the baby. '
                 yolngu='Ŋunhi ŋuli yothu rirrikthun ŋayi ŋuli gurruṯumirriy guŋga’yun djäma gaḏayka ga wiripuwiripu ḏukthunamirr mala man’tjarr ga dharpa ga wiripuny raŋipuy mala rerriw ḏukmaranharaw ga ḻaymaranharaw.'
@@ -532,13 +537,13 @@ id='33'
 
                 <Blob 
                 animation={true}
-id='36' 
+                id='36' 
                 colour='brown'
                 english='Father supports the mother in caring for the child. Immediate to extended family also care for the child.'
                 yolngu='Bäpa’mirriŋuy ŋuli guŋga’yun ŋäṉḏi’miriŋuny djägaw yothuw.  Ga bulu ŋuli gurruṯumirr bukmak djäga ŋurikiyi yothuw.'
                 language={language}
                 audio={true}
-                style={{ position: 'relative', left: '40px', top:'20px' }}
+                style={{ position: 'relative', left: '40px', top:'40px' }}
                 />
 
                 <Blob 
@@ -549,7 +554,7 @@ id='36'
                   yolngu='Yothu ŋuli malthun bitjan bili bukmakku gurruṯumirriw - wakalkurr, huntingkurr ga bäpurrukurr.'
                   language={language}
                   audio={true}
-                  style={{ position: 'relative', top: '700px', left:'60px' }}
+                  style={{ position: 'relative', top: '750px', left:'60px' }}
                   />
 
               </DhukarrContent>
@@ -577,7 +582,8 @@ id='36'
                 yolngu='Yothuy ŋuli marŋgi gurrupan gurruṯumirriny: balanya nhakun ŋaṉḏi’mirriŋuny ŋayi ŋuli rälimirriyam ŋäthi ŋaminiw dhäkaywu ga wiripuny ŋayi yothu dhu melnyaŋ’thun waryun ga biḻkthun ŋayi dhu bala ŋäthin.'
                 language={language}
                 audio={true}
-                style={{ position: 'relative',  top:'80px', left:'30px'}}
+                style={{ position: 'relative',  top:'80px', left:'10px'}}
+                textStyle={{width:'80%'}}
                 />
                 
                 <Blob 
@@ -618,7 +624,7 @@ id='36'
                 
               <Blob 
                 animation={true}
-id='45' 
+                id='45' 
                 colour='brown'
                 english='Family sing lullabies to the baby.'
                 yolngu='Gurruṯumirriy ŋuli ḏar’ṯaryun manikay yothuwal.'
@@ -629,38 +635,40 @@ id='45'
 
               <Blob 
                 animation={true}
-id='43' 
+                id='43' 
                 colour='grey'
                 english='Family monitor baby’s health through checking every part of the body and body functions.'
                 yolngu='Gurruṯumirriy ŋuli nhäma bukmak rumbal yothuny  nhaltjan ŋayi ga ŋuthan.'
                 language={language}
                 audio={true}
-                style={{ width:'80%' }}
+                style={{ width:'80%', position:'relative', left:'20px' }}
                 />
 
               <Blob 
                 animation={true}
-id='44' 
+                id='44' 
                 colour='orange'
                 english='Mother continues to avoid certain foods to protect the breast-feeding baby from harmful effects.'
                 yolngu='Baḏak rom ga ŋorra yaka dhu ḻuka ŋatha bawalamirr ŋäṉḏi’mirriŋuy ŋunhi yothu nyumukuṉiny ga yalŋgi yän.'
                 language={language}
                 audio={true}
+                style={{ position:'relative', left:'20px' }}
                 />
 
               <Blob 
                 animation={true}
-id='46' 
+                id='46' 
                 colour='orange'
                 english='Family can now introduce the baby to mother’s brothers.'
                 yolngu='Ŋunhi yothu ŋuli märr gurrŋanthirra bala ŋapipi’mirriŋuy ŋuli nhäman.'
                 language={language}
                 audio={true}
+                style={{ position:'relative', left:'20px' }}
                 />
 
               <Blob 
                 animation={true}
-id='47' 
+                id='47' 
                 colour='brown'
                 english='The family effectively monitor and recognise the child’s development.'
                 yolngu='Gurruṯumirriy yothuwal ŋuli dharaŋaṉ nhäman nhanŋu ŋunhi gakal dhuwal mirithirr manymak.'
@@ -677,7 +685,7 @@ id='47'
                
               <Blob 
                 animation={true}
-id='48' 
+                id='48' 
                 colour='light'
                 english='Baby communicates their thoughts and feelings through their body movement and facial expressions that the family recognise.'
                 yolngu='Yothuy ŋuli ŋayaŋuy ga guyaŋanhawuyyu rumbalyu ga bukuy milkum, ga gurruṯu’mirri ŋuli dharaŋan.'
@@ -688,7 +696,7 @@ id='48'
 
               <Blob 
                 animation={true}
-id='50' 
+                id='50' 
                 colour='light'
                 english='Vomiting (a little) is a sign that baby is starting to vocalise.'
                 yolngu='Gakthunamirr gakal nhanŋu yothu ŋayi dhu marrtji waŋa’waŋan.'
@@ -703,7 +711,7 @@ id='50'
               
               <Blob 
                 animation={true}
-id='42' 
+                id='42' 
                 colour='light'
                 english='The baby is starting to recognise extended family.'
                 yolngu='Yothuy ŋuli dhoka dharaŋan bukmaknha gurruṯumirriny mala.'
@@ -714,7 +722,7 @@ id='42'
 
               <Blob 
                 animation={true}
-id='49' 
+                id='49' 
                 colour='light'
                 english='When the baby talks (vocalises) and cries a lot it helps the body grow strong.'
                 yolngu='Yothuny ŋuli ga waŋa ga bulu ŋäthi ŋunhiyiny ŋanya ŋuli ga ḏälkum nhanŋu rumbal.'
@@ -725,7 +733,7 @@ id='49'
 
               <Blob 
                 animation={true}
-id='51' 
+                id='51' 
                 colour='light'
                 english='When the baby sees and/or hears family members the baby starts ‘talking’ - often over the phone!'
                 yolngu='Yothuy ŋuli ŋäma ga nhäma gurruṯu’mirriny bala ŋayi ŋuli waŋan gurruṯu’mirrwal. '
@@ -736,13 +744,13 @@ id='51'
 
               <Blob 
                 animation={true}
-id='52' 
+                id='52' 
                 colour='yellow'
                 english='The baby is starting to learn identity and connections: family talking into the baby’s ears, teaching about their name, subsection, their language and kinship connections.'
                 yolngu='Yothuy ŋuli märr dharaŋan yol ŋayi mälk, yol ŋayi yäku ga nhä nhanŋu dhäruk ga nhä nhanŋu gurruṯu, ŋayi ŋuli ŋäṉḏi’mirriŋuy ga wiripu Yolŋuy marŋgikum lakaram yothuwal buthurulil.'
                 language={language}
                 audio={true}
-                style={{ position: 'relative', left:'-50px', top:'-20px', width:'80%' }}
+                style={{ position: 'relative', left:'-50px', top:'-20px', width:'70%' }}
                 />
 
               </DhukarrContent>
@@ -771,73 +779,78 @@ id='52'
                 
               <Blob 
                 animation={true}
-id='54' 
+                id='54' 
                 colour='grey'
                 english='Families encourage the child to notice and localise the source of a sound – planes, birds, cars… pointing, turning their head, telling the child what it is.'
                 yolngu='Bukmakthu ŋuli gurruṯumirriy yothuwal marŋgikum bukmakku rirrakay mala balanya nhakun biḻanygu, mutikaw, warrakangu.. Ga bulu ŋuli melkum yothuwal goŋdhu ga mulkurr bilmaram märr ŋayi dhu nhäma ga gurruṯumirriy ŋuli ḻakaram yäku mala.'
                 language={language}
                 audio={true}
-                style={{ }}
+                style={{ position:'relative', left:'20px'}}
                 />
 
               <Blob 
                 animation={true}
-id='55' 
+                id='55' 
                 colour='brown'
                 english='Family sing the child’s clan songs.'
                 yolngu='Gurruṯumirriy ŋuli ḏar’ṯaryun ŋurikiyi yothuw nhanŋuwuy manikay bäpurrukurr.'
                 language={language}
                 audio={true}
-                style={{ position:'relative', left:'-80px'}}
+                style={{ position:'relative', left:'20px'}}
+                textStyle={{width:'80%'}}
                 />
 
               <Blob 
                 animation={true}
-id='56' 
+                id='56' 
                 colour='brown'
                 english='Close family care for the child so the child gets to know them, for example grandmothers, grandfathers, aunts, uncles, brothers and sisters.'
                 yolngu='Gurruṯumirriy ŋuli guŋga’yun yothuny märr ŋayi dhu yothuy dharaŋan gurruṯumirriny, balanya nhakun momuny, mari’muny, märiny, ŋathiny, mukulnha, ŋapipiny, yapany ga wawany. '
                 language={language}
                 audio={true}
-                style={{ }}
+                style={{ marginTop:'20px'}}
+                textStyle={{width:'90%'}}
                 />
 
               <Blob 
                 animation={true}
-id='62' 
+                id='62' 
                 colour='grey'
                 english='Family help the child to sit and stand - testing the bones and body and feet.'
                 yolngu='Gurruṯu’mirriy ŋuli guŋga’yun yothuny dhärranharaw birrka’yun ŋuli rumbal ga ŋaraka ga luku.'
                 language={language}
                 audio={true}
-                style={{ position:'relative', left:'-60px', top:'10px', marginTop:'20px'}}
+                style={{ position:'relative', left:'20px', top:'10px', marginTop:'20px'}}
+                textStyle={{width:'80%'}}
                 />
 
               <Blob 
                 animation={true}
-id='63' 
+                id='63' 
                 colour='orange'
                 english='Family make the food soft in their mouth then gives to the child so they don’t choke.'
                 yolngu='Gurruṯumirriy mala ŋuli ŋatha yalŋgikum gurrapanaraw yothuw dhurrwaray märr walal dhu yaka gaṯmaram.'
                 language={language}
                 audio={true}
                 style={{width:'100%', marginTop:'30px' }}
+                textStyle={{width:'80%'}}
                 />
 
               <Blob 
                 animation={true}
-id='64' 
+                id='64' 
                 colour='grey'
                 english='Family watch carefully for allergic reactions to any food.'
                 yolngu='Gurruṯumirriy mala ŋuli nhäma yothu nhä mala ŋatha walalaŋ yaka manymak.'
                 language={language}
                 audio={true}
                 style={{marginTop:'30px' }}
+                textStyle={{width:'80%'}}
                 />
 
               <Blob 
                 animation={true}
-id='67' 
+                id='67' 
                 colour='grey'
                 english='All the family test the child’s recognition of their kinship connections by asking, for example,  ‘where is mother, where is sister?’ and watching if the child understands and turns to or looks at the right person. '
                 yolngu='Bukmak gurruṯumirriy ŋuli birrka’yun ŋunhi yothuny gurruṯu mala balanya nhakun ‘wanha ŋäṉdi? wanha yapa?’ ga nhäma ŋayi ŋuli ga rirrakay ŋayi ŋuli ŋäma.'
@@ -869,13 +882,13 @@ id='57'
 
               <Blob 
                 animation={true}
-id='58' 
+                id='58' 
                 colour='light'
                 english='The child reaches for the person or cries for that person that they recognise – and turns away from someone they don’t know.'
                 yolngu='Yothuy ŋuli dharaŋan gurruṯumirriny bala walal ŋuli ŋäthi malthuna. Ga wiripuny walal ŋuli yaka dharaŋan gurruṯumirriny bala yothuy ŋuli ŋäthi ga yakan nhäma ŋanya. '
                 language={language}
                 audio={true}
-                style={{ position:'relative', left:'-50px', top:'130px', width:'100%'}}
+                style={{ position:'relative', left:'-60px', top:'90px', width:'100%'}}
                 textStyle={{ width:'80%' }}
                 />
 
@@ -891,7 +904,7 @@ id='58'
                   yolngu='Yothu ga marŋgithirr ŋänharaw rirrakaywu bawalamirriw.'
                   language={language}
                   audio={true}
-                  style={{ position:'relative', left:'30px', top:'20px', marginTop:'300px'}}
+                  style={{ position:'relative', left:'10px', top:'20px', marginTop:'300px'}}
                   textStyle={{ }}
                   />
 
@@ -903,7 +916,7 @@ id='58'
                   yolngu='Goŋdhu ŋuli yothuy wanaŋgum ŋunhi ŋayi ŋuli ŋurru-yirr’yuna, balanya nhakun ŋatha, wäthun ga ŋathi.'
                   language={language}
                   audio={true}
-                  style={{ position:'relative', width:'100%', left:'-100px', top:'20px', marginTop:'50px'}}
+                  style={{ position:'relative', width:'100%', left:'-130px', top:'20px', marginTop:'50px'}}
                   textStyle={{ }}
                   />
 
@@ -915,8 +928,8 @@ id='58'
                   yolngu='Yothu ŋuli waŋa mirithirra yalŋgin dhäruk. '
                   language={language}
                   audio={true}
-                  style={{ position:'relative', width:'100%', left:'-100px', marginTop:'40px'}}
-                  textStyle={{ }}
+                  style={{ position:'relative', width:'100%', left:'-120px', marginTop:'40px'}}
+                  textStyle={{ width:'70%'}}
                   />
 
                 <Blob 
@@ -927,7 +940,7 @@ id='58'
                   yolngu='Ŋayi yothu bilin marŋgin ŋayi dhu nhäma gurruṯu’mirriny ga nhina gurruṯu’mirriwal galki ga nhäma ga ŋäma bala ŋayi dhu marŋgithirr manikaywu ga buŋgulwu.'
                   language={language}
                   audio={true}
-                  style={{ position:'relative', width:'100%', left:'-100px', marginTop:'40px'}}
+                  style={{ position:'relative', width:'100%', left:'-130px', marginTop:'40px'}}
                   textStyle={{ }}
                   />
 
@@ -939,7 +952,7 @@ id='58'
                   yolngu='Yothuy ŋuli ḻuka yalŋgimirr ŋatha balanya nhakun guya ga borum mala. Ŋayi ga nhuman, biḻaŋ’thun ga birrka’yun balanya ŋatha mala.'
                   language={language}
                   audio={true}
-                  style={{ position:'relative', width:'100%', left:'-100px', marginTop:'40px'}}
+                  style={{ position:'relative', width:'100%', left:'-130px', marginTop:'40px'}}
                   textStyle={{ }}
                   />
 
@@ -951,8 +964,8 @@ id='58'
                   yolngu='Gaḏaman’thirr ŋayi dhu yothu gäna yan; gurruṯumirriy ga marŋgikum ŋayi dhu gäna ŋamaŋamayunmirr.'
                   language={language}
                   audio={true}
-                  style={{ position:'relative', width:'100%', left:'-90px', marginTop:'40px'}}
-                  textStyle={{ }}
+                  style={{ position:'relative', width:'100%', left:'-110px', marginTop:'40px', width:'90%'}}
+                  textStyle={{width:'90%'}}
                   />
 
                 <Blob 
@@ -1012,7 +1025,7 @@ id='58'
                   yolngu='Murma’murmaram yothuny bun’kumu ŋuli ḏälkum ga dharwan ga yaŋaran. '
                   language={language}
                   audio={true}
-                  style={{ }}
+                  style={{ position:'relative', left:'20px'}}
                   textStyle={{ }}
                   />
 
@@ -1049,7 +1062,7 @@ id='58'
                   language={language}
                   audio={true}
                   style={{ marginTop:'300px'}}
-                  textStyle={{width:'80%' }}
+                  textStyle={{width:'70%' }}
                   />
 
 
@@ -1068,7 +1081,7 @@ id='58'
                   language={language}
                   audio={true}
                   style={{marginTop:'50px', position:'relative', left:'20px', width:'90%' }}
-                  textStyle={{ width:'70%'}}
+                  textStyle={{ width:'60%'}}
                   />
 
               <Blob 
@@ -1080,7 +1093,7 @@ id='58'
                   language={language}
                   audio={true}
                   style={{marginTop:'50px', position:'relative', left:'70px' }}
-                  textStyle={{ width:'80%'}}
+                  textStyle={{ width:'70%'}}
                   />
 
               <Blob 
@@ -1092,7 +1105,7 @@ id='58'
                   language={language}
                   audio={true}
                   style={{marginTop:'50px', position:'relative', left:'60px' }}
-                  textStyle={{ width:'90%'}}
+                  textStyle={{ width:'70%'}}
                   />
 
               <Blob 
@@ -1104,7 +1117,7 @@ id='58'
                   language={language}
                   audio={true}
                   style={{marginTop:'50px', position:'relative', left:'20px' }}
-                  textStyle={{ width:'80%'}}
+                  textStyle={{ width:'70%'}}
                   />
 
               <Blob 
@@ -1115,7 +1128,7 @@ id='58'
                   yolngu='Yothuy ŋuli wanaŋgum bukuy dhäwu mala ŋunhi djulŋithinyamirriy ga maḏakarritjthirr ga warwuyun ga gitkithun ga biyarrmak buku mala milkum. '
                   language={language}
                   audio={true}
-                  style={{marginTop:'50px' }}
+                  style={{marginTop:'50px', position:'relative', left:'-20px' }}
                   textStyle={{ }}
                   />
               
@@ -1151,8 +1164,8 @@ id='58'
                   yolngu='Yothuy ŋuli dharaŋan ‘lurrkun’ yäku balanya nhakun gurruṯumirriny yäku ga wiripu mala yäku. Ŋayi ŋuli  milkum nhä ŋayi ŋuli dharaŋan – ŋayi ŋuli bilyuna bala nhäman.'
                   language={language}
                   audio={true}
-                  style={{marginTop:'50px', position:'relative', left:'70px' }}
-                  textStyle={{ width:'60%'}}
+                  style={{marginTop:'50px', position:'relative', left:'60px' }}
+                  textStyle={{ width:'50%'}}
                   />
 
               </DhukarrContent>
@@ -1199,7 +1212,7 @@ id='58'
                   yolngu='Gurruṯu’mirriy ŋuli ḻakaram ga marŋgikum yothuny wanha ŋayi manymak wäŋa buḻ’yunaraw ga gaḻ’yunaraw.'
                   language={language}
                   audio={true}
-                  style={{}}
+                  style={{position:'relative', left:'20px'}}
                   textStyle={{}}
                   />
 
@@ -1223,7 +1236,7 @@ id='58'
                   yolngu='Gurruṯumirriy ŋuli marŋgikum yothuny märr ŋayi dhu ŋoy-ḏälthirr ga yaka barrarirr ga ŋayaŋu miḏikirr dhuwandja gakal yolŋuw yothuw ŋanapurr ŋuli ŋayaŋu mulka’kum yothuny ŋunhi walal ŋuli galkirri.'
                   language={language}
                   audio={true}
-                  style={{}}
+                  style={{position:'relative', left:'20px'}}
                   textStyle={{}}
                   />
 
@@ -1235,7 +1248,7 @@ id='58'
                   yolngu='Djamarrkuliw’ rom ŋurruŋu mirithirr walal dhu dhäkay ŋäma manymak wo mägaya rom ga märr-ŋamathinyawuy.'
                   language={language}
                   audio={true}
-                  style={{position:'relative', left:'-20px', top:'-30px', width:'50%'}}
+                  style={{position:'relative', left:'20px', top:'-30px', width:'50%'}}
                   textStyle={{width:'80%'}}
                   />
 
@@ -1289,7 +1302,7 @@ id='58'
                     yolngu='Yothu ŋuli milŋiny’mirriyirr ŋunhi ŋayi ŋuli maŋutji-lakaram ŋayi dhu dhärra.'
                     language={language}
                     audio={true}
-                    style={{position:'relative', left:'50px', width:'60%'}}
+                    style={{position:'relative', left:'70px', width:'50%'}}
                     textStyle={{}}
                     />
 
@@ -1301,7 +1314,7 @@ id='58'
                     yolngu='Yothuwal gurruṯumrriy ŋuli gakal nhäma, bala marŋgithirra.'
                     language={language}
                     audio={true}
-                    style={{position:'relative', left:'100px', top:'-40px', width:'50%'}}
+                    style={{position:'relative', left:'120px', top:'-40px', width:'40%'}}
                     textStyle={{}}
                     />
 
@@ -1313,7 +1326,7 @@ id='58'
                     yolngu='Yothu marŋgithirr dhäkay-ŋänharaw nhä manymak ga nhä maḏakarritj nhakun yiki’, gorrmur gapu ga gorrmur munatha ga gurtha.'
                     language={language}
                     audio={true}
-                    style={{position:'relative', top:'-50px', width:'100%'}}
+                    style={{position:'relative', top:'-50px', width:'100%', left:'-20px'}}
                     textStyle={{width:'60%'}}
                     />
 
@@ -1349,7 +1362,7 @@ id='58'
                   yolngu='Gurruṯumirriy ŋuli ŋarambiya  ŋayatham yothuny  ḏälkum dhärranharaw ga marrtjinaraw.'
                   language={language}
                   audio={true}
-                  style={{marginTop:'100px'}}
+                  style={{marginTop:'100px', position:'relative', left:'20px'}}
                   textStyle={{}}
                   />
 
@@ -1361,7 +1374,7 @@ id='58'
                   yolngu='Gurruṯumirr ŋuli galŋa djulŋithirr ga wokṯhun ŋuriki yothu gakalwu.'
                   language={language}
                   audio={true}
-                  style={{width:'60%', marginTop:'30px'}}
+                  style={{width:'60%', marginTop:'30px', position:'relative', left:'20px'}}
                   textStyle={{}}
                   />
 
@@ -1380,7 +1393,7 @@ id='58'
                   language={language}
                   audio={true}
                   style={{position: 'relative', left: '-50px', marginTop:'40px'}}
-                  textStyle={{}}
+                  textStyle={{width:'80%'}}
                   />
 
                 <Blob 
@@ -1392,7 +1405,7 @@ id='58'
                   language={language}
                   audio={true}
                   style={{position: 'relative', left: '50px', marginTop:'20px'}}
-                  textStyle={{width:'80%'}}
+                  textStyle={{width:'70%'}}
                   />
 
                 <Blob 
@@ -1404,7 +1417,7 @@ id='58'
                   language={language}
                   audio={true}
                   style={{position: 'relative', left: '-80px', marginTop:'40px'}}
-                  textStyle={{}}
+                  textStyle={{width:'80%'}}
                   />
 
                 <Blob 
@@ -1416,7 +1429,7 @@ id='58'
                   language={language}
                   audio={true}
                   style={{position: 'relative', left: '50px', marginTop:'40px'}}
-                  textStyle={{width:'80%'}}
+                  textStyle={{width:'70%'}}
                   />
 
                 <Blob 
@@ -1474,8 +1487,8 @@ id='58'
                   yolngu='Gurruṯumirriy ŋuli waŋa dharrwamirr märr yothuy dhu dharaŋan  wanha yätjkurr ga wanha manymak. Bukmakthu gurruṯmirriy ŋuli guŋga’yun ga djäga yothuw märr ŋayi dhu dhäkay-ŋäma guŋga’yunamirr ga yaka galŋa-miḏikirr  märr yothu dhu marrtji manymakum.'
                   language={language}
                   audio={true}
-                  style={{position: 'relative', left: '-30px', marginTop:'40px', width:'100%'}}
-                  textStyle={{width:'70%'}}
+                  style={{position: 'relative', left: '-10px', marginTop:'40px', width:'100%'}}
+                  textStyle={{width:'60%'}}
                   />
 
               </DhukarrContent>
@@ -1504,7 +1517,7 @@ id='58'
                   language={language}
                   audio={true}
                   style={{position: 'relative', left: '50px', marginTop:'50px'}}
-                  textStyle={{width:'80%'}}
+                  textStyle={{width:'70%'}}
                   />
 
               <Blob 
@@ -1515,7 +1528,7 @@ id='58'
                   yolngu='Yothu dhu ŋurru-yirr’yun marŋgithirr Balandaw mathaw.'
                   language={language}
                   audio={true}
-                  style={{position: 'relative', left: '50px', marginTop:'40px', width:'60%'}}
+                  style={{position: 'relative', left: '70px', marginTop:'40px', width:'50%'}}
                   textStyle={{width:'80%'}}
                   />
               <Blob 
@@ -1565,7 +1578,7 @@ id='58'
                   language={language}
                   audio={true}
                   style={{position: 'relative', left: '-30px', marginTop:'400px', width:'80%'}}
-                  textStyle={{width:'70%'}}
+                  textStyle={{width:'60%'}}
                   />
 
               </DhukarrContent>
@@ -1594,7 +1607,7 @@ id='58'
                   language={language}
                   audio={true}
                   style={{}}
-                  textStyle={{}}
+                  textStyle={{width:'80%'}}
                   />
               <Blob 
                   animation={true}
@@ -1615,7 +1628,7 @@ id='58'
                   yolngu='Yothu ŋuli malthun gurruṯumirriw märranharaw maypalwu ga guyaw ga borumgu mala. '
                   language={language}
                   audio={true}
-                  style={{position: 'relative', left: '10px', marginTop:'40px'}}
+                  style={{position: 'relative', left: '-10px', marginTop:'40px'}}
                   textStyle={{width:'100%'}}
                   />
               <Blob 
@@ -1637,8 +1650,8 @@ id='58'
                   yolngu='Yothuy ŋuli marŋgikum ŋunhi ŋayi dhu ŋoy-marrmarryun ga barrarirr ŋayi dhu gurruṯu’mirriwal waṉḏirr ga dhaŋgi’yun mirithirr. Ŋaraka’ŋur ga yaŋara’ŋur dhärra ŋäṉḏi’mirriŋuwal ŋayatham yaŋara ḏälkum ga buku-djuḻulyun dhärra.'
                   language={language}
                   audio={true}
-                  style={{position: 'relative', left: '0', marginTop:'40px', }}
-                  textStyle={{width:'100%'}}
+                  style={{position: 'relative', left: '-30px', marginTop:'40px', }}
+                  textStyle={{width:'80%'}}
                   />
               
               </DhukarrContent>
@@ -1673,7 +1686,7 @@ id='58'
                   language={language}
                   audio={true}
                   style={{position: 'relative', left: '-60px', marginTop:'40px', width:'80%' }}
-                  textStyle={{width:'70%'}}
+                  textStyle={{width:'60%'}}
                   />
 
               <Blob 
@@ -1684,7 +1697,7 @@ id='58'
                   yolngu='Gurruṯumirriy ŋuli nhäma yothuny ga dhunupayam nhaltjan ŋayi dhu burr’yun.'
                   language={language}
                   audio={true}
-                  style={{position: 'relative', left: '-20px', marginTop:'40px',  width:'50%'}}
+                  style={{position: 'relative', left: '20px', marginTop:'40px',  width:'50%'}}
                   textStyle={{width:'80%'}}
                   />
 
@@ -1715,8 +1728,8 @@ id='58'
                   yolngu='Ŋayi yothu biliny marŋgin nhanukalaŋaw gurruṯumirriw, ŋayi ga nhina gurruṯu’mirriwal galki ga nhäma ga ŋäma ŋayi ga märr ŋayi dhu marŋgithirra manikaywu ga buŋgulwu.'
                   language={language}
                   audio={true}
-                  style={{position: 'relative', left: '0px', marginTop:'60px', }}
-                  textStyle={{width:'100%'}}
+                  style={{position: 'relative', left: '-30px', marginTop:'60px', }}
+                  textStyle={{width:'80%'}}
                   />
               <Blob 
                   animation={true}
@@ -1768,8 +1781,8 @@ id='58'
                   yolngu='Ŋunhi ŋayi yothu ŋaḻapaḻnha ŋayi ŋuli wanaŋgum, nhakun marŋgithirr manapan ŋurrkanhamirr munathalil yan nhakun ŋayi ga ŋäthi gurruṯumirriw. Ga wiripuny gaṟa djäma ga manikay ḏar’ṯaryun wo burr’yun. Walal marŋgi nhä mala manikay walal ŋuli dar’taryun dhuwa wo yirritja. Ga dhärranhayŋu dhuwal gakal Yolŋuw djamarrkuliw’.'
                   language={language}
                   audio={true}
-                  style={{position: 'relative', left: '0px', marginTop:'50px' }}
-                  textStyle={{width:'80%'}}
+                  style={{position: 'relative',  left: '0px', marginTop:'50px' }}
+                  textStyle={{width:'70%'}}
                   />
               <Blob 
                   animation={true}
@@ -1790,7 +1803,7 @@ id='58'
                   yolngu='Yothu ŋayi ga gakal nhanŋuwuy ŋayi milkum ŋunhalatjandi dhukarrkurr. Marŋgithinyamirr gakal mirithirr manymak yothu rumbalwu ga mulkurrwu.'
                   language={language}
                   audio={true}
-                  style={{position: 'relative', left: '-50px', marginTop:'20px' }}
+                  style={{position: 'relative', left: '-40px', marginTop:'20px' }}
                   textStyle={{}}
                   />
               <Blob 
@@ -1812,7 +1825,7 @@ id='58'
                   yolngu='Yothu ga marŋgithinyamirriŋur djinawa wukirriŋur ga bawalamirriŋur.'
                   language={language}
                   audio={true}
-                  style={{position: 'relative', left: '50px', marginTop:'20px', marginBottom:'30px' }}
+                  style={{position: 'relative', left: '50px', marginTop:'10px', marginBottom:'40px' }}
                   textStyle={{width:'80%'}}
                   />
 
@@ -1848,7 +1861,7 @@ id='58'
                   yolngu='Gurruṯumirriy ŋuli marŋgi gurrupan yothuny warrpam’ku malaŋuw nhakun gapuw, ŋalindiw, wataw, burwuw’ ga raŋiwu märr ŋayi dhu marŋgithirr märranharaw ŋathaw raŋipuywu ga diltjipuywu.'
                   language={language}
                   audio={true}
-                  style={{position: 'relative', left: '-35%', marginTop:'50px', width:'150%'}}
+                  style={{position: 'relative', left: '-80px', marginTop:'50px', width:'150%'}}
                   textStyle={{width:'50%'}}
                   />
 
@@ -1866,8 +1879,8 @@ id='58'
                   yolngu='Yothuy ŋuli dharaŋan gurruṯu ŋäma bala guyaŋan ŋunhi ŋayi gurruṯumirr nhanŋu.'
                   language={language}
                   audio={true}
-                  style={{position: 'relative', left: '0px', marginTop:'80px' }}
-                  textStyle={{width:'80%'}}
+                  style={{position: 'relative', left: '20px', marginTop:'80px' }}
+                  textStyle={{width:'60%'}}
                   />
 
               <Blob 
@@ -1879,7 +1892,7 @@ id='58'
                   language={language}
                   audio={true}
                   style={{position: 'relative', left: '0px', marginTop:'50px' }}
-                  textStyle={{width:'60%'}}
+                  textStyle={{width:'50%'}}
                   />
 
               <DhukarrContent orientation="row">
@@ -1904,7 +1917,7 @@ id='58'
                     yolngu='Yothu mala ŋuli marŋgithirr borumgu ga maypalwu märranharaw - walal ŋuli ŋaḻapaḻmirriy djamarrkuliy’ ga gurruṯu’mirriy mala guŋga’yun walalany.'
                     language={language}
                     audio={true}
-                    style={{position: 'relative', marginTop:'20px', flex:2 }}
+                    style={{position: 'relative', marginTop:'20px', flex:2, left:'-40px' }}
                     textStyle={{width:'100%'}}
                     />
 
@@ -1943,7 +1956,7 @@ id='58'
                   yolngu='Gurrutumirriy ŋuli milkum raypirri’yunawuy gakal yothuwal nhaltjan ŋayi dhu marrtji bala bulnha marŋgithirr dhukarrwu dharaŋanharaw.'
                   language={language}
                   audio={true}
-                  style={{position: 'relative', left: '0px', marginTop:'50px' }}
+                  style={{position: 'relative', left: '20px', marginTop:'0px' }}
                   textStyle={{}}
                   />
 
@@ -1961,7 +1974,7 @@ id='58'
                   yolngu='Ŋunhi walalaŋ dhuŋgarra marrtji ŋuli djambi ga bulu walalaŋ guyaŋanhawuy.'
                   language={language}
                   audio={true}
-                  style={{position: 'relative', left: '0px', marginTop:'50px' }}
+                  style={{position: 'relative', left: '-20px', marginTop:'0px' }}
                   textStyle={{}}
                   />
                   
@@ -1973,7 +1986,7 @@ id='58'
                   yolngu='Yothu ŋunhi marrtji ŋaḻapaḻyirra ŋunhiyi nhanŋu ŋayi dhu nhinan gurruṯu’mirriwala ŋayi dhu marŋgithirra, ŋäma dhäwuw wäŋapuy ga waŋarrpuy ga bulu raypirri ŋayi dhu marrtji märram märr ŋayi dhu ga buthuru- bitjuna bukmakkun gurruṯumirriw mala. '
                   language={language}
                   audio={true}
-                  style={{position: 'relative', left: '0px', marginTop:'50px' }}
+                  style={{position: 'relative', left: '0px', marginTop:'20px', width:'70%' }}
                   textStyle={{}}
                   />
               

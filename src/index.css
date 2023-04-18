@@ -9,7 +9,6 @@ body {
   font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
-
 @font-face {
   font-family: 'KGBlank';
   src: local('KGBlank'), url(./assets/fonts/kgblankspacesolid-webfont.woff) format('woff'), url(./assets/fonts/KGBlankSpaceSolid.woff2) format('woff2'), url(./assets/fonts/kgblankspacesolid.ttf) format('ttf');
@@ -117,10 +116,11 @@ cursor: pointer;
 }
 .homeIcon{
   width: calc(100% - 10px);
-    height: auto;
+  height: auto;
     padding: 5px;
     border-radius: 50%;
     background-color: #000;
+    min-height: 240px;
 }
 .homeTileText{
   text-align: center;
@@ -181,7 +181,7 @@ cursor: pointer;
 
 .dhukarrScreen{align-items: flex-start; width: 1200px; }
 .yolnguText{display:none;}
-.bgHolder{background-repeat: no-repeat; background-color: #821C19; background-size: cover; padding-left:50px; padding-right:50px;     display: flex;}
+.bgHolder{background-repeat: no-repeat; background-color: #821C19; background-size: cover;    display: flex;}
 .section0Holder{  background-image:url("./assets/dhukarr/intro_bg.png"); padding-top: 200px; flex-direction: column; }
 .section1Holder{  background-image:url("./assets/dhukarr/bg1.png"); height:1051px;}
 .section2Holder{  background-image:url("./assets/dhukarr/bg2.png"); height:571px;}
@@ -228,7 +228,7 @@ cursor: pointer;
 /*Animation stuff*/
 .blob {
   opacity: 0;
-  transform: translateY(10vh);
+  transform: translateY(10px);
   visibility: hidden;
   transition: opacity 0.2s ease-out, transform 0.6s ease-out;
   will-change: opacity, visibility;
@@ -411,9 +411,9 @@ cursor: pointer;
 .dhukarrSectionContentWide {flex: 2;}
 .dhukarrSectionContentRow{display: flex; flex-direction: row;}
 .dhukarrSectionMiddle{width:200px;}
-.dhukarrScreen .dhukarrSectionSideBar{    margin-right: -50px; margin-left: 30px; height: 100%; background-color: #843c0b42; padding:0 15px;}
+.dhukarrScreen .dhukarrSectionSideBar{    height: 100%; background-color: #843c0b42; padding:0 15px;}
 .dhukarrScreen .dhukarrSectionSideBarNoBg{background: none;}
-.dhukarrScreen .sideBarText{writing-mode: vertical-rl;text-orientation: mixed; color: #841a0c; font-family: 'KGBlank', Arial, sans-serif; font-weight: normal; }
+.dhukarrScreen .sideBarText{writing-mode: vertical-rl;text-orientation: mixed; color: #841a0c; font-family: 'KGBlank', Arial, sans-serif; font-weight: normal; white-space: nowrap; }
 .dhukarrScreen .sideBarTextNumber {display:inline; writing-mode: horizontal-tb; text-orientation: initial;     padding: 20px 0 20px 0;}
 .dhukarrScreen a{color:#831C19;}
 .dhukarrScreen .moreInfo{margin-top:20px;}
@@ -541,9 +541,10 @@ padding: 10px;
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
+  width: 160px;
   height: 34px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .switchLabel{color: #FFFFFF;    display: flex;
@@ -565,7 +566,7 @@ padding: 10px;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #9D726E;
+  background-color: #e0925d;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -591,9 +592,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(126px);
+  -ms-transform: translateX(126px);
+  transform: translateX(126px);
 }
 
 /* Rounded sliders */
@@ -604,6 +605,13 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+.sliderText{   
+   position: relative;
+  display: flex;
+  height: 100%;
+  top: -20px;
+  justify-content: center;
+  align-items: center;}
 
 .largerFont{
   font-size: 4vh;

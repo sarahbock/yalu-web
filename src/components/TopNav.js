@@ -57,10 +57,13 @@ const TopNav = ({ toggleSearch, title, home, back, play, audio, noBorder, toggle
         {toggleLanguage &&
           <div className="rightHeader" >
             <label className="switch">
+            
               <input type="checkbox" onChange={toggleLanguage} checked={language}/>
+              
               <span className="slider round"></span>
+              <span className="sliderText">{language ? `Yolngu` : `English`}</span>
             </label>
-            <div className="switchLabel" onClick={toggleLanguage}>Yolngu</div>
+           {/* <div className="switchLabel" onClick={toggleLanguage}>Yolngu</div>*/}
           </div>
         }
 

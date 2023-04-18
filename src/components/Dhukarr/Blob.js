@@ -10,7 +10,7 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
 
   const domRef = useRef();
 
-  const showBlobNumber = true;
+  const showBlobNumber = false;
   const introBlob = id.substr(0,1) ==='0';
   const classId = introBlob ? 'intro'+id+'Holder' : 'blob'+id+'Holder';
   const soundFile = audio ? require('../../assets/dhukarr/mp3/recording'+id+'.mp3') : null;
@@ -49,6 +49,9 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
 
   const blobText = language ? yolngu ? yolnguText : englishText : englishText;
 
+  const randomTransitionDelay = Math.random()+'s';
+  const randomTranslateY = (Math.floor(Math.random() * 20) + 1) + 'px';
+
   return(
 
     <div 
@@ -59,6 +62,8 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
         `} 
       ref={ domRef } 
       style={{
+        transitionDuration: animation ? {randomTransitionDelay} : 0,
+       transform: animation ? `translateY(${randomTranslateY})` : `none`,
         ...style,
       }}
       id={classId}
