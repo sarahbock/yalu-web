@@ -1947,7 +1947,7 @@ id='57'
                     english='The child talks with family asking questions - the child wants to understand more deeply about their individual and group kinship relationships and ancestral connections.'
                     yolngu='Yothuy ŋuli waŋa ga ŋäŋ’thun ga dhä-birrka’yun gurruṯumirriny – yothuy dhu guyaŋa ga dharaŋan nhanŋu gurruṯu’mirriny ga wanhaŋur ŋayi yarraṯaŋur balanya nhakun märipulu, wakupulu, yapapulu ga ŋäṉḏipulu.'
                     language={language}
-                    audio={false}
+                    audio={true}
                     style={{position: 'relative', left:'-50px', top:'50px', marginTop:'20px', flex:2 }}
                     textStyle={{width:'80%'}}
                     />
