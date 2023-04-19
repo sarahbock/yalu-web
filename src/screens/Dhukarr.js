@@ -303,7 +303,7 @@ const Dhukarr = () => {
                 english='Soon after conception, the spirit of the baby communicates with a family member in a dream or through a sign e.g. unusual behaviour of an animal that is the same moiety and totem of the child – the person who gets the message has a lifelong strong connection to that child - like a ‘godparent’.'
                 yolngu='Ŋaḻapaḻyu Yolŋuy ŋuli dhiṉ’thun wuŋiḻi wo mawa ŋunhi ŋayi yothu yutuŋgurrpuy Yolŋuwuŋ ga malthunawuy.'
                 language={language}
-                link='http://growingupyolngu.com.au/index.cfm?fuseaction=page&p=231&l=1&id=71'
+                link='http://growingupyolngu.com.au/index.cfm?fuseaction=page&p=209&l=2&id=71&smid=150'
                 audio={true}
                 style={{position: 'relative', left: '20px', width:'70%'}}
                 textStyle={{width:'90%'}}
