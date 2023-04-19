@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 import classes from './Modal.module.css';
 import SoundPlayer from '../SoundPlayer';
+import previous from '../../assets/back.png';
 
 //accessibility
 //using portals to move backdrop content outside the content root element
@@ -40,8 +41,8 @@ const ModalOverlay = props =>{
         <div 
           className={classes.button}
           onClick={props.onConfirm}>
-            
-            OK
+            <img src={previous} alt="Back" className="appHeaderIcon"/>
+            Go back
         </div>
 
       </footer>

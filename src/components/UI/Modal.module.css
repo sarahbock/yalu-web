@@ -22,6 +22,9 @@ min-width: 100%;
 min-height: 100%;
 }
 
+@media only screen and (max-width: 900px) { .modal { min-width: 100%;
+  min-height: 100%;} }
+
 
 .button{
   background: #84190D;
@@ -39,8 +42,10 @@ min-height: 100%;
   border-radius: 50px; padding:50px;
   max-width: 80%;
   font-family: 'Ebrima', Arial, sans-serif; font-size: 24px; font-weight: normal;
+  
   text-align: center;
 }
+@media only screen and (max-width: 900px) { .content{ font-size: 16px; margin: 10px;} }
 
 .actions {
   padding: 1rem;

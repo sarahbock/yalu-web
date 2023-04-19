@@ -105,7 +105,7 @@ const Dhukarr = () => {
                 <DhukarrContent orientation="column" arrow={true}>
                   <BlobArrow 
                     id='8'
-                    style={{position:'relative', top:'-30px'}}
+                    style={{position:'relative', top:'-20px'}}
                   />
                   <Blob 
                   animation={false}
@@ -122,7 +122,7 @@ const Dhukarr = () => {
                 <DhukarrContent orientation="column" arrow={true}>
                   <BlobArrow 
                       id='3'
-                      style={{position:'relative', top:'-160px'}}
+                      style={{position:'relative', top:'-150px'}}
                     />
                   <Blob 
                   animation={false}
@@ -487,7 +487,7 @@ const Dhukarr = () => {
                 id='34' 
                 colour='orange'
                 english='The child is not shown to mother’s brothers too soon after birth because of kinship respect protocols between brother and sister: brothers can’t see their sister’s newborn child.'
-                yolngu=''
+                yolngu='Yothuy ŋuli bäyŋu milkum yänayi ŋapipi’mirriŋuwal bili ŋunhi ŋayi Rom Yolŋuw balanya nhakun mirriri, ŋayi dhu yaka nhäma yothu yalŋgi. '
                 language={language}
                 audio={true}
                 style={{position:'relative', left:'-30px',width:'80%', marginBottom:'40px'}}

@@ -216,10 +216,15 @@ cursor: pointer;
     margin: auto;
     font-weight: normal;
     text-align: center;}
+    @media only screen and (max-width: 900px) {.dhukarrScreen h1{ max-width: none; font-size:24px } }
 .dhukarrScreen h2{color: #FFF; font-family: 'KGBlank', Arial, sans-serif; font-size: 22px; font-weight: normal;     max-width: 800px;
   margin: auto;}
+  @media only screen and (max-width: 900px) {.dhukarrScreen h2{ font-size:18px } }
 .dhukarrScreen h3{color: #FFF; font-family: 'Ebrima', Arial, sans-serif; font-size: 22px; font-weight: normal;}
+@media only screen and (max-width: 900px) {.dhukarrScreen h3{font-size:18px } }
 .dhukarrScreen p{color: #FFF; font-family: 'Ebrima', Arial, sans-serif; font-size: 20px; font-weight: normal;}
+@media only screen and (max-width: 900px) {.dhukarrScreen p{font-size:14px } }
+.dhukarrScreen .infoIcon{    width: 35px; margin-left: 10px;}
 
 .blob{ padding: 60px;background-size: contain; background-repeat: no-repeat; display:flex; justify-content: center; align-items: center;     background-position: center; flex:1; cursor: pointer;}
 .blobArrowImage{width:61px; height:69px;}
@@ -227,8 +232,8 @@ cursor: pointer;
 .blobRow{display:flex; align-items: flex-start;  justify-content: space-between;  }
 @media only screen and (max-width: 900px) { .blobRow{ flex-direction: column; } }
 .blobRowThin{max-width: 1000px; margin:auto; justify-content: space-evenly; align-items: center;}
-.blobText{font-family: 'Ebrima', Arial, sans-serif; font-size: 16px; font-weight: normal;     margin: 20px;}
-@media only screen and (max-width: 900px) { .blobText{ width: 70%!important; } }
+.blobText{font-family: 'Ebrima', Arial, sans-serif; font-size: 16px; font-weight: normal;     }
+@media only screen and (max-width: 900px) { .blobText{ width: 70%!important;margin: 20px; } }
 .blobBrown{color: #FFF;}
 .blobOrange{color: #FFF;}
 .blobYellow{color: #843c0c;}
@@ -421,6 +426,7 @@ cursor: pointer;
 
 
 .dhukarrScreen .padThinner{ padding-left:100px; padding-right:100px;}
+@media only screen and (max-width: 900px) { .dhukarrScreen .padThinner{ padding:20px; } }
 .dhukarrScreen .marginTop{margin-top:100px;}
 .dhukarrScreen .marginTopLarge{margin-top:170px;}
 @media only screen and (max-width: 900px) { .dhukarrScreen .marginTop, .dhukarrScreen .marginTopLarge{ margin-top:50px; } }
@@ -442,7 +448,7 @@ cursor: pointer;
 .dhukarrScreen .dhukarrSectionSideBarNoBg{background: none;}
 @media only screen and (max-width: 900px) { .dhukarrScreen .dhukarrSectionSideBarNoBg{     background-color: #dfbb77c9;} }
 .dhukarrScreen .sideBarText{writing-mode: vertical-rl;text-orientation: mixed; color: #841a0c; font-family: 'KGBlank', Arial, sans-serif; font-weight: normal; white-space: nowrap; }
-@media only screen and (max-width: 900px) { .dhukarrScreen .sideBarText{ writing-mode: initial; text-orientation: initial;} }
+@media only screen and (max-width: 900px) { .dhukarrScreen .sideBarText{ writing-mode: initial; text-orientation: initial;     white-space: initial;} }
 .dhukarrScreen .sideBarTextNumber {display:inline; writing-mode: horizontal-tb; text-orientation: initial;     padding: 20px 0 20px 0;}
 @media only screen and (max-width: 900px) { .dhukarrScreen .sideBarTextNumber{  padding: 20px 10px 20px 0;} }
 .dhukarrScreen a{color:#831C19;}
@@ -495,6 +501,7 @@ padding: 10px;
   position: fixed;
   top: 0;
   z-index: 1;
+  width: 100%;
 }
 .appHeader.bgstrip{
   padding-top: 30px;
@@ -529,7 +536,6 @@ padding: 10px;
 }
 
 .contentContainer{margin-top: 110px; width: 100%; max-width: 1200px;}
-@media only screen and (max-width: 900px) { .contentContainer{ width:auto;} }
 .textContainer p, .textContainer h1, .textContainer h3, .textContainer h2, .textContainer li {color:#FFF; text-align: left; padding: 5px 10px;}
 /*ITEM NAV*/
 .itemNavHolder {
@@ -636,10 +642,11 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 .sliderText{   
-   position: relative;
+   position: absolute;
   display: flex;
   height: 100%;
-  top: -20px;
+  width:100%;
+  top: 0px;
   justify-content: center;
   align-items: center;}
 
