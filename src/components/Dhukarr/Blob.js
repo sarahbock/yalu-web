@@ -10,7 +10,7 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
 
   const domRef = useRef();
 
-  const showBlobNumber = false;
+  const showBlobNumber = true;
   const introBlob = id.substr(0,1) ==='0';
   const classId = introBlob ? 'intro'+id+'Holder' : 'blob'+id+'Holder';
   const soundFile = audio ? require('../../assets/dhukarr/mp3/recording'+id+'.mp3') : null;
@@ -44,8 +44,8 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
 
   const textClass = textStyle ? textStyle : {};
 
-  const englishText = showBlobNumber ? id+english : english;
-  const yolnguText = showBlobNumber ? id+yolngu : yolngu;
+  const englishText = showBlobNumber ? id+' '+english : english;
+  const yolnguText = showBlobNumber ? id+' '+yolngu : yolngu;
 
   const blobText = language ? yolngu ? yolnguText : englishText : englishText;
 

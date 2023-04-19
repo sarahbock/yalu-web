@@ -1,9 +1,10 @@
 import React from 'react';
 
-const DhukarrContent = ({ orientation, children, flex }) => {
+const DhukarrContent = ({ orientation, children, flex, arrow }) => {
 
     let cssClass = orientation === 'column' ? 'dhukarrSectionContent' : 'dhukarrSectionContentRow';
     if (flex===2) {cssClass += ' dhukarrSectionContentWide'}
+    if (arrow) {cssClass += ' dhukarrSectionContentArrow'}
 
   return(
 

@@ -17,7 +17,7 @@ const Home = props =>{
 
     <div className="container homeScreen">
 
-        <div className="header bgstrip largerFont">Dhukarr ga Rom marŋgithinyaraw bala-räliyunmirr Yolŋuw ga Balandaw</div>
+        <div className="header bgstrip largerFont">Dhukarr ga Rom marŋgithinyaraw bala-räliyunmirr Yolŋuw ga Balandaw (Draft)</div>
 
         <div className="homeContent">
 

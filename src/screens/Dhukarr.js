@@ -5,7 +5,7 @@ import TopNav from '../components/TopNav';
 
 import SoundPlayer from '../components/SoundPlayer';
 import Blob from '../components/Dhukarr/Blob';
-import BlobRow from '../components/Dhukarr/BlobRow';
+import BlobArrow from '../components/Dhukarr/BlobArrow';
 import Anchor from '../components/Dhukarr/Anchor';
 import SectionHolder from '../components/Dhukarr/SectionHolder';
 import DhukarrSection from '../components/Dhukarr/DhukarrSection';
@@ -100,32 +100,49 @@ const Dhukarr = () => {
 
               <DhukarrContent orientation="column">
 
-            <BlobRow>
+              <DhukarrContent orientation="row">
 
-              <Blob 
-                animation={false}
-                id='8' 
-                colour='brown'
-                english='In the Yolŋu system, we all work together to care and support the child’s development.'
-                yolngu='Dhuwal yothuw gakal yolŋuwal romŋur ŋanapurruŋgal djägany ŋuli räḻ-manapanmirr.'
-                language={language}
-                audio={true}
-                style={{position:'relative', top:'20px', paddingBottom: '130px'}}
-                />
+                <DhukarrContent orientation="column" arrow={true}>
+                  <BlobArrow 
+                    id='8'
+                    style={{position:'relative', top:'-30px'}}
+                  />
+                  <Blob 
+                  animation={false}
+                  id='8' 
+                  colour='brown'
+                  english='In the Yolŋu system, we all work together to care and support the child’s development.'
+                  yolngu='Dhuwal yothuw gakal yolŋuwal romŋur ŋanapurruŋgal djägany ŋuli räḻ-manapanmirr.'
+                  language={language}
+                  audio={true}
+                  style={{position:'relative', top:'20px'}}
+                  />
+                </DhukarrContent>
 
-              <Blob 
-                animation={false}
-                id='3' 
-                colour='yellow'
-                english='The child knows what is best for their growth – when to sleep, eat, play (the child decides not the family).'
-                yolngu='ŋayi yothu marŋgi nhaltjan ŋayi ŋuli galŋa-dhulŋithirr –  ŋorranharaw ga buḻ’yunaraw ga ŋaminiwu ŋulkthunaraw.'
-                language={language}
-                audio={true}
-                style={{position:'relative', top:'-100px', paddingBottom: '130px'}}
-                textStyle={{width:'80%'}}
-                />
+                <DhukarrContent orientation="column" arrow={true}>
+                  <BlobArrow 
+                      id='3'
+                      style={{position:'relative', top:'-160px'}}
+                    />
+                  <Blob 
+                  animation={false}
+                  id='3' 
+                  colour='yellow'
+                  english='The child knows what is best for their growth – when to sleep, eat, play (the child decides not the family).'
+                  yolngu='ŋayi yothu marŋgi nhaltjan ŋayi ŋuli galŋa-dhulŋithirr –  ŋorranharaw ga buḻ’yunaraw ga ŋaminiwu ŋulkthunaraw.'
+                  language={language}
+                  audio={true}
+                  style={{position:'relative', top:'-120px',}}
+                  textStyle={{width:'80%'}}
+                  />
+                </DhukarrContent>
 
-              <Blob 
+                <DhukarrContent orientation="column" arrow={true}>
+                <BlobArrow 
+                    id='5'
+                    style={{position:'relative', top:'-100px'}}
+                  />
+                <Blob 
                 animation={false}
                 id='5' 
                 colour='yellow'
@@ -133,25 +150,38 @@ const Dhukarr = () => {
                 yolngu='Gurruṯuny ŋanapurr ŋuli marŋgi- gurrapan ŋunhi yothuny ŋayi ŋuli marrtji ŋuthan. Ga bulu ŋanapurr ŋuli walalany birrka’yun nhä ŋayi ŋunhi gurruṯu nhanŋu yothuw bitjan bili.'
                 language={language}
                 audio={true}
-                style={{position:'relative', top:'-80px', paddingBottom: '130px'}}
+                style={{position:'relative', top:'-80px', }}
                 />
+                </DhukarrContent>
 
-              </BlobRow>
+             
 
-              <BlobRow>
+            </DhukarrContent>
+            <DhukarrContent orientation="row">
 
-                <Blob 
-                  animation={false}
-                  id='7' 
-                  colour='brown'
-                  english='Grandparents support and offer advice to mum and dad and rest of the family so they understand how to care for the child.'
-                  yolngu='Märiy ga ŋathiy ŋuli guŋga’yun ga gurrupan dharaŋanaraw bäpaw ga ŋaṉḏiw  ga wiripuny mala gurruṯumirriw märr walal dhu dharaŋan nhaltjan walal dhu djäga yothuw.'
-                  language={language}
-                  audio={true}
-                  style={{position:'relative', top:'-20px', paddingBottom: '130px'}}
+            <DhukarrContent orientation="column" arrow={true}>
+            <BlobArrow 
+                    id='7'
+                    style={{position:'relative', top:'-40px'}}
                   />
-
                 <Blob 
+                      animation={false}
+                      id='7' 
+                      colour='brown'
+                      english='Grandparents support and offer advice to mum and dad and rest of the family so they understand how to care for the child.'
+                      yolngu='Märiy ga ŋathiy ŋuli guŋga’yun ga gurrupan dharaŋanaraw bäpaw ga ŋaṉḏiw  ga wiripuny mala gurruṯumirriw märr walal dhu dharaŋan nhaltjan walal dhu djäga yothuw.'
+                      language={language}
+                      audio={true}
+                      style={{position:'relative', top:'-20px', }}
+                  />
+                </DhukarrContent>
+
+                <DhukarrContent orientation="column" arrow={true}>
+                <BlobArrow 
+                    id='4'
+                    style={{position:'relative', top:'-90px'}}
+                  />
+                  <Blob 
                   animation={false}
                   id='4' 
                   colour='grey'
@@ -159,22 +189,34 @@ const Dhukarr = () => {
                   yolngu='Gurruṯumirriy ŋuli dhuwurr nhäma yothuny - nhaltjan ŋayi ŋuli romgu ga gakalwu marŋgithirr bitjan bili.'
                   language={language}
                   audio={true}
-                  style={{position:'relative', top:'-80px', paddingBottom: '130px', width:'100%'}}
+                  style={{position:'relative', top:'-80px',  width:'100%'}}
                   textStyle={{width:'80%'}}
                   />
+                </DhukarrContent>
 
-                <Blob 
-                  animation={false}
-                  id='6' 
-                  colour='yellow'
-                  english='The child decides what they want or don’t want – they have autonomy – family don’t force them or hurt their feelings by refusing to give them what they want. '
-                  yolngu='Yothuw ŋayaŋu nhaku ŋayi djäl ga nhaku malaŋuw – ŋayi ŋunhi rumbal waṯaŋu – gurruṯumirriy ŋuli yaka gurkuryun wo ŋayaŋu wutthun yothuny.'
-                  language={language}
-                  audio={true}
-                  style={{position:'relative', top:'-80px', paddingBottom: '130px'}}
+                <DhukarrContent orientation="column" arrow={true}>
+                <BlobArrow 
+                    id='6'
+                    style={{position:'relative', top:'-110px'}}
                   />
+                  <Blob 
+                    animation={false}
+                    id='6' 
+                    colour='yellow'
+                    english='The child decides what they want or don’t want – they have autonomy – family don’t force them or hurt their feelings by refusing to give them what they want. '
+                    yolngu='Yothuw ŋayaŋu nhaku ŋayi djäl ga nhaku malaŋuw – ŋayi ŋunhi rumbal waṯaŋu – gurruṯumirriy ŋuli yaka gurkuryun wo ŋayaŋu wutthun yothuny.'
+                    language={language}
+                    audio={true}
+                    style={{position:'relative', top:'-80px',}}
+                    />
+                </DhukarrContent>
 
-              </BlobRow>
+                
+
+                
+
+               
+                  </DhukarrContent>
 
               </DhukarrContent>
 
@@ -515,7 +557,7 @@ const Dhukarr = () => {
                 <Blob 
                 animation={true}
                 id='31' 
-                colour='orange'
+                colour='brown'
                 english='The family use child language and sign language for example food, grandfather, come for a cuddle…'
                 yolngu='Yothuwal gurruṯumirriy ŋuli yalŋgi matha waŋa ga goŋdhu ŋuli milkum yothuw balanya nhakun ŋatha, ŋathi, wäthun yothuw dhangi’yunaraw’.'
                 language={language}
@@ -531,7 +573,8 @@ const Dhukarr = () => {
                 yolngu='Ŋunhi ŋuli yothu rirrikthun ŋayi ŋuli gurruṯumirriy guŋga’yun djäma gaḏayka ga wiripuwiripu ḏukthunamirr mala man’tjarr ga dharpa ga wiripuny raŋipuy mala rerriw ḏukmaranharaw ga ḻaymaranharaw.'
                 language={language}
                 audio={true}
-                style={{marginBottom:'40px', position: 'relative', left: '40px', top:'20px'  }}
+                style={{marginBottom:'40px', position: 'relative', left: '-40px', top:'20px', width:'100%'  }}
+                textStyle={{width:'80%'}}
                 
                 />
 
@@ -1549,7 +1592,7 @@ id='57'
 
               <Sidebar background={true}  
                 id='9' 
-                english=''
+                english='Starting to walk'
                 yolngu='Dhuwandja dhäwu yothuw marrtji’marrtjinyamirriw'
                 language={language}
                 />
