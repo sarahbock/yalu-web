@@ -30,7 +30,7 @@ const Home = props =>{
           />
 
           <Tile id='auspathway' label='Australian education pathway'
-            onClick={()=>alert('Coming soon!')}
+            onClick={()=>chooseResourceHandler('auspathway')}
           />
 
           <Tile id='ceremony' label='Ceremony as a Yolŋu classroom'

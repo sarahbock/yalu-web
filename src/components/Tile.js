@@ -1,7 +1,8 @@
 import React from 'react';
 import dictionary from '../assets/wordcloud.png';
 import blank from '../assets/more.png';
-import child from '../assets/human-footprints.png';
+import footprints from '../assets/human-footprints.png';
+import school from '../assets/school.png';
 import more from '../assets/more.png';
 
 const Tile = ({ id, label, onClick }) => {
@@ -11,7 +12,8 @@ const Tile = ({ id, label, onClick }) => {
   let icon = blank;
   switch ( id ) {
     case 'dictionary': icon=dictionary; break;
-    case 'children': icon=child; break;
+    case 'children': icon=footprints; break;
+    case 'auspathway': icon=school; break;
     default: icon=more; break;
   }
 
