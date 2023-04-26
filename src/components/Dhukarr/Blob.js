@@ -2,7 +2,7 @@ import React, {useState, useRef, useEffect} from 'react';
 
 import SoundPlayer from '../SoundPlayer';
 import Modal from '../UI/Modal';
-import info from '../../assets/info.png';
+import info from '../../assets/play.png';
 
 const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textStyle, animation }) => {
 
@@ -92,7 +92,15 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
 
           {link && 
             <div className='moreInfo'>
-              <a href={`${link}`} rel="noreferrer" target='_blank'><img src={info} alt="Info" className="infoIcon"/></a>
+              
+              <a href={`${link}`} rel="noreferrer" target='_blank'>
+                <img src={info} alt="Info" className="infoIcon"/> 
+              </a>
+
+              <a href={`${link}`} rel="noreferrer" target='_blank'>
+                More information
+              </a>
+             
             </div>
             }
 

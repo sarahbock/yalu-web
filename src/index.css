@@ -211,20 +211,15 @@ cursor: pointer;
 .section13Holder{  background-image:url("./assets/dhukarr/bg13.png"); height:1290px;}
 .section14Holder{  background-image:url("./assets/dhukarr/bg14.png"); height:978px;}
 
-.dhukarrScreen h1{ color: #FFF; font-family: 'KGBlank', Arial, sans-serif;     font-size: 41px;
-    max-width: 700px;
-    margin: auto;
-    font-weight: normal;
-    text-align: center;}
-    @media only screen and (max-width: 900px) {.dhukarrScreen h1{ max-width: none; font-size:24px } }
-.dhukarrScreen h2{color: #FFF; font-family: 'KGBlank', Arial, sans-serif; font-size: 22px; font-weight: normal;     max-width: 800px;
-  margin: auto;}
-  @media only screen and (max-width: 900px) {.dhukarrScreen h2{ font-size:18px } }
+.dhukarrScreen h1{ color: #FFF;  font-size: 44px;  max-width: 700px; margin: auto; text-align: center;}
+@media only screen and (max-width: 900px) {.dhukarrScreen h1{ max-width: none; font-size:24px } }
+.dhukarrScreen h2{color: #FFF; font-family: 'KGBlank', Arial, sans-serif; font-size: 22px; font-weight: normal;     max-width: 800px; margin: auto;}
+@media only screen and (max-width: 900px) {.dhukarrScreen h2{ font-size:18px } }
 .dhukarrScreen h3{color: #FFF; font-family: 'Ebrima', Arial, sans-serif; font-size: 22px; font-weight: normal;}
 @media only screen and (max-width: 900px) {.dhukarrScreen h3{font-size:18px } }
 .dhukarrScreen p{color: #FFF; font-family: 'Ebrima', Arial, sans-serif; font-size: 20px; font-weight: normal;}
 @media only screen and (max-width: 900px) {.dhukarrScreen p{font-size:14px } }
-.dhukarrScreen .infoIcon{    width: 35px; margin-left: 10px;}
+.dhukarrScreen .infoIcon{    width: 20px; }
 
 .blob{ padding: 60px;background-size: contain; background-repeat: no-repeat; display:flex; justify-content: center; align-items: center;     background-position: center; flex:1; cursor: pointer;}
 .blobArrowImage{width:61px; height:69px;}
@@ -239,6 +234,7 @@ cursor: pointer;
 .blobYellow{color: #843c0c;}
 .blobLight{color: #843c0c;}
 .blobGrey{color: #efd32e;}
+
 
 /*Modal styles*/
 #root-overlay .blobBrown{background-color: #843C0D}
@@ -452,7 +448,20 @@ cursor: pointer;
 .dhukarrScreen .sideBarTextNumber {display:inline; writing-mode: horizontal-tb; text-orientation: initial;     padding: 20px 0 20px 0;}
 @media only screen and (max-width: 900px) { .dhukarrScreen .sideBarTextNumber{  padding: 20px 10px 20px 0;} }
 .dhukarrScreen a{color:#831C19;}
-.dhukarrScreen .moreInfo{margin-top:20px;}
+.dhukarrScreen .moreInfo{margin-top:20px;     display: flex; justify-content: center; align-items: center;}
+.dhukarrScreen .moreInfo a{margin:0 5px; color: #000000;}
+
+/*AUS PATHWAY*/
+.auspathwayScreen .sideBarText{ color: #fff;}
+.auspathwayScreen .section0Holder{  background-image:url("./assets/dhukarr/intro_bg.png"); padding-top: 200px; flex-direction: column; }
+@media only screen and (max-width: 1024px) { .auspathwayScreen  .section0Holder {padding-top: 0px;}} 
+.auspathwayScreen .section1Holder{  background-image:url("./assets/dhukarr/bg1.png"); height:1051px;}
+.auspathwayScreen .section2Holder{  background-image:url("./assets/dhukarr/bg2.png"); height:571px;}
+.auspathwayScreen .section3Holder{  background-image:url("./assets/dhukarr/bg3.png"); height:3232px;}
+.auspathwayScreen .section4Holder{  background-image:url("./assets/dhukarr/bg4.png"); height:1274px;}
+.auspathwayScreen .section5Holder{  background-image:url("./assets/dhukarr/bg5.png"); height:3015px;}
+
+
 /*ENTRY*/
 
 .entryContent{

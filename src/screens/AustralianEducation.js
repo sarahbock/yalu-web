@@ -15,16 +15,21 @@ import Sidebar from '../components/Dhukarr/Sidebar';
 
 const AustralianEducation = () => {
 
-  //show in language or english?
-  const [language, setLanguage] = useState(true)
+ //show in language or english?
+ const [language, setLanguage] = useState(true)
 
+
+ //when user clicks the language icon 
+ const toggleLanguage = () => {
+   setLanguage(!language);
+ }
 
 
 
   return(
-    <div className="container dictionaryScreen dhukarrScreen">
+    <div className="container dictionaryScreen dhukarrScreen auspathwayScreen">
 
-    <TopNav back noBorder title="Australian Education System"/>
+    <TopNav toggleLanguage={toggleLanguage} language={language} back noBorder title="Australian Education System"/>
 
       <div className='contentContainer'>
 
@@ -34,189 +39,51 @@ const AustralianEducation = () => {
 
           <div className='padThinner'>
             <h1>Australian Education System</h1>
-            <h2 className='marginTop'>Yolŋu title</h2>
+            <h2 className='marginTop'>Djamrrkuliw' dharananaraw balandaw dhukarrwu marngithinyaraw</h2>
           </div>
 
-          <div className='blobRow blobRowThin'>
-
-            <Blob 
-              id='01' 
-              colour='brown'
-              english='Ongoing ways that family support the child'
-              language={language}
-              />
-
-            <Blob 
-              id='02' 
-              colour='orange'
-              english='Ways that family support the child just at this stage'
-              language={language}
-              />
-
-            <Blob 
-              id='03' 
-              colour='yellow'
-              english='What the child does - ongoing'
-              language={language}
-              />
-
-            <Blob 
-              id='04' 
-              colour='light'
-              english='What the child does – just at this stage'
-              language={language}
-              />  
-
-          </div>
-
-          <div className='blobRow blobRowThin'>
-
-          <Blob 
-              id='05' 
-              colour='grey'
-              english='Yellow text – ways that family assess the child’s development'
-              language={language}
-              />
-
-          </div>
-
-          <div className='padThinner marginTop paddingBottom'>
-            <p>
-              { language ? 
-                <>Yolŋuwal mäŋutjiy ŋuli nhäma ga dharaŋan nhaltjan ga yothu ŋuthan ga marŋgithirr – Yolŋuw guyaŋanhawuy dhuwal yaka rrambaŋi nhakun Balandaw.</> : 
-                <>9Yolŋu monitor and support the child’s development through watching and assessing how each child is progressing along their pathway and helping with what they need at the time – not expecting specific stages at specific ages like the Balanda system.</>
-              }
-              <SoundPlayer source={require('../assets/dhukarr/mp3/recording9.mp3')}/>
-            </p>
-          </div>
-
-          {/*ONGOING*/}
+          {/*AGES 0-3.5*/}
 
           <DhukarrSection>
 
-              <DhukarrContent orientation="column">
-
               <DhukarrContent orientation="row">
 
-                <DhukarrContent orientation="column" arrow={true}>
-                  <BlobArrow 
-                    id='8'
-                    style={{position:'relative', top:'-20px'}}
-                  />
-                  <Blob 
-                  animation={false}
-                  id='8' 
-                  colour='brown'
-                  english='In the Yolŋu system, we all work together to care and support the child’s development.'
-                  yolngu='Dhuwal yothuw gakal yolŋuwal romŋur ŋanapurruŋgal djägany ŋuli räḻ-manapanmirr.'
-                  language={language}
-                  audio={true}
-                  style={{position:'relative', top:'20px'}}
-                  />
-                </DhukarrContent>
+                <DhukarrContent orientation="column">
 
-                <DhukarrContent orientation="column" arrow={true}>
-                  <BlobArrow 
-                      id='3'
-                      style={{position:'relative', top:'-150px'}}
-                    />
-                  <Blob 
-                  animation={false}
-                  id='3' 
-                  colour='yellow'
-                  english='The child knows what is best for their growth – when to sleep, eat, play (the child decides not the family).'
-                  yolngu='ŋayi yothu marŋgi nhaltjan ŋayi ŋuli galŋa-dhulŋithirr –  ŋorranharaw ga buḻ’yunaraw ga ŋaminiwu ŋulkthunaraw.'
-                  language={language}
-                  audio={true}
-                  style={{position:'relative', top:'-120px',}}
-                  textStyle={{width:'80%'}}
-                  />
-                </DhukarrContent>
-
-                <DhukarrContent orientation="column" arrow={true}>
-                <BlobArrow 
-                    id='5'
-                    style={{position:'relative', top:'-100px'}}
-                  />
-                <Blob 
-                animation={false}
-                id='5' 
-                colour='yellow'
-                english='Gurruṯu (kinship connection) testing—teaching—testing—teaching routines continue all the time until the child has demonstrated strong understanding of kinship concepts and their own relationship.'
-                yolngu='Gurruṯuny ŋanapurr ŋuli marŋgi- gurrapan ŋunhi yothuny ŋayi ŋuli marrtji ŋuthan. Ga bulu ŋanapurr ŋuli walalany birrka’yun nhä ŋayi ŋunhi gurruṯu nhanŋu yothuw bitjan bili.'
-                language={language}
-                audio={true}
-                style={{position:'relative', top:'-80px', }}
-                />
-                </DhukarrContent>
-
-             
-
-            </DhukarrContent>
-            <DhukarrContent orientation="row">
-
-            <DhukarrContent orientation="column" arrow={true}>
-            <BlobArrow 
-                    id='7'
-                    style={{position:'relative', top:'-40px'}}
-                  />
-                <Blob 
-                      animation={false}
-                      id='7' 
-                      colour='brown'
-                      english='Grandparents support and offer advice to mum and dad and rest of the family so they understand how to care for the child.'
-                      yolngu='Märiy ga ŋathiy ŋuli guŋga’yun ga gurrupan dharaŋanaraw bäpaw ga ŋaṉḏiw  ga wiripuny mala gurruṯumirriw märr walal dhu dharaŋan nhaltjan walal dhu djäga yothuw.'
-                      language={language}
-                      audio={true}
-                      style={{position:'relative', top:'-20px', }}
-                  />
-                </DhukarrContent>
-
-                <DhukarrContent orientation="column" arrow={true}>
-                <BlobArrow 
-                    id='4'
-                    style={{position:'relative', top:'-90px'}}
-                  />
-                  <Blob 
-                  animation={false}
-                  id='4' 
-                  colour='grey'
-                  english='Family constantly observe and monitor how the child is developing in all areas (identity, skills, knowledge, character etc) - ‘watching what knowledge the child has caught’ (ref).'
-                  yolngu='Gurruṯumirriy ŋuli dhuwurr nhäma yothuny - nhaltjan ŋayi ŋuli romgu ga gakalwu marŋgithirr bitjan bili.'
-                  language={language}
-                  audio={true}
-                  style={{position:'relative', top:'-80px',  width:'100%'}}
-                  textStyle={{width:'80%'}}
-                  />
-                </DhukarrContent>
-
-                <DhukarrContent orientation="column" arrow={true}>
-                <BlobArrow 
-                    id='6'
-                    style={{position:'relative', top:'-110px'}}
-                  />
                   <Blob 
                     animation={false}
-                    id='6' 
-                    colour='yellow'
-                    english='The child decides what they want or don’t want – they have autonomy – family don’t force them or hurt their feelings by refusing to give them what they want. '
-                    yolngu='Yothuw ŋayaŋu nhaku ŋayi djäl ga nhaku malaŋuw – ŋayi ŋunhi rumbal waṯaŋu – gurruṯumirriy ŋuli yaka gurkuryun wo ŋayaŋu wutthun yothuny.'
+                    id='1' 
+                    colour='brown'
+                    english='BabyHub offering support to mothers and their babies through a variey of integrated programs'
                     language={language}
-                    audio={true}
-                    style={{position:'relative', top:'-80px',}}
+                    style={{position:'relative', top:'20px'}}
                     />
+                    
                 </DhukarrContent>
 
-                
+                <Blob 
+                  animation={false}
+                  id='2' 
+                  colour='brown'
+                  english='FaFT'
+                  language={language}
+                  style={{position:'relative', top:'20px'}}
+                  />
 
-                
+                <DhukarrContent orientation="column">
 
-               
-                  </DhukarrContent>
+                  <Blob 
+                    animation={false}
+                    id='3' 
+                    colour='brown'
+                    english='East Arnhem supporting through their Childcare play based program'
+                    language={language}
+                    style={{position:'relative', top:'20px'}}
+                    />
 
+                </DhukarrContent>
+         
               </DhukarrContent>
-
-             {/*SIDE BAR - ONGOING*/}
 
              <Sidebar background={false}  
               id='0' 
@@ -230,7 +97,7 @@ const AustralianEducation = () => {
         </SectionHolder>
       
 
-       {/*SECTION 1*/}
+       {/*Ages 3.5-5 years*/}
 
        <SectionHolder id='1'>
 
@@ -238,21 +105,47 @@ const AustralianEducation = () => {
 
               <DhukarrContent orientation="column">
 
-                Fast program
+                <Blob 
+                  animation={true}
+                  id='4' 
+                  colour='white'
+                  english='FAST program helps support families and children through a variety of family centric programs'
+                  yolngu=''
+                  language={language}
+                  audio={false}
+                  style={{position:'relative', left:'20px' }}
+                  />
+
 
               </DhukarrContent>
 
-              <DhukarrMiddle/>
+              <Blob 
+                animation={true}
+                id='5' 
+                colour='transparent'
+                english='Preschool'
+                yolngu=''
+                language={language}
+                audio={false}
+                style={{position:'relative', left:'20px' }}
+                />
 
-              <DhukarrContent orientation="column">
-                
-                Preschool
+              <Blob 
+                animation={true}
+                id='6' 
+                colour='white'
+                english=''
+                yolngu=''
+                language={language}
+                audio={false}
+                style={{position:'relative', left:'20px' }}
+                />
 
-              </DhukarrContent>
+
 
               <Sidebar background={true}  
                 id='1' 
-                english='Ages 3.5 - 5 years'
+                english='Ages 3.5-5 years'
                 yolngu=''
                 language={language}
                 />
@@ -262,7 +155,7 @@ const AustralianEducation = () => {
            </SectionHolder>
 
 
-        {/*SECTION 2*/}
+        {/*Ages 5-6 years*/}
 
         <Anchor id='2'/>
 
@@ -270,11 +163,16 @@ const AustralianEducation = () => {
 
             <DhukarrSection>
 
-              <DhukarrContent orientation="row">
-                
-               Transition
-
-              </DhukarrContent>
+              <Blob 
+                animation={true}
+                id='7' 
+                colour='transparent'
+                english='Transition'
+                yolngu=''
+                language={language}
+                audio={false}
+                style={{position:'relative', left:'20px' }}
+                />
 
               <Sidebar background={true}  
                 id='2' 
@@ -287,7 +185,7 @@ const AustralianEducation = () => {
 
            </SectionHolder>
 
-        {/*SECTION 3*/}
+        {/*Ages 6-9 years (grade 1-4)*/}
 
         <Anchor id='3'/>
 
@@ -295,11 +193,16 @@ const AustralianEducation = () => {
 
             <DhukarrSection>
 
-              <DhukarrContent orientation="row">
-                
-               Primary years
-
-              </DhukarrContent>
+              <Blob 
+                animation={true}
+                id='8' 
+                colour='transparent'
+                english='Primary years'
+                yolngu=''
+                language={language}
+                audio={false}
+                style={{position:'relative', left:'20px' }}
+                />
 
               <Sidebar background={true}  
                 id='3' 
@@ -313,7 +216,7 @@ const AustralianEducation = () => {
            </SectionHolder>
 
 
-         {/*SECTION 4*/}
+         {/*Ages 10-12 years (grade 5-7)*/}
 
          <Anchor id='4'/>
 
@@ -321,11 +224,16 @@ const AustralianEducation = () => {
 
             <DhukarrSection>
 
-              <DhukarrContent orientation="row">
-                
-               Middle years
-
-              </DhukarrContent>
+              <Blob 
+                animation={true}
+                id='9' 
+                colour='transparent'
+                english='Middle years'
+                yolngu=''
+                language={language}
+                audio={false}
+                style={{position:'relative', left:'20px' }}
+                />
 
               <Sidebar background={true}  
                 id='4' 
@@ -339,7 +247,7 @@ const AustralianEducation = () => {
            </SectionHolder>
 
 
-         {/*SECTION 5*/}
+         {/*Ages 13-17 years (grade 8-12)*/}
 
          <Anchor id='5'/>
 
@@ -347,11 +255,16 @@ const AustralianEducation = () => {
 
           <DhukarrSection>
 
-            <DhukarrContent orientation="row">
-              
-            Secondary years
-
-            </DhukarrContent>
+            <Blob 
+              animation={true}
+              id='10' 
+              colour='transparent'
+              english='Secondary years'
+              yolngu=''
+              language={language}
+              audio={false}
+              style={{position:'relative', left:'20px' }}
+              />
 
             <Sidebar background={true}  
               id='5' 
@@ -373,9 +286,63 @@ const AustralianEducation = () => {
 
             <DhukarrSection>
 
-              <DhukarrContent orientation="row">
+              <DhukarrContent orientation="column">
                 
-               Higher education
+                <Blob 
+                  animation={true}
+                  id='11' 
+                  colour='transparent'
+                  english='Certificate 1'
+                  yolngu=''
+                  language={language}
+                  audio={false}
+                  style={{position:'relative', left:'0px' }}
+                  />
+                  
+                <Blob 
+                  animation={true}
+                  id='12' 
+                  colour='transparent'
+                  english='Certificate 2'
+                  yolngu=''
+                  language={language}
+                  audio={false}
+                  style={{position:'relative', left:'0px' }}
+                  />
+
+                <Blob 
+                  animation={true}
+                  id='13' 
+                  colour='transparent'
+                  english='Certificate 3'
+                  yolngu=''
+                  language={language}
+                  audio={false}
+                  style={{position:'relative', left:'0px' }}
+                  />
+
+                <Blob 
+                  animation={true}
+                  id='14' 
+                  colour='transparent'
+                  english='Certificate 4'
+                  yolngu=''
+                  language={language}
+                  audio={false}
+                  style={{position:'relative', left:'20px' }}
+                  />
+
+                <Blob 
+                  animation={true}
+                  id='15' 
+                  colour='transparent'
+                  english='Advanced Diploma'
+                  yolngu=''
+                  language={language}
+                  audio={false}
+                  style={{position:'relative', left:'20px' }}
+                  />
+
 
               </DhukarrContent>
 
@@ -383,21 +350,8 @@ const AustralianEducation = () => {
             </DhukarrSection>
             
            </SectionHolder>
-
-
         
-
-
-          
-
-        
-        
-      </div>
-
-      
- 
-
-    
+      </div> 
 
     </div>
   )
