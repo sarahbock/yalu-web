@@ -3,6 +3,7 @@ import React, {useState, useRef, useEffect} from 'react';
 import SoundPlayer from '../SoundPlayer';
 import Modal from '../UI/Modal';
 import info from '../../assets/play.png';
+import BlobText from './BlobText';
 
 const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textStyle, animation }) => {
 
@@ -56,7 +57,7 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
   return(
 
     <div 
-      onClick={toggleEntryOpenState}
+      
       className={`
         blob 
         ${ isVisible ? 'is-visible' : animation ? '' : 'is-visible'}
@@ -82,11 +83,16 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
         }
 
         <div 
-          className={`blobText ${colourClass} ${textClass}`} 
+          className={`blobTextHolder ${colourClass}`}
           style={textClass}
           >
 
-          { blobText }
+            <BlobText 
+              className={`blobText ${colourClass}`}
+              clickHandler={toggleEntryOpenState} 
+              >
+              {blobText}
+            </BlobText>
 
           { soundFile && <SoundPlayer source={soundFile}/> }
 

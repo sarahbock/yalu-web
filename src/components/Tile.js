@@ -3,6 +3,7 @@ import dictionary from '../assets/wordcloud.png';
 import blank from '../assets/more.png';
 import footprints from '../assets/human-footprints.png';
 import school from '../assets/school.png';
+import didge from '../assets/didgeridoo.png';
 import more from '../assets/more.png';
 
 const Tile = ({ id, label, onClick }) => {
@@ -14,6 +15,7 @@ const Tile = ({ id, label, onClick }) => {
     case 'dictionary': icon=dictionary; break;
     case 'children': icon=footprints; break;
     case 'auspathway': icon=school; break;
+    case 'ceremony': icon=didge; break;
     default: icon=more; break;
   }
 

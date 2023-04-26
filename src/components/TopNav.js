@@ -27,7 +27,6 @@ const TopNav = ({ toggleSearch, title, home, back, play, audio, noBorder, toggle
 
     <div className={`${'appHeader bgstrip'} ${noBorder&&'noBorder'}`}>
       
-
         {home &&
           <div className="leftHeader" onClick={returnHome}>
             <div className="appHeaderImage">
@@ -72,6 +71,12 @@ const TopNav = ({ toggleSearch, title, home, back, play, audio, noBorder, toggle
             <div className="appHeaderImage">
               <SoundPlayer source={audio}/>
               </div>
+          </div>
+        }
+
+        {!play && !toggleLanguage && !toggleSearch &&
+          <div className="rightHeader" >
+            &nbsp;
           </div>
         }
 

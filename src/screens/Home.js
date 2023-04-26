@@ -34,7 +34,7 @@ const Home = props =>{
           />
 
           <Tile id='ceremony' label='Ceremony as a Yolŋu classroom'
-            onClick={()=>alert('Coming soon!')}
+            onClick={()=>chooseResourceHandler('ceremony')}
           />
 
           

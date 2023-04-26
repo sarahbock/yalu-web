@@ -5,6 +5,7 @@ import TopNav from '../components/TopNav';
 
 import SoundPlayer from '../components/SoundPlayer';
 import Blob from '../components/Dhukarr/Blob';
+import BlobText from '../components/Dhukarr/BlobText';
 import BlobArrow from '../components/Dhukarr/BlobArrow';
 import Anchor from '../components/Dhukarr/Anchor';
 import SectionHolder from '../components/Dhukarr/SectionHolder';
@@ -15,21 +16,12 @@ import Sidebar from '../components/Dhukarr/Sidebar';
 
 const AustralianEducation = () => {
 
- //show in language or english?
- const [language, setLanguage] = useState(true)
-
-
- //when user clicks the language icon 
- const toggleLanguage = () => {
-   setLanguage(!language);
- }
-
 
 
   return(
     <div className="container dictionaryScreen dhukarrScreen auspathwayScreen">
 
-    <TopNav toggleLanguage={toggleLanguage} language={language} back noBorder title="Australian Education System"/>
+    <TopNav back noBorder title=""/>
 
       <div className='contentContainer'>
 
@@ -52,33 +44,76 @@ const AustralianEducation = () => {
 
                   <Blob 
                     animation={false}
-                    id='1' 
+                    id='0a' 
+                    colour='brown'
+                    english='Early years through to secondary school pathway'
+                    language={false}
+                    style={{position:'relative', top:'0px'}}
+                    />
+
+                  <Blob 
+                    animation={false}
+                    id='0b' 
+                    colour='brown'
+                    english='BabyHub logo'
+                    language={false}
+                    style={{position:'relative', top:'0px'}}
+                    />
+
+                  <Blob 
+                    animation={false}
+                    id='0c' 
                     colour='brown'
                     english='BabyHub offering support to mothers and their babies through a variey of integrated programs'
-                    language={language}
-                    style={{position:'relative', top:'20px'}}
+                    language={false}
+                    style={{position:'relative', top:'0px'}}
                     />
                     
                 </DhukarrContent>
 
                 <Blob 
                   animation={false}
-                  id='2' 
+                  id='0d' 
                   colour='brown'
                   english='FaFT'
-                  language={language}
-                  style={{position:'relative', top:'20px'}}
+                  language={false}
+                  style={{position:'relative', top:'0px'}}
                   />
 
                 <DhukarrContent orientation="column">
 
                   <Blob 
                     animation={false}
-                    id='3' 
+                    id='0e' 
+                    colour='brown'
+                    english='East Arnhem RC logo'
+                    language={false}
+                    style={{position:'relative', top:'0px'}}
+                    />
+
+                  <Blob 
+                    animation={false}
+                    id='0f' 
                     colour='brown'
                     english='East Arnhem supporting through their Childcare play based program'
-                    language={language}
-                    style={{position:'relative', top:'20px'}}
+                    language={false}
+                    style={{position:'relative', top:'0px'}}
+                    />
+                  <Blob 
+                    animation={false}
+                    id='0g' 
+                    colour='brown'
+                    english='CB logo'
+                    language={false}
+                    style={{position:'relative', top:'0px'}}
+                    />
+                  <Blob 
+                    animation={false}
+                    id='0h' 
+                    colour='brown'
+                    english='Connected Beginnings supports school readiness and families in the early years through integrated programming'
+                    language={false}
+                    style={{position:'relative', top:'0px'}}
                     />
 
                 </DhukarrContent>
@@ -89,7 +124,7 @@ const AustralianEducation = () => {
               id='0' 
               english='Ages 0 - 3.5 years'
               yolngu=''
-              language={language}
+              language={false}
               />
 
           </DhukarrSection> 
@@ -106,14 +141,21 @@ const AustralianEducation = () => {
               <DhukarrContent orientation="column">
 
                 <Blob 
-                  animation={true}
-                  id='4' 
-                  colour='white'
+                  animation={false}
+                  id='1a' 
+                  colour='brown'
+                  english='Fast logo'
+                  language={false}
+                  style={{position:'relative', top:'0px'}}
+                  />
+
+                <Blob 
+                  animation={false}
+                  id='1b' 
+                  colour='brown'
                   english='FAST program helps support families and children through a variety of family centric programs'
-                  yolngu=''
-                  language={language}
-                  audio={false}
-                  style={{position:'relative', left:'20px' }}
+                  language={false}
+                  style={{position:'relative', top:'0px'}}
                   />
 
 
@@ -121,33 +163,44 @@ const AustralianEducation = () => {
 
               <Blob 
                 animation={true}
-                id='5' 
+                id='1c' 
                 colour='transparent'
                 english='Preschool'
-                yolngu=''
-                language={language}
+                language={false}
                 audio={false}
-                style={{position:'relative', left:'20px' }}
+                style={{position:'relative', left:'0px' }}
                 />
 
-              <Blob 
-                animation={true}
-                id='6' 
-                colour='white'
-                english=''
-                yolngu=''
-                language={language}
-                audio={false}
-                style={{position:'relative', left:'20px' }}
-                />
+              <DhukarrContent orientation="column">
 
+                <Blob 
+                  animation={true}
+                  id='1d' 
+                  colour='white'
+                  english='Yalu logo'
+                  language={false}
+                  audio={false}
+                  style={{position:'relative', left:'0px' }}
+                  />
+                
+                <Blob 
+                  animation={true}
+                  id='1d' 
+                  colour='white'
+                  english='NEST supports inter-agency collaboration and programs across the child circle'
+                  language={false}
+                  audio={false}
+                  style={{position:'relative', left:'0px' }}
+                  />
+
+              </DhukarrContent>       
 
 
               <Sidebar background={true}  
                 id='1' 
                 english='Ages 3.5-5 years'
                 yolngu=''
-                language={language}
+                language={false}
                 />
             
             </DhukarrSection>
@@ -163,22 +216,53 @@ const AustralianEducation = () => {
 
             <DhukarrSection>
 
+            <DhukarrContent orientation="column">
+
+              <Blob 
+                animation={false}
+                id='2a' 
+                colour='brown'
+                english='Logo'
+                language={false}
+                style={{position:'relative', top:'0px'}}
+                />
+
+              <Blob 
+                animation={false}
+                id='2b' 
+                colour='brown'
+                english='Learning on Country run a number of programs for children to learn on country at various homelands'
+                language={false}
+                style={{position:'relative', top:'0px'}}
+                />
+
+              </DhukarrContent>
+
               <Blob 
                 animation={true}
-                id='7' 
+                id='2c' 
                 colour='transparent'
                 english='Transition'
                 yolngu=''
-                language={language}
+                language={false}
                 audio={false}
                 style={{position:'relative', left:'20px' }}
+                />
+
+              <Blob 
+                animation={false}
+                id='2d' 
+                colour='brown'
+                english=''
+                language={false}
+                style={{position:'relative', top:'0px'}}
                 />
 
               <Sidebar background={true}  
                 id='2' 
                 english='Ages 5-6 years'
                 yolngu=''
-                language={language}
+                language={false}
                 />
             
             </DhukarrSection>
@@ -193,22 +277,81 @@ const AustralianEducation = () => {
 
             <DhukarrSection>
 
+            <DhukarrContent orientation="column">
+
+              <Blob 
+                animation={false}
+                id='3a' 
+                colour='green'
+                english='YEAR 1'
+                language={false}
+                style={{position:'relative', top:'0px'}}
+                />
+              <Blob 
+                animation={false}
+                id='3b' 
+                colour='green'
+                english='YEAR 2'
+                language={false}
+                style={{position:'relative', top:'0px'}}
+                />
+              <Blob 
+                animation={false}
+                id='3c' 
+                colour='green'
+                english='YEAR 3'
+                language={false}
+                style={{position:'relative', top:'0px'}}
+                />
+              <Blob 
+                animation={false}
+                id='3d' 
+                colour='green'
+                english='YEAR 4'
+                language={false}
+                style={{position:'relative', top:'0px'}}
+                />
+
+              </DhukarrContent>
+
+
               <Blob 
                 animation={true}
-                id='8' 
+                id='3e' 
                 colour='transparent'
                 english='Primary years'
                 yolngu=''
-                language={language}
+                language={false}
                 audio={false}
                 style={{position:'relative', left:'20px' }}
                 />
+
+              <DhukarrContent orientation="column">
+
+              <Blob 
+                animation={false}
+                id='3f' 
+                colour='white'
+                english='gvt logo'
+                language={false}
+                style={{position:'relative', top:'0px'}}
+                />
+              <Blob 
+                animation={false}
+                id='3g' 
+                colour='green'
+                english='Territory Families provide support services across child protection, domestic and family violence'
+                language={false}
+                style={{position:'relative', top:'0px'}}
+                />
+
+              </DhukarrContent>
 
               <Sidebar background={true}  
                 id='3' 
                 english='Ages 6-9 years (grade 1-4)'
                 yolngu=''
-                language={language}
+                language={false}
                 />
             
             </DhukarrSection>
@@ -224,22 +367,64 @@ const AustralianEducation = () => {
 
             <DhukarrSection>
 
+            <DhukarrContent orientation="column">
+
+              <Blob 
+                animation={false}
+                id='4a' 
+                colour='yellow'
+                english=''
+                language={false}
+                style={{position:'relative', top:'0px'}}
+                />
+
+            </DhukarrContent>
+
               <Blob 
                 animation={true}
-                id='9' 
+                id='4b' 
                 colour='transparent'
                 english='Middle years'
                 yolngu=''
-                language={language}
+                language={false}
                 audio={false}
                 style={{position:'relative', left:'20px' }}
                 />
+
+              <DhukarrContent orientation="column">
+
+                <Blob 
+                  animation={false}
+                  id='4c' 
+                  colour='yellow'
+                  english='YEAR 5'
+                  language={false}
+                  style={{position:'relative', top:'0px'}}
+                  />
+                <Blob 
+                  animation={false}
+                  id='4d' 
+                  colour='yellow'
+                  english='YEAR 6'
+                  language={false}
+                  style={{position:'relative', top:'0px'}}
+                  />
+                <Blob 
+                  animation={false}
+                  id='4e' 
+                  colour='yellow'
+                  english='YEAR 7'
+                  language={false}
+                  style={{position:'relative', top:'0px'}}
+                  />
+
+              </DhukarrContent>
 
               <Sidebar background={true}  
                 id='4' 
                 english='Ages 10-12 years (grade 5-7)'
                 yolngu=''
-                language={language}
+                language={false}
                 />
             
             </DhukarrSection>
@@ -255,22 +440,76 @@ const AustralianEducation = () => {
 
           <DhukarrSection>
 
+          <DhukarrContent orientation="column">
+
+          <Blob 
+            animation={false}
+            id='5a' 
+            colour='orange'
+            english='YEAR 8'
+            language={false}
+            style={{position:'relative', top:'0px'}}
+            />
+          <Blob 
+            animation={false}
+            id='5b' 
+            colour='orange'
+            english='YEAR 9'
+            language={false}
+            style={{position:'relative', top:'0px'}}
+            />
+          <Blob 
+            animation={false}
+            id='5c' 
+            colour='orange'
+            english='YEAR 10'
+            language={false}
+            style={{position:'relative', top:'0px'}}
+            />
+          <Blob 
+            animation={false}
+            id='5d' 
+            colour='orange'
+            english='YEAR 11'
+            language={false}
+            style={{position:'relative', top:'0px'}}
+            />
+          <Blob 
+            animation={false}
+            id='5e' 
+            colour='orange'
+            english='YEAR 12'
+            language={false}
+            style={{position:'relative', top:'0px'}}
+            />
+
+          </DhukarrContent>
+
             <Blob 
               animation={true}
-              id='10' 
+              id='5f' 
               colour='transparent'
               english='Secondary years'
               yolngu=''
-              language={language}
+              language={false}
               audio={false}
               style={{position:'relative', left:'20px' }}
               />
+
+            <Blob 
+            animation={false}
+            id='5g' 
+            colour='orange'
+            english=''
+            language={false}
+            style={{position:'relative', top:'0px'}}
+            />
 
             <Sidebar background={true}  
               id='5' 
               english='Ages 13-17 years (grade 8-12)'
               yolngu=''
-              language={language}
+              language={false}
               />
 
           </DhukarrSection>
@@ -294,7 +533,7 @@ const AustralianEducation = () => {
                   colour='transparent'
                   english='Certificate 1'
                   yolngu=''
-                  language={language}
+                  language={false}
                   audio={false}
                   style={{position:'relative', left:'0px' }}
                   />
@@ -305,7 +544,7 @@ const AustralianEducation = () => {
                   colour='transparent'
                   english='Certificate 2'
                   yolngu=''
-                  language={language}
+                  language={false}
                   audio={false}
                   style={{position:'relative', left:'0px' }}
                   />
@@ -316,7 +555,7 @@ const AustralianEducation = () => {
                   colour='transparent'
                   english='Certificate 3'
                   yolngu=''
-                  language={language}
+                  language={false}
                   audio={false}
                   style={{position:'relative', left:'0px' }}
                   />
@@ -327,7 +566,7 @@ const AustralianEducation = () => {
                   colour='transparent'
                   english='Certificate 4'
                   yolngu=''
-                  language={language}
+                  language={false}
                   audio={false}
                   style={{position:'relative', left:'20px' }}
                   />
@@ -338,7 +577,7 @@ const AustralianEducation = () => {
                   colour='transparent'
                   english='Advanced Diploma'
                   yolngu=''
-                  language={language}
+                  language={false}
                   audio={false}
                   style={{position:'relative', left:'20px' }}
                   />
