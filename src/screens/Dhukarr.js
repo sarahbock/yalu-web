@@ -47,28 +47,36 @@ const Dhukarr = () => {
               id='01' 
               colour='brown'
               english='Ongoing ways that family support the child'
+              yolngu='Dhuwandja malany dhukarr ŋunha nhaltjan dhu gurruṯumirriy ga bitjan bili guŋgayun ŋunha yothuny.'
               language={language}
+              audio={true}
               />
 
             <Blob 
               id='02' 
               colour='orange'
               english='Ways that family support the child just at this stage'
+              yolngu='Dhuwandja malany dhukarr ŋunha nhaltjan dhu gurruṯumirriy guŋgayun yothuny ŋunhiwili-biliyan dhuwurr gakalil.' 
               language={language}
+              audio={true}
               />
 
             <Blob 
               id='03' 
               colour='yellow'
               english='What the child does - ongoing'
+              yolngu='Dhuwandja ŋunha nhaltjan ŋayi ŋuli yothuy ga gänan bitjana-bili gakal milkum wo marŋgiyirr.' 
               language={language}
+              audio={true}
               />
 
             <Blob 
               id='04' 
               colour='light'
               english='What the child does – just at this stage'
+              yolngu='Dhuwandja ga nhaltjana ŋayi ŋuli ga ŋunha yothu dhiyaŋun bala.' 
               language={language}
+              audio={true}
               />  
 
           </div>
@@ -79,12 +87,14 @@ const Dhukarr = () => {
               id='05' 
               colour='grey'
               english='Yellow text – ways that family assess the child’s development'
+              yolngu='Buthalakkurr wukirri – Dhuwandja dhukarr malany nhaltjan dhu gurruṯumirriy maladjarryun marrtji nhäma yothuw gakal ŋunha nhaltjan ŋayi ŋuli marrtji ŋuthan.' 
               language={language}
+              audio={true}
               />
 
           </div>
 
-          <div className='padThinner marginTop paddingBottom'>
+          <div className='padThinner marginTop paddingBottom whiteText'>
             <p>
               { language ? 
                 <>Yolŋuwal mäŋutjiy ŋuli nhäma ga dharaŋan nhaltjan ga yothu ŋuthan ga marŋgithirr – Yolŋuw guyaŋanhawuy dhuwal yaka rrambaŋi nhakun Balandaw.</> : 

@@ -175,8 +175,9 @@ cursor: pointer;
 #root .rhap_progress-section, #root-overlay .rhap_progress-section{ display: none;}
 @media only screen and (max-width: 900px) { #root .rhap_container, .rhap_container *:focus, #root-overlay .rhap_container{ margin-top: 20px;} }
 
-#root .dhukarrScreen .rhap_main-controls-button, #root-overlay .rhap_main-controls-button{ color:#ffffff; }
+
 #root .dictionaryScreen .rhap_main-controls-button, #root-overlay .rhap_main-controls-button{ color:#821C19; }
+#root .dhukarrScreen .rhap_main-controls-button, #root-overlay .rhap_main-controls-button{ color:#ffffff; }
 #root .dictionaryScreen .appHeader .rhap_main-controls-button, #root-overlay .rhap_main-controls-button{ color:#FFFFFF; }
 #root .blob .rhap_main-controls-button, #root-overlay .blob .rhap_main-controls-button{ color:#831C19; }
 #root .blobLight .rhap_main-controls-button, #root-overlay .blobLight .rhap_main-controls-button{ color:#831C19; }
@@ -228,10 +229,11 @@ cursor: pointer;
 @media only screen and (max-width: 900px) { .blobArrowImage{ display: none;} }
 .blobRow{display:flex; align-items: flex-start;  justify-content: space-between;  }
 @media only screen and (max-width: 900px) { .blobRow{ flex-direction: column; } }
-.blobRowThin{max-width: 1000px; margin:auto; justify-content: space-evenly; align-items: center;}
+.blobRowThin{max-width: 1200px; margin:auto; justify-content: space-evenly; align-items: center;}
 .blobText{font-family: 'Ebrima', Arial, sans-serif; font-size: 16px; font-weight: normal;     }
 .blobText{cursor: pointer;}
 @media only screen and (max-width: 900px) { .blobTextHolder{ width: 70%!important;margin: 20px; } }
+.blobRowThin .blobText{font-size: 13px; }
 .blobBrown{color: #FFF;}
 .blobOrange{color: #FFF;}
 .blobYellow{color: #843c0c;}
@@ -426,7 +428,7 @@ cursor: pointer;
 
 .dhukarrScreen .padThinner{ padding-left:100px; padding-right:100px;}
 @media only screen and (max-width: 900px) { .dhukarrScreen .padThinner{ padding:20px; } }
-.dhukarrScreen .marginTop{margin-top:100px;}
+.dhukarrScreen .marginTop{margin-top:60px;}
 .dhukarrScreen .marginTopLarge{margin-top:170px;}
 @media only screen and (max-width: 900px) { .dhukarrScreen .marginTop, .dhukarrScreen .marginTopLarge{ margin-top:50px; } }
 .dhukarrScreen .paddingBottom{padding-bottom:100px;}
