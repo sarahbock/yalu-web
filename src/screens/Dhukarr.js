@@ -337,8 +337,8 @@ const Dhukarr = () => {
 
               <Sidebar background={true}  
                 id='1' 
-                english='Things that are ongoing throughout the dhukarr'
-                yolngu='Dhuwandja dhäwu mala baḏaknha ŋuli bitjana bili  marrtji weyinŋumirra'
+                english='During pregnancy'
+                yolngu='Yothumirriw miyalkku gakal'
                 language={language}
                 />
             
@@ -417,8 +417,8 @@ const Dhukarr = () => {
 
               <Sidebar background={true}  
                 id='2' 
-                english='During pregnancy'
-                yolngu='Yothumirriw miyalkku gakal'
+                english='When it’s time to be born'
+                yolngu='Yothuw walu galki ŋayi dhu wäŋa-nhäman'
                 language={language}
                 />
             
@@ -654,7 +654,7 @@ const Dhukarr = () => {
 
               <Sidebar background={true}  
                 id='3' 
-                english='When it’s time to be born'
+                english='Newborn'
                 yolngu='Dhuwandja dhäwu Ŋäṉarrwu yothuw'
                 language={language}
                 />
@@ -1712,7 +1712,7 @@ id='57'
               <Sidebar background={true}  
                 id='10' 
                 english='Toddler stage'
-                yolngu='Dhuwandja dhäwu yothuw djandjanmirriw ḏälnha marrtjinyaraw '
+                yolngu='Dhuwandja dhäwu yothuw djandjanmirriw ḏälnha marrtjinyaraw'
                 language={language}
                 />
             
@@ -1887,7 +1887,7 @@ id='57'
               <Sidebar background={true}  
                 id='12' 
                 english='Around preschool age'
-                yolngu='Dhuwandja dhäwu yothuw dharaŋanamirriw '
+                yolngu='Dhuwandja dhäwu yothuw dharaŋanamirriw'
                 language={language}
                 />
             
@@ -1982,7 +1982,7 @@ id='57'
             <Sidebar background={true}  
               id='13' 
               english='From preschool age and onwards'
-              yolngu='Dhuwandja dhäwu yothuw ŋunhi ŋayi ŋuli mirithirra dharaŋan ga marŋgithirra '
+              yolngu='Dhuwandja dhäwu yothuw ŋunhi ŋayi ŋuli mirithirra dharaŋan ga marŋgithirra'
               language={language}
               />
 
