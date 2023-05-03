@@ -158,6 +158,7 @@ const Dhukarr = () => {
                 colour='yellow'
                 english='Gurruṯu (kinship connection) testing—teaching—testing—teaching routines continue all the time until the child has demonstrated strong understanding of kinship concepts and their own relationship.'
                 yolngu='Gurruṯuny ŋanapurr ŋuli marŋgi- gurrapan ŋunhi yothuny ŋayi ŋuli marrtji ŋuthan. Ga bulu ŋanapurr ŋuli walalany birrka’yun nhä ŋayi ŋunhi gurruṯu nhanŋu yothuw bitjan bili.'
+                link='http://www.growingupyolngu.com.au/index.cfm?fuseaction=page&p=254&l=2&id=69&smid=163'
                 language={language}
                 audio={true}
                 style={{position:'relative', top:'-80px', }}
@@ -199,6 +200,7 @@ const Dhukarr = () => {
                   yolngu='Gurruṯumirriy ŋuli dhuwurr nhäma yothuny - nhaltjan ŋayi ŋuli romgu ga gakalwu marŋgithirr bitjan bili.'
                   language={language}
                   audio={true}
+                  link='http://growingupyolngu.com.au/index.cfm?fuseaction=page&p=226&l=2&id=70&smid=146'
                   style={{position:'relative', top:'-80px',  width:'100%'}}
                   textStyle={{width:'80%'}}
                   />
@@ -453,6 +455,7 @@ const Dhukarr = () => {
                 colour='orange'
                 english='Family members choose names for the child: connecting to the baby’s ancestors through songlines, and the land and the sea and the sky (Yirritja or Dhuwa).'
                 yolngu='Gurruṯumirriy ŋuli gurrupan yäku yothuny nhanŋu yarraṯaŋur - märipuluwal ga yapapuluwal ga gäthupulu ga nhä nhanŋu bäpurru yothuw.'
+                link='http://growingupyolngu.com.au/index.cfm?fuseaction=page&p=250&l=1&id=69'
                 language={language}
                 audio={true}
                 style={{marginBottom:'40px' }}
@@ -489,6 +492,7 @@ const Dhukarr = () => {
                 yolngu='Gurruṯu’mirrinydja ŋuli ŋurru-yirr’yun dhäruk waŋanharaw yothuw bitjan bili .'
                 language={language}
                 audio={true}
+                link='http://www.growingupyolngu.com.au/index.cfm?fuseaction=page&p=231&l=1&id=71'
                 style={{marginBottom:'40px', position:'relative', left:'20px' }}
                 />
 
@@ -523,6 +527,7 @@ const Dhukarr = () => {
                 yolngu='Dhuḏi-guthanamirr dhuwal rom balanya nhakun yothuny yan ŋuli goŋdhu märramay ŋayatham bala gäma ŋanya ŋäwuḻuḻkurr märr ŋanya dhu ḏälkum rumbal ga yakurr nhanŋu dhu gurrupan manymak. Ga bulu ŋanya gurrupan raypirri – bala walal ŋuli ŋaḻapaḻmirri ḻakaraman nhanukal nhaltjan ŋayi dhu ŋuthan.'
                 language={language}
                 audio={true}
+                link='http://www.growingupyolngu.com.au/index.cfm?fuseaction=page&p=225&l=2&id=70&smid=147'
                 style={{ width:'200%' }}
                 textStyle={{width:'70%'}}
                 />
@@ -572,6 +577,7 @@ const Dhukarr = () => {
                 yolngu='Yothuwal gurruṯumirriy ŋuli yalŋgi matha waŋa ga goŋdhu ŋuli milkum yothuw balanya nhakun ŋatha, ŋathi, wäthun yothuw dhangi’yunaraw’.'
                 language={language}
                 audio={true}
+                link='http://www.growingupyolngu.com.au/index.cfm?fuseaction=page&p=242&l=2&id=71&smid=171'
                 style={{marginBottom:'40px' }}
                 />
 
@@ -596,6 +602,7 @@ const Dhukarr = () => {
                 yolngu='Bäpa’mirriŋuy ŋuli guŋga’yun ŋäṉḏi’miriŋuny djägaw yothuw.  Ga bulu ŋuli gurruṯumirr bukmak djäga ŋurikiyi yothuw.'
                 language={language}
                 audio={true}
+                link='http://www.growingupyolngu.com.au/index.cfm?fuseaction=page&p=241&l=2&id=72&smid=151'
                 style={{ position: 'relative', left: '40px', top:'40px' }}
                 />
 
@@ -727,6 +734,7 @@ const Dhukarr = () => {
                 yolngu='Gurruṯumirriy yothuwal ŋuli dharaŋaṉ nhäman nhanŋu ŋunhi gakal dhuwal mirithirr manymak.'
                 language={language}
                 audio={true}
+                link='http://www.growingupyolngu.com.au/index.cfm?fuseaction=page&p=226&l=2&id=70&smid=146'
                 style={{ position: 'relative', top:'-40px',left:'40px', width:'80%' }}
                 />
 
@@ -770,6 +778,7 @@ const Dhukarr = () => {
                 yolngu='Yothuy ŋuli dhoka dharaŋan bukmaknha gurruṯumirriny mala.'
                 language={language}
                 audio={true}
+                link='https://youtu.be/uwUNtocUfLA'
                 style={{ marginTop:'70px' }}
                 />
 
@@ -792,6 +801,7 @@ const Dhukarr = () => {
                 yolngu='Yothuy ŋuli ŋäma ga nhäma gurruṯu’mirriny bala ŋayi ŋuli waŋan gurruṯu’mirrwal. '
                 language={language}
                 audio={true}
+                link='https://youtu.be/m04fdeawQMc'
                 style={{ position: 'relative', left:'30px', top:'-20px', width:'50%' }}
                 />
 
@@ -803,6 +813,7 @@ const Dhukarr = () => {
                 yolngu='Yothuy ŋuli märr dharaŋan yol ŋayi mälk, yol ŋayi yäku ga nhä nhanŋu dhäruk ga nhä nhanŋu gurruṯu, ŋayi ŋuli ŋäṉḏi’mirriŋuy ga wiripu Yolŋuy marŋgikum lakaram yothuwal buthurulil.'
                 language={language}
                 audio={true}
+                link='http://www.growingupyolngu.com.au/index.cfm?fuseaction=page&p=250&l=1&id=69'
                 style={{ position: 'relative', left:'-50px', top:'-20px', width:'70%' }}
                 />
 
@@ -1078,6 +1089,7 @@ id='57'
                   yolngu='Murma’murmaram yothuny bun’kumu ŋuli ḏälkum ga dharwan ga yaŋaran. '
                   language={language}
                   audio={true}
+                  link='https://youtu.be/Mj1BGuk8XyU'
                   style={{ position:'relative', left:'20px'}}
                   textStyle={{ }}
                   />
@@ -1102,6 +1114,7 @@ id='57'
                   yolngu='Gurruṯumirriy ŋuli guŋga’yun ga märr-dharaŋan wanganyŋulil wäŋalil märr ŋayi dhu yothu nhina manymakum ga galŋa-djulŋithirr ga yaka barrarirr ga gora.'
                   language={language}
                   audio={true}
+                  link='http://www.growingupyolngu.com.au/index.cfm?fuseaction=page&p=259&l=2&id=70&smid=180'
                   style={{ marginTop:'50px'}}
                   textStyle={{width:'80%' }}
                   />
@@ -1114,6 +1127,7 @@ id='57'
                   yolngu='Gurruṯumirriy yothuwal ŋuli lakaram yäkuw bukmak nhä mala ŋayi ŋuli yothuy dharaŋan bala nhäman.'
                   language={language}
                   audio={true}
+                  link='https://youtu.be/YA_iEmXqtWw'
                   style={{ marginTop:'300px'}}
                   textStyle={{width:'70%' }}
                   />
@@ -1205,6 +1219,7 @@ id='57'
                   yolngu='Yothu ga gäna buŋgu’puŋguyun ŋunhi ŋayi ga burr’yun ga miḻkum ŋayi ga gurruṯumirriny nhakun ŋayi marŋgin – gaḏaman’nha yothu.'
                   language={language}
                   audio={true}
+                  link='http://www.growingupyolngu.com.au/index.cfm?fuseaction=page&p=237&l=2&id=69&smid=154'
                   style={{marginTop:'50px', position:'relative', left:'-10px' }}
                   textStyle={{ width:'80%'}}
                   />
@@ -1217,6 +1232,7 @@ id='57'
                   yolngu='Yothuy ŋuli dharaŋan ‘lurrkun’ yäku balanya nhakun gurruṯumirriny yäku ga wiripu mala yäku. Ŋayi ŋuli  milkum nhä ŋayi ŋuli dharaŋan – ŋayi ŋuli bilyuna bala nhäman.'
                   language={language}
                   audio={true}
+                  link='https://youtu.be/SsGun_KWXw8'
                   style={{marginTop:'50px', position:'relative', left:'60px' }}
                   textStyle={{ width:'50%'}}
                   />
@@ -1253,6 +1269,7 @@ id='57'
                   yolngu='Gurruṯumirriy ŋuli ga marŋgikum yothuny dhärukku ga wanaŋgum goŋdhu bitjan bili, nhakun gurruṯumirriny yäku ga bawalamirr – gurruṯumirriy mala birrka’yun ŋuli yothuny bitjan bili. '
                   language={language}
                   audio={true}
+                  link='http://www.growingupyolngu.com.au/index.cfm?fuseaction=page&p=242&l=2&id=71&smid=171'
                   style={{marginTop:'30px'}}
                   textStyle={{}}
                   />
@@ -1289,6 +1306,7 @@ id='57'
                   yolngu='Gurruṯumirriy ŋuli marŋgikum yothuny märr ŋayi dhu ŋoy-ḏälthirr ga yaka barrarirr ga ŋayaŋu miḏikirr dhuwandja gakal yolŋuw yothuw ŋanapurr ŋuli ŋayaŋu mulka’kum yothuny ŋunhi walal ŋuli galkirri.'
                   language={language}
                   audio={true}
+                  link='http://www.growingupyolngu.com.au/index.cfm?fuseaction=page&p=259&l=2&id=70&smid=180'
                   style={{position:'relative', left:'20px'}}
                   textStyle={{}}
                   />
@@ -1379,6 +1397,7 @@ id='57'
                     yolngu='Yothu marŋgithirr dhäkay-ŋänharaw nhä manymak ga nhä maḏakarritj nhakun yiki’, gorrmur gapu ga gorrmur munatha ga gurtha.'
                     language={language}
                     audio={true}
+                    link='http://www.growingupyolngu.com.au/index.cfm?fuseaction=page&p=259&l=2&id=70&smid=180'
                     style={{position:'relative', top:'-50px', width:'100%', left:'-20px'}}
                     textStyle={{width:'60%'}}
                     />
@@ -1415,6 +1434,7 @@ id='57'
                   yolngu='Gurruṯumirriy ŋuli ŋarambiya  ŋayatham yothuny  ḏälkum dhärranharaw ga marrtjinaraw.'
                   language={language}
                   audio={true}
+                  link='https://youtu.be/tG-X_ZveHUY'
                   style={{marginTop:'100px', position:'relative', left:'20px'}}
                   textStyle={{}}
                   />
@@ -1457,6 +1477,7 @@ id='57'
                   yolngu='Ŋunhi yothu dhärranhamirrnydja ŋunhi ŋayi marŋgin burr’yunaraw bili ŋayi ga dharaŋana. '
                   language={language}
                   audio={true}
+                  link='http://www.growingupyolngu.com.au/index.cfm?fuseaction=page&p=237&l=2&id=69&smid=154'
                   style={{position: 'relative', left: '50px', marginTop:'20px'}}
                   textStyle={{width:'70%'}}
                   />
@@ -1529,6 +1550,7 @@ id='57'
                   yolngu='Gurruṯumirriy ŋuli ŋamaŋamayun yothuny märrmaw’ dhukarrwu Yolŋuw ga Balandaw: märr walal dhu marŋgithirr dhärukku Balandaw.'
                   language={language}
                   audio={true}
+                  link='http://www.growingupyolngu.com.au/index.cfm?fuseaction=page&p=238&l=2&id=70&smid=148'
                   style={{position: 'relative', left: '-50px', marginTop:'40px'}}
                   textStyle={{width:'60%'}}
                   />
@@ -1557,6 +1579,7 @@ id='57'
                   english='The child has expert ears for listening  – even when the are busy playing at the same time they are listening to all the sounds around them – close and distant. The child can pay attention to more than one thing at a time.'
                   yolngu='Yothuwdja dhuwal buthuru djambatj ŋänaraw ŋunhi ŋayi ga bul’yun ga bulu ŋäyi ŋuli ŋäma rirrakay bawalamirr.'
                   language={language}
+                  link='http://www.growingupyolngu.com.au/index.cfm?fuseaction=page&p=229&l=2&id=72&smid=175'
                   audio={true}
                   style={{position: 'relative', left: '-50px', marginTop:'40px'}}
                   textStyle={{width:'70%'}}
@@ -1569,6 +1592,7 @@ id='57'
                   yolngu='Yothu ga marŋgithirr nhanŋuwuy yäku mayaliw ga bäpurruw ga bukmakku nhanŋuwuy ŋayi dhäwu beŋur ŋurru-yirr’yunaŋur ga dhiyaŋun bala.'
                   language={language}
                   audio={true}
+                  link='http://www.growingupyolngu.com.au/index.cfm?fuseaction=page&p=250&l=1&id=69'
                   style={{position: 'relative', left: '50px', marginTop:'50px'}}
                   textStyle={{width:'70%'}}
                   />
@@ -1588,10 +1612,11 @@ id='57'
                   animation={true}
                   id='110' 
                   colour='yellow'
-                  english='The child is listening to and understanding different Yolŋu languages The child is strongly learning their father’s language, cultural system and ceremony – this is important for developing a strong identity.'
+                  english='The child is listening to and understanding different Yolŋu languages. The child is strongly learning their father’s language, cultural system and ceremony – this is important for developing a strong identity.'
                   yolngu='Yothuy ŋuli ŋäma ga dharaŋan dhäruk mala. Yothu dhu mirithirr marŋgithirr nhanŋu bäpa’mirriŋuw dhärukku ga romgu ga buŋgulwu. '
                   language={language}
                   audio={true}
+                  link='https://youtu.be/Ig4MYVAN9zk'
                   style={{position: 'relative', left: '-100px', marginTop:'40px', width:'100%'}}
                   textStyle={{width:'50%'}}
                   />
@@ -1648,6 +1673,7 @@ id='57'
                   yolngu='Yothuny ŋuli malthun ga nhina wiripuwal gurruṯu’mirriwal – ŋayi dhu marŋgithirr bukmakku  gurruṯu’mirriw galkipuywu ga barrkupuywu. Bili gurruṯumirr dhuwal djinawa romŋur ḻukuŋur Yolŋuwal.'
                   language={language}
                   audio={true}
+                  link='https://youtu.be/166f6FV8XIE'
                   style={{position: 'relative', left: '-150px', marginTop:'40px'}}
                   textStyle={{width:'80%'}}
                   />
@@ -1692,6 +1718,7 @@ id='57'
                   yolngu='Yothu ŋuli marŋgithirr ŋunhal playgroupŋur wo Childcareŋur märr ŋayi dhu dharaŋan marrmaw’ dhukarrwu ga romgu nhaltjan ŋayi dhu ga yothu ŋirrimbum. Ga bulu nhaku ŋayi dhu yothu dharaŋan waŋganyŋuny djamarrkuḻiny ga ŋaḻapaḻmirriny ga Balandany mala märr ŋayi dhu yothu yaka barrarirr ga gora.'
                   language={language}
                   audio={true}
+                  link='http://www.growingupyolngu.com.au/index.cfm?fuseaction=page&p=238&l=2&id=70&smid=148'
                   style={{position: 'relative', left: '-50px', marginTop:'40px'}}
                   textStyle={{width:'100%'}}
                   />
@@ -1738,6 +1765,7 @@ id='57'
                   yolngu='Gurruṯumirriy ŋuli ŋäma dhäruk mala yothuny ga dälkum nhaltjan ŋayi dhu waŋa ḏäl matha ga bulu ŋayi ŋuli wanaŋgunhamirr dhäruk mala märr ŋayi dhu ḏälthirr.'
                   language={language}
                   audio={true}
+                  link='https://youtu.be/Jm12HZr95tg'
                   style={{position: 'relative', left: '-60px', marginTop:'40px', width:'80%' }}
                   textStyle={{width:'60%'}}
                   />
@@ -1750,6 +1778,7 @@ id='57'
                   yolngu='Gurruṯumirriy ŋuli nhäma yothuny ga dhunupayam nhaltjan ŋayi dhu burr’yun.'
                   language={language}
                   audio={true}
+                  link='https://youtu.be/SdzaiwZ6Crk'
                   style={{position: 'relative', left: '20px', marginTop:'40px',  width:'50%'}}
                   textStyle={{width:'80%'}}
                   />
@@ -1834,6 +1863,7 @@ id='57'
                   yolngu='Ŋunhi ŋayi yothu ŋaḻapaḻnha ŋayi ŋuli wanaŋgum, nhakun marŋgithirr manapan ŋurrkanhamirr munathalil yan nhakun ŋayi ga ŋäthi gurruṯumirriw. Ga wiripuny gaṟa djäma ga manikay ḏar’ṯaryun wo burr’yun. Walal marŋgi nhä mala manikay walal ŋuli dar’taryun dhuwa wo yirritja. Ga dhärranhayŋu dhuwal gakal Yolŋuw djamarrkuliw’.'
                   language={language}
                   audio={true}
+                  link='http://www.growingupyolngu.com.au/index.cfm?fuseaction=page&p=235&l=2&id=70&smid=162'
                   style={{position: 'relative',  left: '0px', marginTop:'50px' }}
                   textStyle={{width:'70%'}}
                   />
@@ -1867,6 +1897,7 @@ id='57'
                   yolngu='Yothu ga marŋgithirr gakalwu wakalwu buḻ’yunamirriw girriw’ malaŋu.'
                   language={language}
                   audio={true}
+                  link='http://www.growingupyolngu.com.au/index.cfm?fuseaction=page&p=238&l=2&id=70&smid=148'
                   style={{position: 'relative', left: '-150px', marginTop:'20px' }}
                   textStyle={{width:'80%'}}
                   />
@@ -1970,6 +2001,7 @@ id='57'
                     yolngu='Yothu mala ŋuli marŋgithirr borumgu ga maypalwu märranharaw - walal ŋuli ŋaḻapaḻmirriy djamarrkuliy’ ga gurruṯu’mirriy mala guŋga’yun walalany.'
                     language={language}
                     audio={true}
+                    link='https://youtu.be/JthqiWFF4Iw'
                     style={{position: 'relative', marginTop:'20px', flex:2, left:'-40px' }}
                     textStyle={{width:'100%'}}
                     />

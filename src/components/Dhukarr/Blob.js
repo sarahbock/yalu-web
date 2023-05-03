@@ -10,6 +10,8 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
   const [isVisible, setVisible] = useState(true);
   const [entryOpen, setEntryOpen] = useState(false);
 
+  const videoLink = link && link.indexOf('youtu.be')!==-1;
+
   const domRef = useRef();
 
   const showBlobNumber = true;
@@ -104,7 +106,7 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
               </a>
 
               <a href={`${link}`} rel="noreferrer" target='_blank'>
-                More information
+              { videoLink ? 'Watch clip': 'More information' } 
               </a>
              
             </div>
