@@ -10,12 +10,12 @@ const Tile = ({ id, label, onClick }) => {
 
   const link = "/"+id;
 
-  let icon = blank;
+  let icon = blank; let bgClass = null;
   switch ( id ) {
-    case 'dictionary': icon=dictionary; break;
-    case 'children': icon=footprints; break;
-    case 'auspathway': icon=school; break;
-    case 'ceremony': icon=didge; break;
+    case 'dictionary': icon=dictionary; bgClass = 'homeTileBlobBlack'; break;
+    case 'children': icon=footprints;  bgClass = 'homeTileBlobRed'; break;
+    case 'auspathway': icon=school; bgClass = 'homeTileBlobPurple'; break;
+    case 'ceremony': icon=didge; bgClass = 'homeTileBlobBrown'; break;
     default: icon=more; break;
   }
 
@@ -23,7 +23,7 @@ const Tile = ({ id, label, onClick }) => {
 
     <div className="homeTile" onClick={onClick}>
 
-      <div className="homeTileImage">
+      <div className={`${'homeTileImage'} ${bgClass}`}>
         <img src={icon} className="homeIcon" alt={label}/>
       </div>
 

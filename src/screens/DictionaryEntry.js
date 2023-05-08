@@ -47,18 +47,15 @@ const DictionaryEntry = () => {
   }, [page, item])
 
   return(
-    <div className="container dictionaryScreen">
+    <div className="container black dictionaryScreen">
 
-    <TopNav title={item?.title ?? 'Entry'} back play audio={definition.titleaudio}/>
+    <TopNav title={item?.title ?? 'Entry'} colour='black' back play audio={definition.titleaudio}/>
 
     <div className='contentContainer'>
     <ItemNav onClick={setPage} page={page} totalPages={totalPages}/>
 
 <div className="entryContent">
-  <div className="entryContentHeader">
-    Djambarrpuyŋu
-  </div>
-  <div className="entrySection">
+  <div className="entrySection entrySection1">
     <div className="entrySectionText">
       {definition.yolngu}
     </div>
@@ -66,13 +63,13 @@ const DictionaryEntry = () => {
       <SoundPlayer source={definition.yolnguaudio}/>
     </div>
   </div>
+  <div className="entryContentHeader entryContentHeader1">
+    Djambarrpuyŋu
+  </div>
 </div>
 
 <div className="entryContent">
-  <div className="entryContentHeader">
-    English
-  </div>
-  <div className="entrySection">
+  <div className="entrySection entrySection2">
     <div className="entrySectionText">
       {definition.english}
     </div>
@@ -80,19 +77,22 @@ const DictionaryEntry = () => {
       <SoundPlayer source={definition.englishaudio}/>
     </div>
   </div>
+  <div className="entryContentHeader entryContentHeader2">
+    English
+  </div>
 </div>
 
 <div className="entryContent">
-  <div className="entryContentHeader">
-    Example
-  </div>
-  <div className="entrySection">
+  <div className="entrySection entrySection3">
     <div className="entrySectionText">
       {definition.example}
     </div>
     <div className="entrySectionAudio">
       <SoundPlayer source={definition.exampleaudio}/>
     </div>
+  </div>
+  <div className="entryContentHeader entryContentHeader3">
+    Example
   </div>
 </div>
     </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo2.png';
 import { useNavigate } from "react-router-dom";
 import click from '../assets/click.png';
 
@@ -25,7 +25,7 @@ const Launch = () => {
           </div>
         </div>
 
-        <div className="footer bgstrip largerFont">Understanding Yolŋu and Balanda education pathways and systems - both ways (Draft)</div>
+        <div className="footer bgstrip largerFont">Understanding Yolŋu and Balanda Education Pathways and Systems - Both Ways (Draft)</div>
 
       </div>
 

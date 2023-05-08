@@ -13,6 +13,7 @@ const Dictionary = () => {
   const [showSearch, setShowSearch] = useState(false)
   const [searchTerm, setSearchTerm] = useState('')
   const [searchResults, setSearchResults] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   const [entries, setEntries] = useState([]);
 
@@ -32,6 +33,7 @@ const Dictionary = () => {
 
   //get entries from firestore and store in state
   const getData = async() => {
+    setLoading(true);
     const entriesArray=[];
     const querySnapshot = await getDocs(
       collection(db, "entries")
@@ -45,6 +47,7 @@ const Dictionary = () => {
       return 0;
     })
     setEntries(entriesArray);
+    setLoading(false);
   }
 
   //render entries as list
@@ -95,9 +98,9 @@ const Dictionary = () => {
   }, []);
 
   return(
-    <div className="container dictionaryScreen">
+    <div className="container black dictionaryScreen">
 
-      <TopNav toggleSearch={toggleSearch} back title="Balandaw gurraŋay dhäruk ga Yolŋukurr mayali – a dictionary of English education and research terms for Yolŋu"/>
+      <TopNav toggleSearch={toggleSearch} back title="Balandaw gurraŋay dhäruk - Yolŋukurr mayali" colour='black'/>
 
       <div className='contentContainer'>
         
@@ -107,7 +110,7 @@ const Dictionary = () => {
           </div>
         }
 
-        {!searchResults && <div className="loading">Loading</div>}
+        {loading && <div className="loading">Loading</div>}
 
         {searchResults && renderEntries()}
 

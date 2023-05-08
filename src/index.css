@@ -29,6 +29,7 @@ body {
   justify-content: space-between;
   flex-direction: column;
 }
+.container.black{background-color: #404040;}
 
 .header{
   color: #FFF;
@@ -69,6 +70,7 @@ body {
   justify-content: center;
   align-items: center;
   flex:1;
+  font-family: 'Ebrima', Arial, sans-serif; 
 }
 
 /*LAUNCH*/
@@ -110,20 +112,22 @@ padding: 0;
 cursor: pointer;
 }
 .homeTileImage{
-  border: 20px solid #831C19;
-    border-radius: 50%;
-    padding: 5px;
-    background-color: #e1b631;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
+
+.homeTileBlobBrown{ background-image:url("./assets/homeblob.png"); }
+.homeTileBlobBlack{ background-image:url("./assets/homeblobblack.png"); }
+.homeTileBlobPurple{ background-image:url("./assets/homeblobpurple.png"); }
+.homeTileBlobRed{ background-image:url("./assets/homeblobred.png"); }
+
+
 @media only screen and (max-width: 769px) { .homeTileImage{ border-width:10px  } }
 
 .homeIcon{
   width: calc(100% - 10px);
   height: auto;
-    padding: 5px;
-    border-radius: 50%;
-    background-color: #000;
-    min-height: 240px;
 }
 
 @media only screen and (max-width: 1200px) { .homeIcon{ min-height: initial;  } }
@@ -141,19 +145,19 @@ cursor: pointer;
   justify-content: flex-start;
 }
 .listItemHolder{
-  width:calc(100% - 6px);
+  width:calc(100% - 40px);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FCF7E9;
-  border: 3px solid #000000;
-  border-bottom: 0px;
-  margin:10px 0 0 0;
+  background-image:url("./assets/dictionary/blobwhite.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
+  margin:10px 20px 0 20px;
 }
 .listItemText{
-  padding:10px;
+  padding: 10px 10px 10px 30px;
   font-size:20px;
-  font-weight: bold;
+  font-family: 'Ebrima', Arial, sans-serif; 
   flex-grow: 1;
   text-align: left;
   cursor: pointer;
@@ -184,7 +188,7 @@ cursor: pointer;
 #root .blobBrown .rhap_main-controls-button, #root-overlay .blobBrown .rhap_main-controls-button{ color:#ffffff; }
 #root .blobOrange .rhap_main-controls-button, #root-overlay .blobOrange .rhap_main-controls-button{ color:#831C19; }
 #root .blobYellow .rhap_main-controls-button, #root-overlay .blobYellow .rhap_main-controls-button{ color:#831C19; }
-#root .blobGrey .rhap_main-controls-button, #root-overlay .blobGrey .rhap_main-controls-button{ color:#FFC153; }
+#root .blobGrey .rhap_main-controls-button, #root-overlay .blobGrey .rhap_main-controls-button{ color:#ffe900; }
 
 
 /*DHUKARR*/
@@ -225,7 +229,7 @@ cursor: pointer;
 .dhukarrScreen .infoIcon{    width: 20px; }
 
 .blob{ padding: 60px;background-size: contain; background-repeat: no-repeat; display:flex; justify-content: center; align-items: center;     background-position: center; flex:1; }
-.blobArrowImage{width:61px; height:69px;}
+.blobArrowImage{width:61px; height:69px; display: none;}
 @media only screen and (max-width: 900px) { .blobArrowImage{ display: none;} }
 .blobRow{display:flex; align-items: flex-start;  justify-content: space-between;  }
 @media only screen and (max-width: 900px) { .blobRow{ flex-direction: column; } }
@@ -234,19 +238,19 @@ cursor: pointer;
 .blobText{cursor: pointer;}
 @media only screen and (max-width: 900px) { .blobTextHolder{ width: 70%!important;margin: 20px; } }
 .blobRowThin .blobText{font-size: 13px; }
-.blobBrown{color: #FFF;}
-.blobOrange{color: #FFF;}
+.blobBrown, .moreInfo.blobBrown a{color: #FFF;}
+.blobOrange, .moreInfo.blobOrange a{color: #FFF;}
 .blobYellow{color: #843c0c;}
 .blobLight{color: #843c0c;}
-.blobGrey{color: #efd32e;}
+.blobGrey, .moreInfo.blobGrey a{color: #ffe900;}
 
 
 /*Modal styles*/
-#root-overlay .blobBrown{background-color: #843C0D}
-#root-overlay .blobOrange {background-color: #C55A11;}
-#root-overlay .blobYellow {background-color: #FFC253;}
-#root-overlay .blobLight {background-color: #FDD680;}
-#root-overlay .blobGrey {background-color: #B97F73; }
+#root-overlay .blobBrown, .moreInfo.blobBrown{background-color: #843C0D}
+#root-overlay .blobOrange, .moreInfo.blobOrange {background-color: #C55A11;}
+#root-overlay .blobYellow, .moreInfo.blobYellow {background-color: #FFC253;}
+#root-overlay .blobLight, .moreInfo.blobLight {background-color: #FDD680;}
+#root-overlay .blobGrey, .moreInfo.blobGrey {background-color: #A17775; }
 
 /*Animation stuff*/
 .blob {
@@ -453,8 +457,10 @@ cursor: pointer;
 .dhukarrScreen .sideBarTextNumber {display:inline; writing-mode: horizontal-tb; text-orientation: initial;     padding: 20px 0 20px 0;}
 @media only screen and (max-width: 900px) { .dhukarrScreen .sideBarTextNumber{  padding: 20px 10px 20px 0;} }
 .dhukarrScreen a{color:#831C19;}
-.dhukarrScreen .moreInfo{margin-top:20px;     display: flex; justify-content: center; align-items: center;}
-.dhukarrScreen .moreInfo a{margin:0 5px; color: #000000;}
+.dhukarrScreen .moreInfo{display: flex; justify-content: center; align-items: center;
+padding:20px; border-radius: 50px; width: 70%;
+margin: 0 auto; position: relative; top:-30px;}
+.dhukarrScreen .moreInfo a{margin:0 5px; }
 
 /*AUS PATHWAY*/
 .auspathwayScreen .sideBarText{ color: #fff;}
@@ -472,32 +478,37 @@ cursor: pointer;
 /*ENTRY*/
 
 .entryContent{
-  width: 100%;
-margin: 10px 0 0 0;
 display: flex;
 align-items: center;
-background-color: #e1b631;
+flex-direction: column;
+margin-bottom: 20px;
 }
 .entryContentHeader{
-  flex:1;
   padding: 20px;
-  font-weight: bold;
-  text-align: left;
-
+  font-family: 'Ebrima', Arial, sans-serif; 
+  border-radius: 50px;
+  position: relative;
+  top:-10px;
 }
+.entryContentHeader1 {background-color: #ffc253;}
+.entryContentHeader2 {background-color: #ffffff;}
+.entryContentHeader3 {background-color: #bb8479;}
 .entrySection{
-  background-color: #FCF7E9;
-  padding: 20px;
+  padding: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex:4;
+  max-width: 600px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  flex-direction: column;
 }
+.entrySection1{background-image: url('./assets/dictionary/blob1.png');}
+.entrySection2{background-image: url('./assets/dictionary/blob2.png');}
+.entrySection3{background-image: url('./assets/dictionary/blob3.png');}
 .entrySectionText{
-  text-align: left;
-  margin-right:20px;
+  font-family: 'Ebrima', Arial, sans-serif; 
 word-break: break-word;
-padding: 10px;
 }
 .entrySectionAudioIcon{
   width:40px;
@@ -512,13 +523,14 @@ padding: 10px;
   max-width: 1200px;
   align-items: center;
   background-color: #831C19;
-  border-bottom: 5px solid #e1b631;
+  /*border-bottom: 5px solid #e1b631;*/
   min-height: 80px;
   position: fixed;
   top: 0;
   z-index: 1;
   width: 100%;
 }
+.appHeader.black{background-color:#404040}
 .appHeader.bgstrip{
   padding-top: 30px;
 }
@@ -527,10 +539,10 @@ padding: 10px;
 }
 .rightHeader{display: flex; flex-direction: row;     margin-right: 10px;}
 .appHeaderTitle{
-  font-weight: bold;
   text-align: center;
   color:#FFFFFF;
   font-size: 20px;
+  font-family: 'Ebrima', Arial, sans-serif; 
 }
 .appHeaderImage{
   padding: 10px;
@@ -583,7 +595,7 @@ padding: 10px;
     margin: 10px 0 0 0;
     padding: 20px 10px;
     width: calc(100% - 40px);
-    background-color: #FCF7E9;
+    background-color: #FFC253;
     font-size: 16px;
 }
 
@@ -679,12 +691,6 @@ input:checked + .slider:before {
 @media only screen and (max-width: 480px) {
   .homeTileImage {
     border-width: 10px;
-  }
-  .entryContent{
-      flex-direction: column;
-  }
-  .entrySection{
-      width: calc(100% - 40px);
   }
 
 }

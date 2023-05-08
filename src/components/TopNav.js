@@ -7,7 +7,7 @@ import previous from '../assets/back.png';
 import search from '../assets/search.png';
 import SoundPlayer from './SoundPlayer';
 
-const TopNav = ({ toggleSearch, title, home, back, play, audio, noBorder, toggleLanguage, language }) => {
+const TopNav = ({ toggleSearch, title, home, back, play, audio, noBorder, toggleLanguage, language, colour }) => {
 
   const navigate = useNavigate();
 
@@ -25,7 +25,7 @@ const TopNav = ({ toggleSearch, title, home, back, play, audio, noBorder, toggle
 
   return(
 
-    <div className={`${'appHeader bgstrip'} ${noBorder&&'noBorder'}`}>
+    <div className={`${'appHeader bgstrip'} ${colour} ${noBorder&&'noBorder'}`}>
       
         {home &&
           <div className="leftHeader" onClick={returnHome}>

@@ -2,7 +2,6 @@ import React from 'react';
 import { useNavigate } from "react-router-dom";
 
 import Tile from '../components/Tile';
-import lipalipa from '../assets/lipalipa-strip.png';
 
 const Home = props =>{
 
@@ -21,15 +20,15 @@ const Home = props =>{
 
         <div className="homeContent">
 
-          <Tile id='dictionary' label='Balandaw gurraŋay dhäruk ga Yolŋukurr mayali: – a dictionary of English education and research terms for Yolŋu'
+          <Tile id='dictionary' label='Balandaw gurraŋay dhäruk - Yolŋukurr mayali'
             onClick={()=>chooseResourceHandler('dictionary')}
           />
 
-          <Tile id='children' label='Yolŋu Yothuw Dhukarr – the developmental pathway of a Yolŋu child'
+          <Tile id='children' label='Yolŋu Yothuw Dhukarr – Yolŋu Developmental Pathway'
             onClick={()=>chooseResourceHandler('dhukarr')}
           />
 
-          <Tile id='auspathway' label='Australian education pathway'
+          <Tile id='auspathway' label='Australian Education Pathway'
             onClick={()=>chooseResourceHandler('auspathway')}
           />
 

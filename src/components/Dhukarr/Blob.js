@@ -2,8 +2,9 @@ import React, {useState, useRef, useEffect} from 'react';
 
 import SoundPlayer from '../SoundPlayer';
 import Modal from '../UI/Modal';
-import info from '../../assets/play.png';
+
 import BlobText from './BlobText';
+import BlobMore from './BlobMore';
 
 const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textStyle, animation }) => {
 
@@ -58,6 +59,7 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
 
   return(
 
+    <div>
     <div 
       
       className={`
@@ -98,22 +100,17 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
 
           { soundFile && <SoundPlayer source={soundFile}/> }
 
-          {link && 
-            <div className='moreInfo'>
-              
-              <a href={`${link}`} rel="noreferrer" target='_blank'>
-                <img src={info} alt="Info" className="infoIcon"/> 
-              </a>
-
-              <a href={`${link}`} rel="noreferrer" target='_blank'>
-              { videoLink ? 'Watch clip': 'More information' } 
-              </a>
-             
-            </div>
-            }
+          
 
         </div>
     </div>
+
+      <BlobMore 
+        colourClass={colourClass}
+        link={link}
+      />
+      
+  </div>
   )
 }
 

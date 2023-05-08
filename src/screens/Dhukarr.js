@@ -36,7 +36,7 @@ const Dhukarr = () => {
         <SectionHolder id='0'>
 
           <div className='padThinner'>
-            <h1>Yolŋu Yothuw Dhukarr ŋuthanaraw ga dharaŋanaraw. Ga nhaltjan dhu gurruṯumirriy guŋga’yun yothuny.</h1>
+            <h1>Yolŋu Yothuw Dhukarr ŋuthanaraw ga dharaŋanaraw - ga nhaltjan dhu gurruṯumirriy guŋga’yun yothuny.</h1>
             <h2 className='marginTop'>The Yolŋu child’s developmental pathway and ways that family monitor and support the child’s development. </h2>
             <h3 className='marginTopLarge'>Colour Key</h3>
           </div>
@@ -110,13 +110,6 @@ const Dhukarr = () => {
 
               <DhukarrContent orientation="column">
 
-              <DhukarrContent orientation="row">
-
-                <DhukarrContent orientation="column" arrow={true}>
-                  <BlobArrow 
-                    id='8'
-                    style={{position:'relative', top:'-20px'}}
-                  />
                   <Blob 
                   animation={false}
                   id='8' 
@@ -125,15 +118,10 @@ const Dhukarr = () => {
                   yolngu='Dhuwal yothuw gakal yolŋuwal romŋur ŋanapurruŋgal djägany ŋuli räḻ-manapanmirr.'
                   language={language}
                   audio={true}
-                  style={{position:'relative', top:'20px'}}
+                  style={{}}
                   />
-                </DhukarrContent>
 
-                <DhukarrContent orientation="column" arrow={true}>
-                  <BlobArrow 
-                      id='3'
-                      style={{position:'relative', top:'-150px'}}
-                    />
+                
                   <Blob 
                   animation={false}
                   id='3' 
@@ -142,16 +130,13 @@ const Dhukarr = () => {
                   yolngu='ŋayi yothu marŋgi nhaltjan ŋayi ŋuli galŋa-dhulŋithirr –  ŋorranharaw ga buḻ’yunaraw ga ŋaminiwu ŋulkthunaraw.'
                   language={language}
                   audio={true}
-                  style={{position:'relative', top:'-120px',}}
-                  textStyle={{width:'80%'}}
+                  style={{}}
+                  textStyle={{}}
                   />
-                </DhukarrContent>
 
-                <DhukarrContent orientation="column" arrow={true}>
-                <BlobArrow 
-                    id='5'
-                    style={{position:'relative', top:'-100px'}}
-                  />
+</DhukarrContent>
+               <DhukarrContent orientation="column">
+               
                 <Blob 
                 animation={false}
                 id='5' 
@@ -161,20 +146,9 @@ const Dhukarr = () => {
                 link='http://www.growingupyolngu.com.au/index.cfm?fuseaction=page&p=254&l=2&id=69&smid=163'
                 language={language}
                 audio={true}
-                style={{position:'relative', top:'-80px', }}
+                style={{position:'relative', top:'0', }}
                 />
-                </DhukarrContent>
-
-             
-
-            </DhukarrContent>
-            <DhukarrContent orientation="row">
-
-            <DhukarrContent orientation="column" arrow={true}>
-            <BlobArrow 
-                    id='7'
-                    style={{position:'relative', top:'-40px'}}
-                  />
+               
                 <Blob 
                       animation={false}
                       id='7' 
@@ -183,15 +157,11 @@ const Dhukarr = () => {
                       yolngu='Märiy ga ŋathiy ŋuli guŋga’yun ga gurrupan dharaŋanaraw bäpaw ga ŋaṉḏiw  ga wiripuny mala gurruṯumirriw märr walal dhu dharaŋan nhaltjan walal dhu djäga yothuw.'
                       language={language}
                       audio={true}
-                      style={{position:'relative', top:'-20px', }}
+                      style={{position:'relative', top:'-0px', }}
                   />
-                </DhukarrContent>
-
-                <DhukarrContent orientation="column" arrow={true}>
-                <BlobArrow 
-                    id='4'
-                    style={{position:'relative', top:'-90px'}}
-                  />
+                  </DhukarrContent>
+               <DhukarrContent orientation="column">
+                
                   <Blob 
                   animation={false}
                   id='4' 
@@ -201,16 +171,13 @@ const Dhukarr = () => {
                   language={language}
                   audio={true}
                   link='http://growingupyolngu.com.au/index.cfm?fuseaction=page&p=226&l=2&id=70&smid=146'
-                  style={{position:'relative', top:'-80px',  width:'100%'}}
+                  style={{position:'relative', top:'0px'}}
                   textStyle={{width:'80%'}}
                   />
-                </DhukarrContent>
 
-                <DhukarrContent orientation="column" arrow={true}>
-                <BlobArrow 
-                    id='6'
-                    style={{position:'relative', top:'-110px'}}
-                  />
+
+           
+              
                   <Blob 
                     animation={false}
                     id='6' 
@@ -219,17 +186,9 @@ const Dhukarr = () => {
                     yolngu='Yothuw ŋayaŋu nhaku ŋayi djäl ga nhaku malaŋuw – ŋayi ŋunhi rumbal waṯaŋu – gurruṯumirriy ŋuli yaka gurkuryun wo ŋayaŋu wutthun yothuny.'
                     language={language}
                     audio={true}
-                    style={{position:'relative', top:'-80px',}}
+                    style={{position:'relative', top:'0',}}
                     />
-                </DhukarrContent>
-
                 
-
-                
-
-               
-                  </DhukarrContent>
-
               </DhukarrContent>
 
              {/*SIDE BAR - ONGOING*/}
