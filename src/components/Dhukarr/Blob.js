@@ -5,13 +5,40 @@ import Modal from '../UI/Modal';
 
 import BlobText from './BlobText';
 import BlobMore from './BlobMore';
+import BlobImage from './BlobImage';
+import CaptionText from './CaptionText';
 
-const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textStyle, animation }) => {
+const loadMedia = (id, image, bg) => {
+
+  let bgImageSource = null; let audioSource=null; let imageSource = null;
+
+  switch (image) {
+    case 'babyhub': imageSource = require("../../assets/logos/logo_babyhub.png"); break;
+    case 'faft': imageSource = require("../../assets/logos/logo_faft.png"); break;
+    case 'earc': imageSource = require("../../assets/logos/logo_earc.png"); break;
+    case 'cb': imageSource = require("../../assets/logos/logo_cb.png"); break;
+    case 'loc': imageSource = require("../../assets/logos/logo_loc.png"); break;
+    case 'yalu': imageSource = require("../../assets/logos/logo_yalu.png"); break;
+    case 'fast': imageSource = require("../../assets/logos/logo_fast.png"); break;
+    case 'gvt': imageSource = require("../../assets/logos/logo_gvt.png"); break;
+  }
+  switch (bg) {
+    case 'whiteblob': bgImageSource = require("../../assets/dhukarr/blobs_blob201.png"); break;
+    case 'transparent': bgImageSource = require("../../assets/dhukarr/blob_transparent.png"); break;
+    case 'logoblob': bgImageSource = require("../../assets/dhukarr/blobs_blob200.png"); break;
+    case 'greenblob': bgImageSource = require("../../assets/dhukarr/blob_green.png"); break;
+    case 'yellowblob': bgImageSource = require("../../assets/dhukarr/blob_yellow.png"); break;
+    case 'orangeblob': bgImageSource = require("../../assets/dhukarr/blob_orange.png"); break;
+    case 'redblob': bgImageSource = require("../../assets/dhukarr/blob_red.png"); break;
+  }
+
+  return { loadedImage: imageSource, loadedBgImage: bgImageSource, loadedAudio: audioSource}
+}
+
+const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textStyle, animation, image, bg, caption }) => {
 
   const [isVisible, setVisible] = useState(true);
   const [entryOpen, setEntryOpen] = useState(false);
-
-  const videoLink = link && link.indexOf('youtu.be')!==-1;
 
   const domRef = useRef();
 
@@ -57,6 +84,12 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
   const randomTransitionDelay = Math.random()+'s';
   const randomTranslateY = (Math.floor(Math.random() * 20) + 1) + 'px';
 
+  const media = loadMedia(id, image, bg);
+  const bgImageSource = media.loadedBgImage;
+  const imageSource = media.loadedImage;
+  const audioSource = media.loadedAudio;
+
+
   return(
 
     <div>
@@ -70,6 +103,7 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
       style={{
         transitionDuration: animation ? {randomTransitionDelay} : 0,
        transform: animation ? `translateY(${randomTranslateY})` : `none`,
+       backgroundImage: bgImageSource ? `url(${bgImageSource})` : null,
         ...style,
       }}
       id={classId}
@@ -91,12 +125,23 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
           style={textClass}
           >
 
-            <BlobText 
-              className={`blobText ${colourClass}`}
-              clickHandler={toggleEntryOpenState} 
-              >
-              {blobText}
-            </BlobText>
+          {!caption && 
+
+          <BlobText 
+            className={`blobText ${colourClass}`}
+            clickHandler={toggleEntryOpenState} 
+            >
+            {blobText}
+          </BlobText>
+          }
+
+          {imageSource && 
+          <BlobImage
+          source={imageSource}
+          clickHandler={toggleEntryOpenState}
+          style={{width:200, height:200}} 
+          />
+          }
 
           { soundFile && <SoundPlayer source={soundFile}/> }
 
@@ -109,6 +154,15 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
         colourClass={colourClass}
         link={link}
       />
+
+      {/*caption && 
+        <CaptionText 
+          colour={colour} 
+          clickHandler={toggleEntryOpenState}
+          >
+          {blobText}
+        </CaptionText>
+        */} 
       
   </div>
   )

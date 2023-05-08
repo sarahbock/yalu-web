@@ -27,7 +27,7 @@ const Dhukarr = () => {
   return(
     <div className="container dictionaryScreen dhukarrScreen">
 
-    <TopNav toggleLanguage={toggleLanguage} language={language} back noBorder title=""/>
+    <TopNav toggleLanguage={toggleLanguage} language={language} back noBorder title="Yolŋu Yothuw Dhukarr"/>
 
       <div className='contentContainer'>
 
