@@ -18,7 +18,11 @@ const Sidebar = ({ id, english, yolngu, language, audio, background }) => {
                 <>{english}</>
             }
 
-            { audio && <SoundPlayer source={audio}/> }
+            { audio && 
+            <div style={{marginTop:15}}>
+              <SoundPlayer source={audio}/>
+            </div>
+             }
 
     
         </div>
