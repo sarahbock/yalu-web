@@ -2,13 +2,13 @@ import React, {useState, useRef, useEffect} from 'react';
 
 
 
-const BlobText = ({ children, clickHandler, className }) => {
+const BlobText = ({ children, clickHandler, className, fontStyle }) => {
 
 
 
   return(
 
-    <div className = {className} onClick={clickHandler}>
+    <div className = {className} onClick={clickHandler} style={fontStyle}>
 
       { children }
 

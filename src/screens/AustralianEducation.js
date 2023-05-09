@@ -19,23 +19,35 @@ const AustralianEducation = () => {
       <SectionHolder 
         id={section.id}
         bg={section.bg}
+        style={section.style}
         >
 
       <DhukarrSection>
 
-      <DhukarrContent>
+      <DhukarrContent align={section.align}>
 
         {section.data?.length>0 &&
+
         section.data.map(item => (
+          
+          item.ladder ? 
+          
+          <div className={`blobLadder blobLadderLeft ${item.ladderClass}`}>
+            {item.ladder.map(item => (
+            renderBlob(item)
+          ))}
+          </div> : 
+          
           renderBlob(item)
-        ))}
+       
+       ))}
 
       </DhukarrContent>
 
       <Sidebar
         id={section.id}
         showNumber={false}
-        english={section.english}
+        english={section.subheading}
         subheading={section.subheading}
         yolngu={section.yolngu}
         language={false}
@@ -51,6 +63,7 @@ const AustralianEducation = () => {
       </SectionHolder>
     )
   }
+
 
   const renderBlob = (item) => {
     return (
@@ -68,6 +81,7 @@ const AustralianEducation = () => {
           transparent={item.transparent}
           bg={item.bg}
           textStyle={item.textStyle}
+          fontStyle={item.fontStyle}
         />
     )
   }
@@ -75,9 +89,9 @@ const AustralianEducation = () => {
 
 
   return(
-    <div className="container dictionaryScreen dhukarrScreen auspathwayScreen">
+    <div className="container purple dictionaryScreen dhukarrScreen auspathwayScreen">
 
-    <TopNav back noBorder colour='purple' title="The Australian Education System"/>
+    <TopNav back noBorder colour='purple' title="The Australian Education System (Northern Territory)"/>
 
     <div className='contentContainer'>
 

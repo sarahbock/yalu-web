@@ -2,7 +2,7 @@ import React from 'react';
 
 const DhukarrSection = ({ children, align }) => {
 
-  const cssClass = align === 'top' ? 'dhukarrSection dhukarrSectionTop' : 'dhukarrSection';
+  const cssClass = align === 'center' ? 'dhukarrSection dhukarrSectionCenter' : 'dhukarrSection';
 
   return(
 

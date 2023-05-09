@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SectionHolder = ({ id, children, bg }) => {
+const SectionHolder = ({ id, children, bg, style }) => {
 
   const classId = 'section'+id+"Holder";
 
@@ -10,7 +10,10 @@ const SectionHolder = ({ id, children, bg }) => {
   return(
 
     <div className={`${'bgHolder'} ${classId}`}
-    style={{backgroundColor: bgColor}}>
+    style={{
+      backgroundColor: bgColor,
+      ...style
+      }}>
 
         {children}
 

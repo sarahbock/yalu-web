@@ -30,19 +30,29 @@ const loadMedia = (id, image, bg) => {
     case 'yellowblob': bgImageSource = require("../../assets/dhukarr/blob_yellow.png"); break;
     case 'orangeblob': bgImageSource = require("../../assets/dhukarr/blob_orange.png"); break;
     case 'redblob': bgImageSource = require("../../assets/dhukarr/blob_red.png"); break;
+    case 'lightblueblob': bgImageSource = require("../../assets/dhukarr/aused_lightblue.png"); break;
+    case 'darkpinkblob': bgImageSource = require("../../assets/dhukarr/aused_darkpink.png"); break;
+    case 'lightaquablob': bgImageSource = require("../../assets/dhukarr/aused_lightaqua.png"); break;
+    case 'lightgreenblob': bgImageSource = require("../../assets/dhukarr/aused_lightgreen.png"); break;
+    case 'lightorangeblob': bgImageSource = require("../../assets/dhukarr/aused_lightorange.png"); break;
+    case 'lightpinkblob': bgImageSource = require("../../assets/dhukarr/aused_lightpink.png"); break;
+    case 'lightredblob': bgImageSource = require("../../assets/dhukarr/aused_lightred.png"); break;
+    case 'lightyellowblob': bgImageSource = require("../../assets/dhukarr/aused_lightyellow.png"); break;
+    case 'pinkblob': bgImageSource = require("../../assets/dhukarr/aused_pink.png"); break;
+    case 'verydarkpinkblob': bgImageSource = require("../../assets/dhukarr/aused_verydarkpink.png"); break;
   }
 
   return { loadedImage: imageSource, loadedBgImage: bgImageSource, loadedAudio: audioSource}
 }
 
-const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textStyle, animation, image, bg, caption }) => {
+const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textStyle, fontStyle, animation, image, bg, caption }) => {
 
   const [isVisible, setVisible] = useState(true);
   const [entryOpen, setEntryOpen] = useState(false);
 
   const domRef = useRef();
 
-  const showBlobNumber = true;
+  const showBlobNumber = false;
   const introBlob = id.substr(0,1) ==='0';
   const classId = introBlob ? 'intro'+id+'Holder' : 'blob'+id+'Holder';
   const soundFile = audio ? require('../../assets/dhukarr/mp3/recording'+id+'.mp3') : null;
@@ -67,10 +77,14 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
   let colourClass = '';
   switch ( colour ) {
     case 'yellow': colourClass = 'blobYellow'; break;
+    case 'blue': colourClass = 'blobBlue'; break;
     case 'brown': colourClass = 'blobBrown'; break;
     case 'orange': colourClass = 'blobOrange'; break;
     case 'light': colourClass = 'blobLight'; break;
     case 'grey': colourClass = 'blobGrey'; break;
+    case 'aqua': colourClass = 'blobAqua'; break;
+    case 'green': colourClass = 'blobGreen'; break;
+    case 'red': colourClass = 'blobRed'; break;
     default: colourClass = '';
   }
 
@@ -104,6 +118,7 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
         transitionDuration: animation ? {randomTransitionDelay} : 0,
        transform: animation ? `translateY(${randomTranslateY})` : `none`,
        backgroundImage: bgImageSource ? `url(${bgImageSource})` : null,
+       padding: imageSource ? 30 : 50,
         ...style,
       }}
       id={classId}
@@ -130,6 +145,7 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
           <BlobText 
             className={`blobText ${colourClass}`}
             clickHandler={toggleEntryOpenState} 
+            fontStyle={fontStyle}
             >
             {blobText}
           </BlobText>

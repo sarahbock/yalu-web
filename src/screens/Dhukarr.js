@@ -198,6 +198,7 @@ const Dhukarr = () => {
               yolngu='Dhuwandja dhäwu mala baḏaknha ŋuli bitjana bili  marrtji weyinŋumirra '
               language={language}
               audio={require('../assets/dhukarr/mp3/recording2.mp3')}
+              showNumber = {false}
               />
 
           </DhukarrSection> 
@@ -306,6 +307,7 @@ const Dhukarr = () => {
                 yolngu='Yothumirriw miyalkku gakal'
                 language={language}
                 audio={require('../assets/dhukarr/mp3/recording10.mp3')}
+                showNumber = {true}
                 />
             
             </DhukarrSection>
@@ -389,6 +391,7 @@ const Dhukarr = () => {
                 yolngu='Yothuw walu galki ŋayi dhu wäŋa-nhäman'
                 language={language}
                 audio={require('../assets/dhukarr/mp3/recording17.mp3')}
+                showNumber = {true}
                 />
             
             </DhukarrSection>
@@ -645,6 +648,7 @@ const Dhukarr = () => {
                 yolngu='Dhuwandja dhäwu Ŋäṉarrwu yothuw'
                 language={language}
                 audio={require('../assets/dhukarr/mp3/recording22.mp3')}
+                showNumber = {true}
                 />
             
             </DhukarrSection>
@@ -817,6 +821,7 @@ const Dhukarr = () => {
                 yolngu='Dhuwandja dhäwu ŋunhi gurrŋan’thirra ŋuli yothu'
                 language={language}
                 audio={require('../assets/dhukarr/mp3/recording41.mp3')}
+                showNumber = {true}
                 />
             
             </DhukarrSection>
@@ -1059,6 +1064,7 @@ id='57'
                 yolngu='Dhuwandja dhäwu yothuw bilyu’pilyunamirriw '
                 language={language}
                 audio={require('../assets/dhukarr/mp3/recording53.mp3')}
+                showNumber = {true}
                 />
             
             </DhukarrSection>
@@ -1240,6 +1246,7 @@ id='57'
                 yolngu='Dhuwandja dhäwu yothuw nhina’nhinanhamirriw'
                 language={language}
                 audio={require('../assets/dhukarr/mp3/recording79.mp3')}
+                showNumber = {true}
                 />
             
             </DhukarrSection>
@@ -1406,6 +1413,7 @@ id='57'
                 yolngu='Dhuwandja dhäwu yothuw gaḻ’yunamirriw'
                 language={language}
                 audio={require('../assets/dhukarr/mp3/recording84.mp3')}
+                showNumber = {true}
                 />
             
             </DhukarrSection>
@@ -1523,6 +1531,7 @@ id='57'
                 yolngu='Dhuwandja dhäwu yothuw dhärra’tharranhamirriw'
                 language={language}
                 audio={require('../assets/dhukarr/mp3/recording96.mp3')}
+                showNumber = {true}
                 />
             
             </DhukarrSection>
@@ -1628,6 +1637,7 @@ id='57'
                 english='Starting to walk'
                 yolngu='Dhuwandja dhäwu yothuw marrtji’marrtjinyamirriw'
                 language={language}audio={require('../assets/dhukarr/mp3/recording104.mp3')}
+                showNumber = {true}
                 />
             
             </DhukarrSection>
@@ -1740,6 +1750,7 @@ id='57'
                 yolngu='Dhuwandja dhäwu yothuw djandjanmirriw ḏälnha marrtjinyaraw'
                 language={language}
                 audio={require('../assets/dhukarr/mp3/recording111.mp3')}
+                showNumber = {true}
                 />
             
             </DhukarrSection>
@@ -1832,6 +1843,7 @@ id='57'
                 yolngu='Dhuwandja dhäwu yothuw waṉḏinyamirr ga wapthunamirr  ga buḻ’yunamirr'
                 language={language}
                 audio={require('../assets/dhukarr/mp3/recording119.mp3')}
+                showNumber = {true}
                 />
             
             </DhukarrSection>
@@ -1921,6 +1933,7 @@ id='57'
                 yolngu='Dhuwandja dhäwu yothuw dharaŋanamirriw'
                 language={language}
                 audio={require('../assets/dhukarr/mp3/recording125.mp3')}
+                showNumber = {true}
                 />
             
             </DhukarrSection>
@@ -2018,6 +2031,7 @@ id='57'
               yolngu='Dhuwandja dhäwu yothuw ŋunhi ŋayi ŋuli mirithirra dharaŋan ga marŋgithirra'
               language={language}
               audio={require('../assets/dhukarr/mp3/recording131.mp3')}
+              showNumber = {true}
               />
 
           </DhukarrSection>
@@ -2085,6 +2099,7 @@ id='57'
                 yolngu='Dhuwandja dhäwu yothuw märr ŋaḻapaḻnha dhuŋgarramirr'
                 language={language}
                 audio={require('../assets/dhukarr/mp3/recording137.mp3')}
+                showNumber = {true}
                 />
             
             </DhukarrSection>

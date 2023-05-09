@@ -1,6 +1,6 @@
 import React from 'react';
 import SoundPlayer from '../SoundPlayer';
-const Sidebar = ({ id, english, yolngu, language, audio, background }) => {
+const Sidebar = ({ id, english, yolngu, language, audio, background, showNumber }) => {
 
   const componentClass = background ? 'dhukarrSectionSideBar' : 'dhukarrSectionSideBar dhukarrSectionSideBarNoBg';
   return(
@@ -9,7 +9,7 @@ const Sidebar = ({ id, english, yolngu, language, audio, background }) => {
 
         <div className='sideBarText'>
 
-            {id !=='0' && 
+            {showNumber && 
                 <div className='sideBarTextNumber'>{id}</div>
             }
 
