@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import TopNav from '../components/TopNav';
-
+import SoundPlayer from '../components/SoundPlayer';
 import Blob from '../components/Dhukarr/Blob';
 import SectionHolder from '../components/Dhukarr/SectionHolder';
 import DhukarrSection from '../components/Dhukarr/DhukarrSection';
@@ -9,11 +9,21 @@ import DhukarrContent from '../components/Dhukarr/DhukarrContent';
 import Sidebar from '../components/Dhukarr/Sidebar';
 import { blobs } from '../data/australianeducation';
 
+const loadAudio = (id) => {
+  let audioSource=null;
+  switch (id) {
+    case '15': audioSource = require('../assets/aused/mp3/aused_tertiary.mp3'); break;
+  }
+  return audioSource ? audioSource : false;
+}
+
 const AustralianEducation = () => {
 
   const renderSection = (section) => {
 
     if (section?.id === "00") return;
+
+    const audioSource = (section?.audio) ? loadAudio(section.id) : false;
 
     return (
       <SectionHolder 
@@ -51,7 +61,7 @@ const AustralianEducation = () => {
         subheading={section.subheading}
         yolngu={section.yolngu}
         language={false}
-        audio={false}
+        audio={audioSource}
         bgStyle={{backgroundColor:'#00000080'}}
         textStyle={{color:'#FFFFFF'}}
         colourActive='#000000'
@@ -102,6 +112,7 @@ const AustralianEducation = () => {
 
           <div className='padThinner'>
             <h1>Dhuwal Marŋgithyamirr Dhukarr Mulkuru Balandaw </h1>
+            <SoundPlayer source={require('../assets/aused/mp3/aused_intro.mp3')}/>
             <h2 className='marginTop'>Early years through to secondary school pathway </h2>
           </div>
 

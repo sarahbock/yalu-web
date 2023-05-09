@@ -389,7 +389,7 @@ export const blobs=[
             transparent:true,
             audio:false,
             fontStyle:{fontSize:24},
-            style:{padding: 20, width: 150, marginTop:20}
+            style:{position:'relative', top: 30, padding: 20, width: 200, marginTop:0}
           },
           {
             animation: false,
@@ -400,20 +400,21 @@ export const blobs=[
             bg:'transparent',
             transparent:true,
             audio:false,
-            style:{padding: 20, width: 50}
+            style:{padding: 10, width: 100, position:'relative', top: 40, }
           },
         ]
       },
     ]
   },
   {
-    id: '7',
+    id: '15',
     english: 'Higher education',
     subheading: 'Tertiary education',
     yolngu: '',
     bg:'#E75F64',
     style:{paddingTop:0, marginTop:'-1px'},
     align:'top',
+    audio:true,
     data: [
       {
         id:'ladder5',
