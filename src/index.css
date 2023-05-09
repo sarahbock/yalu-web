@@ -565,8 +565,6 @@ margin: 0 auto; position: relative; top:-30px;}
 @media only screen and (max-width: 680px) {  .auspathwayScreen .dhukarrSectionContentRow{ } }
 
 
-/*CEREMONY SCREEN*/
-.ceremonyScreen .contentContainer{ background-color: #FCF7E9;}
 /*ENTRY*/
 
 .entryContent{
@@ -608,6 +606,10 @@ word-break: break-word;
   filter: invert(19%) sepia(35%) saturate(3376%) hue-rotate(339deg) brightness(94%) contrast(91%);
 }
 
+/*CEREMONY SCREEN*/
+.ceremonyScreen{background-color: #843c0b87;}
+.ceremonyScreen p{color: #000000; }
+
 /*APP HEADER*/
 .appHeader{
   display: flex;
@@ -624,6 +626,7 @@ word-break: break-word;
 }
 .appHeader.black{background-color:#404040}
 .appHeader.purple{background-color:#9855A0}
+.appHeader.brown{background-color:#843c0c}
 .appHeader.bgstrip{
   padding-top: 30px;
 }
