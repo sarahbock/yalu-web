@@ -304,6 +304,8 @@ cursor: pointer;
     width: 100%;
 
 }
+@media only screen and (max-width: 1024px) {  .blobLadderTopLines {    background-size: 120% 100%;} }
+@media only screen and (max-width: 900px) {  .blobLadderTopLines {    background-size: 130% 100%;} }
 @media only screen and (max-width: 900px) { .blobLadder{ padding-left: inherit; padding-right: inherit;  } }
 @media only screen and (max-width: 680px) { .blobLadder{ background-image: none;margin:inherit; max-width: none;} }
 
@@ -552,8 +554,11 @@ margin: 0 auto; position: relative; top:-30px;}
 .auspathwayScreen .section7Holder{  
   background-image:url("./assets/dhukarr/aused_ladderhighered.png"); 
   background-size: auto;
-  background-position: 470px 370px;
+  background-position: 450px 390px;
 }
+@media only screen and (max-width: 1024px) {  .auspathwayScreen .section7Holder{background-position: 370px 400px;} }
+@media only screen and (max-width: 900px) {  .auspathwayScreen .section7Holder{background-position: 270px 400px;} }
+@media only screen and (max-width: 800px) {  .auspathwayScreen .section7Holder{background-position: 170px 400px;} }
 .auspathwayScreen .dhukarrSectionContentRow{flex-wrap: wrap; justify-content: space-evenly; flex: 1; align-items: center;}
 .auspathwayScreen .dhukarrSectionRowCenter{  justify-content: center; }
 .auspathwayScreen .dhukarrSectionRowTop{  align-items: flex-start; }
