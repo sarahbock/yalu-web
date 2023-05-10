@@ -621,7 +621,8 @@ word-break: break-word;
 
 /*CEREMONY SCREEN*/
 .ceremonyScreen{background-color: #843c0b87;}
-.ceremonyScreen p{color: #000000; }
+.ceremonyScreen p{color: #000000;     margin: 20px 30px;
+  text-align: left;}
 
 /*APP HEADER*/
 .appHeader{
