@@ -8,6 +8,7 @@ export const blobs=[
   {
     id: '0',
     english: 'Child and family services at Galiwin’ku',
+    subheading: 'Child and family services at Galiwin’ku',
     yolngu: '',
     bg:'#9855A0',
     data: [
@@ -25,7 +26,7 @@ export const blobs=[
           animation: false,
           id:'2012', 
           colour:'white',
-          english:'[Childcare]',
+          english:'',
           yolngu:'',
           image:'earc',
           bg:'logoblob',
@@ -35,11 +36,12 @@ export const blobs=[
           animation: false,
           id:'2013', 
           colour:'white',
+          iconColour:'red',
           english:'',
           yolngu:'',
           image:'cb',
           bg:'logoblob',
-          audio:false
+          audio:true
           },
         {
           animation: false,
@@ -65,11 +67,12 @@ export const blobs=[
           animation: false,
           id:'2032', 
           colour:'white',
+          iconColour:'red',
           english:'',
           yolngu:'',
           image:'loc',
           bg:'logoblob',
-          audio:false
+          audio:true
           }
       ],
   },
@@ -115,31 +118,9 @@ export const blobs=[
     ],
   },
   {
-    id: '3',
-    english: 'Transition',
-    subheading: '5 - 6 years',
-    yolngu: '',
-    bg:'#24B49B',
-    data: [
-      {
-        animation: false,
-        id:'2031', 
-        colour:'aqua',
-        english:'Transition',
-        yolngu:'',
-        bg:'lightaquablob',
-        transparent:true,
-        audio:false,
-        style:{padding:80},
-        fontStyle:{fontSize:32}
-        },
-      
-    ],
-  },
-  {
     id: '4',
-    english: 'Primary (Grade 1 - 4)',
-    subheading: '6 - 9 years',
+    english: 'Primary (Transition to Year 6)',
+    subheading: 'About 5 - 12 years',
     yolngu: '',
     bg:'#42AD49',
     data: [
@@ -192,23 +173,42 @@ export const blobs=[
         ]
       },
       {
-        animation: false,
-        id:'2041', 
-        colour:'green',
-        english:'Primary years',
-        yolngu:'',
-        bg:'lightgreenblob',
-        transparent:true,
-        audio:false,
-        style:{padding:80},
-        fontStyle:{fontSize:32}
-        },
+        id:'ladder10',
+        ladder: [
+          {
+            animation: false,
+            id:'2031', 
+            colour:'aqua',
+            english:'Transition',
+            yolngu:'',
+            bg:'lightaquablob',
+            transparent:true,
+            audio:false,
+            style:{padding:80, position:'relative', top:'20px', left:'-60px'},
+            fontStyle:{fontSize:32}
+            },
+          {
+            animation: false,
+            id:'2041', 
+            colour:'green',
+            english:'Primary years',
+            yolngu:'',
+            bg:'lightgreenblob',
+            transparent:true,
+            audio:false,
+            style:{padding:80},
+            fontStyle:{fontSize:32}
+            },
+        
+        ]
+      },
+      
     ],
   },
   {
     id: '5',
-    english: 'Middle (Grade 5 - 8)',
-    subheading: '10 - 12 years',
+    english: 'Middle years (Year 7 to Year 9)',
+    subheading: 'About 12 - 15 years',
     yolngu: '',
     bg:'#E9C935',
     data: [
@@ -268,8 +268,8 @@ export const blobs=[
   },
   {
     id: '6',
-    english: 'Secondary (Grade 9 - 12)',
-    subheading: '13 - 17 years',
+    english: 'Senior years (Year 10 to Year 12)',
+    subheading: 'About 15-18 years',
     yolngu: '',
     bg:'#EC9823',
     style:{paddingBottom:0},
@@ -310,7 +310,7 @@ export const blobs=[
             bg:'orangeblob',
             transparent:true,
             audio:false,
-            style:{position:'relative', left:'30px', top:'-40px'}
+            style:{position:'relative', left:'20px', top:'-20px'}
             },
           {
             animation: false,
@@ -321,7 +321,7 @@ export const blobs=[
             bg:'orangeblob',
             transparent:true,
             audio:false,
-            style:{position:'relative', left:'60px', top:'-40px'}
+            style:{position:'relative', left:'60px', top:'-30px'}
             },
           {
             animation: false,
@@ -332,8 +332,19 @@ export const blobs=[
             bg:'orangeblob',
             transparent:true,
             audio:false,
-            style:{position:'relative', left:'155px', top:'-60px'}
+            style:{position:'relative', left:'165px', top:'-20px'}
             },
+            {
+              animation: false,
+              id:'2096', 
+              colour:'light',
+              english:'NICET',
+              yolngu:'',
+              bg:'transparent',
+              transparent:true,
+              audio:false,
+              style:{position:'relative', left:'70px',top:'-90px', width:60, padding:20}
+              },
         ]
       },
       {
@@ -344,7 +355,7 @@ export const blobs=[
             animation: false,
             id:'2061', 
             colour:'orange',
-            english:'Secondary years',
+            english:'Senior years',
             yolngu:'',
             bg:'lightorangeblob',
             transparent:true,
@@ -354,18 +365,68 @@ export const blobs=[
             },
             {
               animation: false,
-              id:'2067', 
+              id:'2095', 
               colour:'light',
-              english:'ATAR',
+              english:'NICET',
               yolngu:'',
               bg:'transparent',
               transparent:true,
-              audio:true,
-              style:{position:'relative', left:'0px',top:'70px', width:60}
+              audio:false,
+              style:{position:'relative', left:'-30px',top:'160px', width:60, padding:20}
               },
+              {
+                animation: false,
+                id:'2067', 
+                colour:'light',
+                english:'ATAR',
+                yolngu:'',
+                bg:'transparent',
+                transparent:true,
+                audio:true,
+                style:{position:'relative', left:'70px',top:'70px', width:60, padding:20}
+                },
         ]
       },
     ],
+  },
+  {
+    id: '9',
+    english:'',
+    subheading:'',
+    yolngu:'',
+    bg:'#E75F64',
+    style:{paddingTop:0, paddingBottom:0},
+    data:[
+      {
+        id:'ladder9',
+        ladderClass:'blobLadderTopRow',
+        ladder:[
+          {
+            animation: false,
+            id:'2094', 
+            colour:'light',
+            english:'Choosing a pathway',
+            yolngu:'',
+            bg:'transparent',
+            transparent:true,
+            audio:true,
+            style:{position: 'relative', left:'-220px', top:'-50px'},
+            },
+            {
+            animation: false,
+            id:'2093', 
+            colour:'red',
+            english:'Tertiary education',
+            yolngu:'',
+            bg:'lightredblob',
+            transparent:true,
+            audio:true,
+            style:{position: 'relative', left:'-140px' },
+            fontStyle:{fontSize:26}
+            }
+        ]
+      },
+    ]
   },
   {
     id: '8',
@@ -379,6 +440,7 @@ export const blobs=[
         id:'ladder7',
         ladderClass:'blobLadderTopLines',
         ladder:[
+          
           {
             animation: false,
             id:'2091', 
@@ -389,7 +451,7 @@ export const blobs=[
             transparent:true,
             audio:false,
             fontStyle:{fontSize:24},
-            style:{position:'relative', top: 30, padding: 20, width: 200, marginTop:0}
+            style:{position:'relative', top: 50, padding: 20, width: 200, marginTop:0}
           },
           {
             animation: false,
@@ -400,7 +462,7 @@ export const blobs=[
             bg:'transparent',
             transparent:true,
             audio:true,
-            style:{padding: 10, width: 100, position:'relative', top: 40, }
+            style:{padding: 10, width: 100, position:'relative', top: 55, }
           },
         ]
       },
@@ -408,13 +470,13 @@ export const blobs=[
   },
   {
     id: '15',
-    english: 'Higher education',
-    subheading: 'Tertiary education',
+    english: '',
+    subheading: '',
     yolngu: '',
     bg:'#E75F64',
     style:{paddingTop:0, marginTop:'-1px'},
     align:'top',
-    audio:true,
+    audio:false,
     data: [
       {
         id:'ladder5',

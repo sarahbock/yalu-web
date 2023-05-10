@@ -20,7 +20,7 @@ const Home = props =>{
 
         <div className="homeContent">
 
-          <Tile id='dictionary' label='Balandaw gurraŋay dhäruk - Yolŋukurr mayali'
+          <Tile id='dictionary' label='Balandaw Gurraŋay Dhäruk - Yolŋukurr Mayali'
             onClick={()=>chooseResourceHandler('dictionary')}
           />
 
@@ -32,7 +32,7 @@ const Home = props =>{
             onClick={()=>chooseResourceHandler('auspathway')}
           />
 
-          <Tile id='ceremony' label='Ceremony as a Yolŋu classroom'
+          <Tile id='ceremony' label='Ceremony as a Yolŋu Classroom'
             onClick={()=>chooseResourceHandler('ceremony')}
           />
 

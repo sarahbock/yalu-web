@@ -178,7 +178,10 @@ const loadMedia = (id, image, bg) => {
      /*AUS ED*/
      case '2092': audioSource = require('../../assets/aused/mp3/aused_pts.mp3'); break;
      case '2067': audioSource = require('../../assets/aused/mp3/aused_atar.mp3'); break;
-     case '2071': audioSource = require('../../assets/aused/mp3/aused_pathway.mp3'); break;
+     case '2013': audioSource = require('../../assets/aused/mp3/aused_cb.mp3'); break;
+     case '2032': audioSource = require('../../assets/aused/mp3/aused_loc.mp3'); break;
+     case '2093': audioSource = require('../../assets/aused/mp3/aused_tertiary.mp3'); break;
+     case '2094': audioSource = require('../../assets/aused/mp3/aused_pathway.mp3'); break;
 
     default: audioSource = null;
   }
@@ -323,10 +326,13 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
 
           {imageSource && 
           <BlobImage
-          source={imageSource}
-          clickHandler={toggleEntryOpenState}
-          style={{width:200, height:200}} 
-          />
+            source={imageSource}
+            clickHandler={toggleEntryOpenState}
+            style={{
+              width: audioSource || video ? 150 : 200, 
+              height: audioSource || video ? 150 : 200
+            }} 
+            />
           }
 
           { audioSource && <SoundPlayer source={audioSource}/> }
