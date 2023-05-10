@@ -86,6 +86,8 @@ const AustralianEducation = () => {
           yolngu={item.yolngu}
           language={false}
           audio={item.audio}
+          video={item.video}
+          link={item.link}
           style={item.style}
           image={item.image}
           transparent={item.transparent}

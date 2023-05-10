@@ -6,7 +6,7 @@ import info from '../../assets/play.png';
 const BlobMore = ({ link, colourClass}) => {
 
   const videoLink = link && link.indexOf('youtu.be')!==-1;
-
+console.log(link);
 
   if (!link) return;
 

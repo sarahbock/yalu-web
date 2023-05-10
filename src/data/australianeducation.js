@@ -360,7 +360,7 @@ export const blobs=[
               yolngu:'',
               bg:'transparent',
               transparent:true,
-              audio:false,
+              audio:true,
               style:{position:'relative', left:'0px',top:'70px', width:60}
               },
         ]
@@ -399,7 +399,7 @@ export const blobs=[
             yolngu:'',
             bg:'transparent',
             transparent:true,
-            audio:false,
+            audio:true,
             style:{padding: 10, width: 100, position:'relative', top: 40, }
           },
         ]
@@ -429,6 +429,7 @@ export const blobs=[
             bg:'lightredblob',
             transparent:true,
             audio:false,
+            video:'https://youtu.be/hwmutKojM9k',
             style:{padding:60},
             fontStyle:{fontSize:26}
             },
@@ -508,6 +509,7 @@ export const blobs=[
             bg:'lightredblob',
             transparent:true,
             audio:false,
+            video:'https://youtu.be/ZZkF4oju8BQ',
             style:{padding:60, position:'relative', left:'-60px', top:'-20px'},
             fontStyle:{fontSize:26}
             },

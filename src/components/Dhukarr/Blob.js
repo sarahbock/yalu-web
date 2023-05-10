@@ -6,6 +6,7 @@ import Modal from '../UI/Modal';
 import BlobText from './BlobText';
 import BlobMore from './BlobMore';
 import BlobImage from './BlobImage';
+import BlobVideo from './BlobVideo';
 import CaptionText from './CaptionText';
 
 const loadMedia = (id, image, bg) => {
@@ -215,7 +216,7 @@ const loadMedia = (id, image, bg) => {
   return { loadedImage: imageSource, loadedBgImage: bgImageSource, loadedAudio: audioSource}
 }
 
-const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textStyle, fontStyle, animation, image, bg, caption }) => {
+const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textStyle, fontStyle, animation, image, bg, caption, video }) => {
 
   const [isVisible, setVisible] = useState(true);
   const [entryOpen, setEntryOpen] = useState(false);
@@ -270,7 +271,7 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
   const media = loadMedia(id, image, bg);
   const bgImageSource = media.loadedBgImage;
   const imageSource = media.loadedImage;
-  const audioSource = media.loadedAudio;
+  const audioSource = audio ? media.loadedAudio : null;
 
 
   return(
@@ -330,6 +331,11 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
 
           { audioSource && <SoundPlayer source={audioSource}/> }
 
+          <BlobVideo 
+            colourClass={colourClass}
+            video={video}
+          />
+
           
 
         </div>
@@ -339,6 +345,8 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
         colourClass={colourClass}
         link={link}
       />
+
+      
 
       {/*caption && 
         <CaptionText 
