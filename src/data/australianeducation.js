@@ -294,7 +294,7 @@ export const blobs=[
   {
     id: '6',
     english: 'Senior years (Year 10 to Year 12)',
-    subheading: 'About 15-18 years',
+    subheading: 'About 15 - 18 years',
     yolngu: '',
     bg:'#EC9823',
     style:{paddingBottom:0},
