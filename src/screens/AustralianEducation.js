@@ -113,7 +113,7 @@ const AustralianEducation = () => {
           <div  style={{backgroundColor: '#9855a0d4'}}>
 
           <div className='padThinner'>
-            <h1>Dhuwal Marŋgithyamirr Dhukarr Mulkuru Balandaw </h1>
+            <h1>Dhuwal Balandaw Marŋgithyamirr Dhukarr</h1>
             <SoundPlayer source={require('../assets/aused/mp3/aused_intro.mp3')}/>
             <h2 className='marginTop'>Early years through to secondary school pathway </h2>
           </div>

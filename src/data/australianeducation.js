@@ -61,7 +61,8 @@ export const blobs=[
           yolngu:'',
           image:'yalu',
           bg:'logoblob',
-          audio:false
+          audio:false,
+          link:'https://www.yalu.org.au/'
           },
         {
           animation: false,
@@ -126,7 +127,7 @@ export const blobs=[
     data: [
       {
         id:'ladder1',
-        ladderClass:'blobLadder4Left',
+        ladderClass:'blobLadderPrimary',
         ladder: [
           {
             animation: false,
@@ -137,7 +138,7 @@ export const blobs=[
             bg:'greenblob',
             transparent:true,
             audio:false,
-            style:{position:'relative', left:'10px'}
+            style:{position:'relative', left:'20px', top:'10px'}
             },
           {
             animation: false,
@@ -157,7 +158,8 @@ export const blobs=[
             yolngu:'',
             bg:'greenblob',
             transparent:true,
-            audio:false
+            audio:false,
+            style:{position:'relative', left:'-10px'}
             },
           {
             animation: false,
@@ -170,6 +172,28 @@ export const blobs=[
             audio:false,
             style:{position:'relative', left:'40px'}
             },
+            {
+              animation: false,
+              id:'2052', 
+              colour:'green',
+              english:'Year 5',
+              yolngu:'',
+              bg:'greenblob',
+              transparent:true,
+              audio:false,
+              style:{position:'relative', left:'20px'}
+              },
+            {
+              animation: false,
+              id:'2053', 
+              colour:'green',
+              english:'Year 6',
+              yolngu:'',
+              bg:'greenblob',
+              transparent:true,
+              audio:false,
+              style:{position:'relative', left:'5px'}
+              },
         ]
       },
       {
@@ -184,7 +208,7 @@ export const blobs=[
             bg:'lightaquablob',
             transparent:true,
             audio:false,
-            style:{padding:80, position:'relative', top:'20px', left:'-60px'},
+            style:{padding:80, position:'relative', top:'-200px', left:'-120px'},
             fontStyle:{fontSize:32}
             },
           {
@@ -226,30 +250,9 @@ export const blobs=[
         },
       {
         id:'ladder2',
-        ladderClass:'blobLadder3Right',
+        ladderClass:'blobLadderMiddle',
         ladder: [
-          {
-            animation: false,
-            id:'2052', 
-            colour:'yellow',
-            english:'Year 5',
-            yolngu:'',
-            bg:'yellowblob',
-            transparent:true,
-            audio:false,
-            style:{position:'relative', left:'20px'}
-            },
-          {
-            animation: false,
-            id:'2053', 
-            colour:'yellow',
-            english:'Year 6',
-            yolngu:'',
-            bg:'yellowblob',
-            transparent:true,
-            audio:false,
-            style:{position:'relative', left:'5px'}
-            },
+          
           {
             animation: false,
             id:'2054', 
@@ -259,8 +262,30 @@ export const blobs=[
             bg:'yellowblob',
             transparent:true,
             audio:false,
-            style:{position:'relative', left:'-40px'}
+            style:{position:'relative', left:'20px'}
             },
+            {
+              animation: false,
+              id:'2062', 
+              colour:'yellow',
+              english:'Year 8',
+              yolngu:'',
+              bg:'yellowblob',
+              transparent:true,
+              audio:false,
+              style:{position:'relative', left:'10px', top:'-10px'}
+              },
+            {
+              animation: false,
+              id:'2063', 
+              colour:'yellow',
+              english:'Year 9',
+              yolngu:'',
+              bg:'yellowblob',
+              transparent:true,
+              audio:false,
+              style:{position:'relative', left:'-40px', top:'0px'}
+              },
         ]
 
       }
@@ -277,30 +302,9 @@ export const blobs=[
     data: [
       {
         id:'ladder3',
-        ladderClass:'blobLadder5Left',
+        ladderClass:'blobLadderSecondary',
         ladder: [
-          {
-            animation: false,
-            id:'2062', 
-            colour:'orange',
-            english:'Year 8',
-            yolngu:'',
-            bg:'orangeblob',
-            transparent:true,
-            audio:false,
-            style:{position:'relative', left:'60px', top:'-40px'}
-            },
-          {
-            animation: false,
-            id:'2063', 
-            colour:'orange',
-            english:'Year 9',
-            yolngu:'',
-            bg:'orangeblob',
-            transparent:true,
-            audio:false,
-            style:{position:'relative', left:'20px', top:'-40px'}
-            },
+         
           {
             animation: false,
             id:'2064', 
@@ -310,7 +314,7 @@ export const blobs=[
             bg:'orangeblob',
             transparent:true,
             audio:false,
-            style:{position:'relative', left:'20px', top:'-20px'}
+            style:{position:'relative', left:'25px', top:'-20px'}
             },
           {
             animation: false,
@@ -321,7 +325,7 @@ export const blobs=[
             bg:'orangeblob',
             transparent:true,
             audio:false,
-            style:{position:'relative', left:'60px', top:'-30px'}
+            style:{position:'relative', left:'80px', top:'-30px'}
             },
           {
             animation: false,
@@ -332,24 +336,24 @@ export const blobs=[
             bg:'orangeblob',
             transparent:true,
             audio:false,
-            style:{position:'relative', left:'165px', top:'-20px'}
+            style:{position:'relative', left:'80px', top:'-40px'}
             },
             {
               animation: false,
               id:'2096', 
               colour:'light',
-              english:'NICET',
+              english:'NTCET',
               yolngu:'',
               bg:'transparent',
               transparent:true,
-              audio:false,
-              style:{position:'relative', left:'70px',top:'-90px', width:60, padding:20}
+              audio:true,
+              style:{position:'relative', left:'100px',top:'-60px', width:60, padding:20}
               },
         ]
       },
       {
         id:'ladder4',
-        ladderClass:'blobLadder1Right',
+        ladderClass:'blobLadderAtar',
         ladder: [
           {
             animation: false,
@@ -367,12 +371,12 @@ export const blobs=[
               animation: false,
               id:'2095', 
               colour:'light',
-              english:'NICET',
+              english:'NTCET',
               yolngu:'',
               bg:'transparent',
               transparent:true,
-              audio:false,
-              style:{position:'relative', left:'-30px',top:'160px', width:60, padding:20}
+              audio:true,
+              style:{position:'relative', left:'-140px',top:'0px', width:60, padding:20}
               },
               {
                 animation: false,
@@ -383,7 +387,7 @@ export const blobs=[
                 bg:'transparent',
                 transparent:true,
                 audio:true,
-                style:{position:'relative', left:'70px',top:'70px', width:60, padding:20}
+                style:{position:'relative', left:'70px',top:'-40px', width:60, padding:20}
                 },
         ]
       },
@@ -584,8 +588,8 @@ export const blobs=[
               bg:'lightpinkblob',
               transparent:true,
               audio:false,
-              style:{padding:80},
-              fontStyle:{fontSize:22}
+              style:{},
+              fontStyle:{}
             },
             {
               animation: false,
@@ -596,8 +600,8 @@ export const blobs=[
               bg:'pinkblob',
               transparent:true,
               audio:false,
-              style:{padding:80},
-              fontStyle:{fontSize:22}
+              style:{},
+              fontStyle:{}
             },
             {
               animation: false,
@@ -608,8 +612,8 @@ export const blobs=[
               bg:'darkpinkblob',
               transparent:true,
               audio:false,
-              style:{padding:80},
-              fontStyle:{fontSize:22}
+              style:{},
+              fontStyle:{}
             },
             {
               animation: false,
@@ -620,8 +624,8 @@ export const blobs=[
               bg:'verydarkpinkblob',
               transparent:true,
               audio:false,
-              style:{padding:80},
-              fontStyle:{fontSize:22}
+              style:{},
+              fontStyle:{}
             },
         ]
       },

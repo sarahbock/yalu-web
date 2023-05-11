@@ -25,7 +25,7 @@ const Ceremony = () => {
 
       <CeremonyVideo video='3UOs2zK8scQ' title='Ceremonial body painting'/>
       
-      <CeremonyVideo video='fvIqfff3RFY' title='Dhapi initiation ceremony'/>
+      <CeremonyVideo video='NMPXR14HuOA' title='Dhapi initiation ceremony'/>
       
       <CeremonyVideo video='XBInm-YrIRk' title='Gumurryu märram adoption'/>
 

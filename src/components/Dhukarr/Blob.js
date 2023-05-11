@@ -182,6 +182,8 @@ const loadMedia = (id, image, bg) => {
      case '2032': audioSource = require('../../assets/aused/mp3/aused_loc.mp3'); break;
      case '2093': audioSource = require('../../assets/aused/mp3/aused_tertiary.mp3'); break;
      case '2094': audioSource = require('../../assets/aused/mp3/aused_pathway.mp3'); break;
+     case '2095': audioSource = require('../../assets/aused/mp3/aused_ncet.mp3'); break;
+     case '2096': audioSource = require('../../assets/aused/mp3/aused_ncet.mp3'); break;
 
     default: audioSource = null;
   }
@@ -258,6 +260,7 @@ const Blob = ({ id, colour, english, yolngu, language, audio, style, link, textS
     case 'aqua': colourClass = 'blobAqua'; break;
     case 'green': colourClass = 'blobGreen'; break;
     case 'red': colourClass = 'blobRed'; break;
+    case 'white': colourClass = 'blobWhite'; break;
     default: colourClass = '';
   }
 

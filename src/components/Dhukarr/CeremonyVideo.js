@@ -15,7 +15,7 @@ const CeremonyVideo = ({ video, title, colourClass}) => {
   return(
 
     <iframe 
-      src={`https://www.youtube.com/embed/${video}?rel=0`} 
+      src={`https://www.youtube.com/embed/${video}?rel=0&&cc_load_policy=1`} 
       width="560" height="315" 
       style={{
         margin:'10px',
