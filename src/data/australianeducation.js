@@ -92,7 +92,7 @@ export const blobs=[
           yolngu:'',
           image:'faft',
           bg:'whiteblob',
-          audio:false
+          audio:true
           },
       ],
   },
@@ -111,7 +111,7 @@ export const blobs=[
         yolngu:'',
         bg:'lightblueblob',
         transparent:true,
-        audio:false,
+        audio:true,
         style:{padding:80},
         fontStyle:{fontSize:32}
         },
@@ -207,7 +207,7 @@ export const blobs=[
             yolngu:'',
             bg:'lightaquablob',
             transparent:true,
-            audio:false,
+            audio:true,
             style:{padding:80, position:'relative', top:'-200px', left:'-120px'},
             fontStyle:{fontSize:32}
             },

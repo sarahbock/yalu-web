@@ -176,6 +176,9 @@ const loadMedia = (id, image, bg) => {
      case '140': audioSource = require('../../assets/dhukarr/mp3/recording140.mp3'); break;
 
      /*AUS ED*/
+     case '2021': audioSource = require('../../assets/aused/mp3/aused_preschool.mp3'); break;
+     case '2031': audioSource = require('../../assets/aused/mp3/aused_transitions.mp3'); break;
+     case '2011': audioSource = require('../../assets/aused/mp3/aused_faft.mp3'); break;
      case '2092': audioSource = require('../../assets/aused/mp3/aused_pts.mp3'); break;
      case '2067': audioSource = require('../../assets/aused/mp3/aused_atar.mp3'); break;
      case '2013': audioSource = require('../../assets/aused/mp3/aused_cb.mp3'); break;
