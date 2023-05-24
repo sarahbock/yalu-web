@@ -20,7 +20,8 @@ export const blobs=[
           yolngu:'',
           image:'babyhub',
           bg:'logoblob',
-          audio:false
+          audio:false,
+          video:'https://www.youtube.com/shorts/C1CZatTMC2k'
         },
         {
           animation: false,
@@ -51,7 +52,8 @@ export const blobs=[
           yolngu:'',
           image:'fast',
           bg:'logoblob',
-          audio:false
+          audio:false,
+          video:'https://youtu.be/RDwx_VzNc04'
           },
         {
           animation: false,

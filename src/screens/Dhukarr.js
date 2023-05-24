@@ -461,7 +461,7 @@ const Dhukarr = () => {
                 animation={true}
                 id='32' 
                 colour='brown'
-                english='Family constantly communicate with the baby - ‘building up their brain through talk’ (ref).'
+                english='Family constantly communicate with the baby - ‘building up their brain through talk’.'
                 yolngu='Gurruṯu’mirrinydja ŋuli ŋurru-yirr’yun dhäruk waŋanharaw yothuw bitjan bili .'
                 language={language}
                 audio={true}
@@ -512,7 +512,7 @@ const Dhukarr = () => {
                 id='39' 
                 colour='brown'
                 english='Grandparents support and offer advice to mum and dad and rest of the family so they understand how to care for the child.'
-                yolngu=''
+                yolngu='Märiy ga ŋathiy ŋuli guŋga’yun ga gurrupan dharaŋanaraw bäpaw ga ŋaṉḏiw  ga wiripuny mala gurruṯumirriw märr walal dhu dharaŋan nhaltjan walal dhu djäga yothuw.'
                 language={language}
                 audio={true}
                 style={{}}
@@ -528,7 +528,7 @@ const Dhukarr = () => {
                 id='25' 
                 colour='grey'
                 english='Family test hearing and vision and body – e.g. checking response to high and low sounds; checking how baby’s eyes track hand or body movements; finding out what support that child needs and how to communicate. If the baby has a problem family think about what the mother ate during pregnancy that might have caused it.'
-                yolngu=''
+                yolngu='Gurruṯumirriy ŋuli birrka’yun yothuny nhaltjan ŋayi ŋuli ga ŋäma buthuruy ga nhäma maŋutjiy ga nhaltjan nhanŋu ga rumbal – Yolŋuy ŋuli birrka’yun nhä ŋäṉḏi’mirriŋuy ŋuli luka maŋutji-lakaram yothuny rerrimirr.'
                 language={language}
                 audio={true}
                 style={{}}
