@@ -100,7 +100,7 @@ const Dictionary = () => {
   return(
     <div className="container black dictionaryScreen">
 
-      <TopNav toggleSearch={toggleSearch} back title="Balandaw gurraŋay dhäruk - Yolŋukurr mayali" colour='black'/>
+      <TopNav toggleSearch={toggleSearch} back title="Balandaw dhäruk Yolŋukurr mayali" colour='black'/>
 
       <div className='contentContainer'>
         

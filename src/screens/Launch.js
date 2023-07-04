@@ -15,7 +15,7 @@ const Launch = () => {
 
       <div className="container" onClick={enterApp}>
 
-        <div className="header bgstrip largerFont">Dhukarr ga Rom Marŋgithinyaraw Bala-räliyunmirr Yolŋuw ga Balandaw (Draft)</div>
+        <div className="header bgstrip largerFont">Dhukarr ga Rom Marŋgithinyaraw Bala-räliyunmirr Yolŋuw ga Balandaw </div>
 
         <div className="centeredContent">
           <img src={logo} className="launchLogo" alt="Yalu logo"/>
@@ -25,7 +25,7 @@ const Launch = () => {
           </div>
         </div>
 
-        <div className="footer bgstrip largerFont">Understanding Yolŋu and Balanda Education Pathways and Systems - Both Ways (Draft)</div>
+        <div className="footer bgstrip largerFont">Understanding Yolŋu and Balanda Education Pathways and Systems - Both Ways </div>
 
       </div>
 

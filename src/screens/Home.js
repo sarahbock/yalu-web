@@ -16,11 +16,11 @@ const Home = props =>{
 
     <div className="container homeScreen">
 
-        <div className="header bgstrip largerFont">Dhukarr ga Rom Marŋgithinyaraw Bala-räliyunmirr Yolŋuw ga Balandaw (Draft)</div>
+        <div className="header bgstrip largerFont">Dhukarr ga Rom Marŋgithinyaraw Bala-räliyunmirr Yolŋuw ga Balandaw</div>
 
         <div className="homeContent">
 
-          <Tile id='dictionary' label='Balandaw Gurraŋay Dhäruk - Yolŋukurr Mayali'
+          <Tile id='dictionary' label='Balandaw Gurraŋay Dhäruk - Dictionary of English terms for Yolŋu'
             onClick={()=>chooseResourceHandler('dictionary')}
           />
 

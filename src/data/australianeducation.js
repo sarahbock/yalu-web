@@ -31,7 +31,8 @@ export const blobs=[
           yolngu:'',
           image:'earc',
           bg:'logoblob',
-          audio:false
+          audio:false,
+          video: 'https://youtu.be/Dh7rrj9cc1A'
           },
         {
           animation: false,
