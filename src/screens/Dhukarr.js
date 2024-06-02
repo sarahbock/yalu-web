@@ -38,6 +38,7 @@ const Dhukarr = () => {
           <div className='padThinner'>
             <h1>Yolŋu Yothuw Dhukarr ŋuthanaraw ga dharaŋanaraw - ga nhaltjan dhu gurruṯumirriy guŋga’yun yothuny.</h1>
             <h2 className='marginTop'>The Yolŋu child’s developmental pathway and ways that family monitor and support the child’s development. </h2>
+            <h2 className='marginTop'>Developed by Helen Nyomba Gandaŋu with the 'Understanding Pathways' Project Team and Yolŋu families.</h2>
             <h3 className='marginTopLarge'>Colour Key</h3>
           </div>
 

@@ -634,5 +634,72 @@ export const blobs=[
       },
       
     ],
+  },
+  {
+    id: '16',
+    english: '',
+    subheading: '',
+    yolngu: '',
+    bg:'#E75F64',
+    style:{paddingTop:0, marginTop:'-1px'},
+    align:'top',
+    audio:false,
+    data: [
+      {
+        id:'ladder5',
+        ladderClass:'blobLadderTopLineLeft',
+        ladder: [
+          {
+            animation: false,
+            id:'20711', 
+            colour:'red',
+            english:'Stories from Yolŋu students',
+            yolngu:'',
+            bg:'lightredblob',
+            transparent:true,
+            audio:false,
+            video:'',
+            style:{padding:60},
+            fontStyle:{fontSize:26}
+            },
+            {
+              animation: false,
+              id:'20811', 
+              colour:'red',
+              english:'Stuart Yiwarr',
+              yolngu:'',
+              audio:false,
+              video:'https://youtu.be/YQsTG9JORSI',
+              bg:'redblob',
+              transparent:true,
+              audio:false,
+            },
+            {
+              animation: false,
+              id:'20821', 
+              colour:'red',
+              english:'Dikul Baker',
+              yolngu:'',
+              audio:false,
+              video:'https://youtu.be/dy6B0K6We1Q',
+              bg:'redblob',
+              transparent:true,
+              audio:false,
+            },
+            {
+              animation: false,
+              id:'20831', 
+              colour:'red',
+              english:'Sheena Bawu',
+              yolngu:'',
+              audio:false,
+              video:'https://youtu.be/7gVVDKbgZFI',
+              bg:'redblob',
+              transparent:true,
+              audio:false,
+            },
+        ]
+      }, 
+    ],
   }
 ];
