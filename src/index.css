@@ -112,6 +112,9 @@ background: none;
 padding: 0;
 cursor: pointer;
 }
+
+@media only screen and (min-width: 1000px) { .homeTile{ max-width: none; flex: 1;  } }
+
 .homeTileImage{
     padding: 10px;
     background-repeat: no-repeat;
@@ -123,6 +126,7 @@ cursor: pointer;
 .homeTileBlobPurple{ background-image:url("./assets/homeblobpurple.png"); }
 .homeTileBlobRed{ background-image:url("./assets/homeblobred.png"); }
 
+.homeAbout {text-align: center; color: #FFF; font-weight: bold; padding: 10px; font-size: 14px;}
 
 @media only screen and (max-width: 769px) { .homeTileImage{ border-width:10px  } }
 

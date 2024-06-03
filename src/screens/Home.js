@@ -40,7 +40,9 @@ const Home = props =>{
 
         </div>
 
-        <div className="footer bgstrip"></div>
+        
+
+        <div className="footer bgstrip"><a href="http://growingupyolngu.com.au/index.cfm?fuseaction=page&p=265&l=2&id=76&smid=182" className='homeAbout' target='_blank'>About this app</a></div>
 
     </div>
   )
