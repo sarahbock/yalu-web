@@ -23,7 +23,7 @@ const Ceremony = () => {
       <p>Videos were produced by Helen Nyomba Gandaŋu with  the 'Understanding Pathways' Project Team and Yolŋu families.</p>
       <p>Viewers are advised that these videos might include images of Yolŋu who have passed away.</p>
 
-      <CeremonyVideo video='3nJMf-qv24k' title='Learning through ceremony'/>
+      <CeremonyVideo video='nTXunFXPIRw' title='Learning through ceremony'/>
    
       <CeremonyVideo video='6ECrt_zIL2A' title='Bukulup ga Daḏayun Cleansing Ceremony'/>
 
